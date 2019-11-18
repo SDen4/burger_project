@@ -22,11 +22,12 @@ h6 {
 
 .wrapper {
     overflow: hidden;
-    /* min-width: 1200px; */
+    min-width: 1103px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     animation: loading .3s;
+    background-color: #010101;
 }
 
 @keyframes loading {
@@ -50,7 +51,7 @@ li {
 
 .container {
     margin: 0px auto;
-    /* width: 1200px; */
+    width: 1103px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
