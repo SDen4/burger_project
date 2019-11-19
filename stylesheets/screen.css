@@ -99,7 +99,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-/* line 11, ../css/layout/_normalize.scss */
+/* line 11, ../css/layout/normalize.scss */
 html {
   line-height: 1.15;
   /* 1 */
@@ -112,7 +112,7 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-/* line 23, ../css/layout/_normalize.scss */
+/* line 23, ../css/layout/normalize.scss */
 body {
   margin: 0;
 }
@@ -120,7 +120,7 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-/* line 31, ../css/layout/_normalize.scss */
+/* line 31, ../css/layout/normalize.scss */
 main {
   display: block;
 }
@@ -129,7 +129,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 40, ../css/layout/_normalize.scss */
+/* line 40, ../css/layout/normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -141,7 +141,7 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 53, ../css/layout/_normalize.scss */
+/* line 53, ../css/layout/normalize.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -155,7 +155,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 64, ../css/layout/_normalize.scss */
+/* line 64, ../css/layout/normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -168,7 +168,7 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-/* line 76, ../css/layout/_normalize.scss */
+/* line 76, ../css/layout/normalize.scss */
 a {
   background-color: transparent;
 }
@@ -177,7 +177,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 85, ../css/layout/_normalize.scss */
+/* line 85, ../css/layout/normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -190,7 +190,7 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 95, ../css/layout/_normalize.scss */
+/* line 95, ../css/layout/normalize.scss */
 b,
 strong {
   font-weight: bolder;
@@ -200,7 +200,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 105, ../css/layout/_normalize.scss */
+/* line 105, ../css/layout/normalize.scss */
 code,
 kbd,
 samp {
@@ -213,7 +213,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 116, ../css/layout/_normalize.scss */
+/* line 116, ../css/layout/normalize.scss */
 small {
   font-size: 80%;
 }
@@ -222,7 +222,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 125, ../css/layout/_normalize.scss */
+/* line 125, ../css/layout/normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -231,12 +231,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 133, ../css/layout/_normalize.scss */
+/* line 133, ../css/layout/normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 137, ../css/layout/_normalize.scss */
+/* line 137, ../css/layout/normalize.scss */
 sup {
   top: -0.5em;
 }
@@ -246,7 +246,7 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-/* line 148, ../css/layout/_normalize.scss */
+/* line 148, ../css/layout/normalize.scss */
 img {
   border-style: none;
 }
@@ -257,7 +257,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 160, ../css/layout/_normalize.scss */
+/* line 160, ../css/layout/normalize.scss */
 button,
 input,
 optgroup,
@@ -277,7 +277,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 176, ../css/layout/_normalize.scss */
+/* line 176, ../css/layout/normalize.scss */
 button,
 input {
   /* 1 */
@@ -288,7 +288,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 186, ../css/layout/_normalize.scss */
+/* line 186, ../css/layout/normalize.scss */
 button,
 select {
   /* 1 */
@@ -298,7 +298,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 195, ../css/layout/_normalize.scss */
+/* line 195, ../css/layout/normalize.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -309,7 +309,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 206, ../css/layout/_normalize.scss */
+/* line 206, ../css/layout/normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -321,7 +321,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 218, ../css/layout/_normalize.scss */
+/* line 218, ../css/layout/normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -332,7 +332,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-/* line 229, ../css/layout/_normalize.scss */
+/* line 229, ../css/layout/normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -343,7 +343,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 240, ../css/layout/_normalize.scss */
+/* line 240, ../css/layout/normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -362,7 +362,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 253, ../css/layout/_normalize.scss */
+/* line 253, ../css/layout/normalize.scss */
 progress {
   vertical-align: baseline;
 }
@@ -370,7 +370,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-/* line 261, ../css/layout/_normalize.scss */
+/* line 261, ../css/layout/normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -379,7 +379,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-/* line 270, ../css/layout/_normalize.scss */
+/* line 270, ../css/layout/normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -391,7 +391,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 280, ../css/layout/_normalize.scss */
+/* line 280, ../css/layout/normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -401,7 +401,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 290, ../css/layout/_normalize.scss */
+/* line 290, ../css/layout/normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -412,7 +412,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* line 299, ../css/layout/_normalize.scss */
+/* line 299, ../css/layout/normalize.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -421,7 +421,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 308, ../css/layout/_normalize.scss */
+/* line 308, ../css/layout/normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -434,7 +434,7 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-/* line 320, ../css/layout/_normalize.scss */
+/* line 320, ../css/layout/normalize.scss */
 details {
   display: block;
 }
@@ -442,7 +442,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 328, ../css/layout/_normalize.scss */
+/* line 328, ../css/layout/normalize.scss */
 summary {
   display: list-item;
 }
@@ -452,7 +452,7 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-/* line 339, ../css/layout/_normalize.scss */
+/* line 339, ../css/layout/normalize.scss */
 template {
   display: none;
 }
@@ -460,7 +460,7 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-/* line 347, ../css/layout/_normalize.scss */
+/* line 347, ../css/layout/normalize.scss */
 [hidden] {
   display: none;
 }
