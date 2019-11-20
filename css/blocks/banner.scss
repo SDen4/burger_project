@@ -1,0 +1,48 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5.4%;
+}
+
+.banner__img {
+    display: block;
+    width: 21%;
+    height: 100%;
+}
+
+.banner__drops {
+    width: 24%;
+    height: 60%;
+    position: absolute;
+    top: 14%;
+    left: 26%;
+}
+
+.banner__descr {
+    display: flex;
+    flex-flow: column wrap;
+    width: 22%;
+    margin-top: 3.5%;
+    margin-left: 2%;
+}
+
+.banner__descr-top {
+    text-transform: uppercase;
+    font-size: 72px;
+    color: $yellow;
+    font-family: "Gagalin";
+    width: 93%;
+    padding-bottom: 6%;
+}
+
+.banner__descr-bottom {
+    text-transform: lowercase;
+    font-size: 62px;
+    line-height: 60px;
+    font-family: 'Lifehack';
+    color: #fff;
+    width: 98%;
+}

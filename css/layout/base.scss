@@ -21,13 +21,8 @@ h6 {
 }
 
 .wrapper {
-    overflow: hidden;
-    min-width: 1103px;
     display: flex;
-    flex-direction: column;
-    /* min-height: 100vh; */
     animation: loading .3s;
-    background-color: #010101;
 }
 
 @keyframes loading {

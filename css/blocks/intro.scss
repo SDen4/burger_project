@@ -1,8 +1,20 @@
 .wrapper__intro {
-    background: url('../../img/bg-intro.jpg') center no-repeat;
-    height: 650px;
+    background: url('../../img/bg-intro.jpg') center center no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper__frame {
+    background: url('../../img/texture.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
