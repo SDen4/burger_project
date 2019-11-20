@@ -4,43 +4,44 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 12%;
+    margin-bottom: 5.4%;
 }
 
 .banner__img {
     display: block;
-    width: 45%;
+    width: 21%;
     height: 100%;
 }
 
 .banner__drops {
-    width: 45%;
-    height: 50%;
+    width: 24%;
+    height: 60%;
     position: absolute;
-    top: 17%;
-    left: 6%;
+    top: 14%;
+    left: 26%;
 }
 
 .banner__descr {
     display: flex;
     flex-flow: column wrap;
-    width: 40%;
-    margin-top: 5%;
+    width: 22%;
+    margin-top: 3.5%;
+    margin-left: 2%;
 }
 
 .banner__descr-top {
     text-transform: uppercase;
     font-size: 72px;
-    /* line-height: 85px; */
     color: $yellow;
     font-family: "Gagalin";
-    width: 85%;
-    padding-bottom: 5%;
+    width: 93%;
+    padding-bottom: 6%;
 }
 
 .banner__descr-bottom {
     text-transform: lowercase;
-    font-size: 72px;
+    font-size: 62px;
+    line-height: 60px;
     font-family: 'Lifehack';
     color: #fff;
     width: 98%;
