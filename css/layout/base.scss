@@ -4,10 +4,6 @@
 
 body {
     margin: 0;
-    /* font-size: 14px; */
-    /* color: #656464; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-weight: 300; */
 }
 
 h1,
@@ -23,6 +19,7 @@ h6 {
 .wrapper {
     display: flex;
     animation: loading .3s;
+    flex-direction: column;
 }
 
 @keyframes loading {
@@ -46,7 +43,7 @@ li {
 
 .container {
     margin: 0px auto;
-    width: 1103px;
+    width: 1100px;
     display: flex;
     flex-wrap: wrap;
 }

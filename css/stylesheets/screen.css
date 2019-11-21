@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -379,13 +380,9 @@ template {
 /* line 5, ../layout/base.scss */
 body {
   margin: 0;
-  /* font-size: 14px; */
-  /* color: #656464; */
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-weight: 300; */
 }
 
-/* line 13, ../layout/base.scss */
+/* line 9, ../layout/base.scss */
 h1,
 h2,
 h3,
@@ -396,10 +393,11 @@ h6 {
   font-weight: normal;
 }
 
-/* line 23, ../layout/base.scss */
+/* line 19, ../layout/base.scss */
 .wrapper {
   display: flex;
   animation: loading .3s;
+  flex-direction: column;
 }
 
 @keyframes loading {
@@ -410,21 +408,21 @@ h6 {
     opacity: 1;
   }
 }
-/* line 38, ../layout/base.scss */
+/* line 35, ../layout/base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 43, ../layout/base.scss */
+/* line 40, ../layout/base.scss */
 li {
   list-style-type: none;
 }
 
-/* line 47, ../layout/base.scss */
+/* line 44, ../layout/base.scss */
 .container {
   margin: 0px auto;
-  width: 1103px;
+  width: 1100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -463,6 +461,64 @@ li {
   font-weight: 500;
   font-style: normal;
 }
+/* line 1, ../blocks/pagination.scss */
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 190px;
+  position: fixed;
+  top: 17.7%;
+  left: 74.6%;
+  z-index: 1;
+}
+
+/* line 14, ../blocks/pagination.scss */
+.pagination__link {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-bottom: 14px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 24, ../blocks/pagination.scss */
+.pagination__link:last-child {
+  margin-bottom: 0;
+}
+/* line 28, ../blocks/pagination.scss */
+.pagination__link::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+/* line 43, ../blocks/pagination.scss */
+.pagination__link:hover::before {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
+/* line 50, ../blocks/pagination.scss */
+.pagination__link_active::before {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
 /* line 1, ../blocks/header.scss */
 .header {
   display: flex;
@@ -477,8 +533,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 77px;
-  padding-right: 83px;
+  padding: 13px 83px 0px 77px;
 }
 
 /* line 1, ../blocks/navigation.scss */
@@ -533,26 +588,26 @@ li {
 }
 
 /* line 1, ../blocks/intro.scss */
-.wrapper__intro {
+.intro {
   background: url("../../img/bg-intro.jpg") center center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
 /* line 15, ../blocks/intro.scss */
-.wrapper__frame {
+.intro__frame {
   background: url("../../img/texture.png");
   background-size: cover;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* line 1, ../blocks/banner.scss */
@@ -562,7 +617,7 @@ li {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 5.4%;
+  /* margin-bottom: 5.4%; */
 }
 
 /* line 10, ../blocks/banner.scss */
@@ -574,11 +629,11 @@ li {
 
 /* line 16, ../blocks/banner.scss */
 .banner__drops {
-  width: 24%;
+  width: 23.7%;
   height: 60%;
   position: absolute;
-  top: 14%;
-  left: 26%;
+  top: 14.5%;
+  left: 25.5%;
 }
 
 /* line 24, ../blocks/banner.scss */
@@ -586,8 +641,8 @@ li {
   display: flex;
   flex-flow: column wrap;
   width: 22%;
-  margin-top: 3.5%;
-  margin-left: 2%;
+  margin-top: 3.9%;
+  margin-left: .5%;
 }
 
 /* line 32, ../blocks/banner.scss */
@@ -614,45 +669,95 @@ li {
 .scroll {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
+  /*скорректировать по РР*/
+  position: relative;
+  height: 18.2px;
+}
+/* line 8, ../blocks/scroll.scss */
+.scroll:hover .scroll__pic {
+  top: -5px;
+  width: 37.7px;
+  height: 18.2px;
 }
 
-/* line 6, ../blocks/scroll.scss */
+/* line 15, ../blocks/scroll.scss */
 .scroll__pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 29px;
   height: 14px;
+  transition: .3s;
 }
 
 /* line 1, ../blocks/best.scss */
-.best__title {
-  text-transform: uppercase;
-  /* font-size: 72px; */
-  line-height: 64px;
+.best {
+  background: url("../../img/bg-best.jpg") center center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
   color: #2f3234;
-  font-family: "Gagalin";
-  text-align: center;
 }
 
-/* line 10, ../blocks/best.scss */
+/* line 16, ../blocks/best.scss */
+.best__title {
+  text-transform: uppercase;
+  font-size: 72px;
+  line-height: 64px;
+  font-family: "Gagalin";
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* line 25, ../blocks/best.scss */
+.best__list {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 30, ../blocks/best.scss */
+.best__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+  margin-right: 3.5%;
+}
+/* line 37, ../blocks/best.scss */
+.best__item:last-child {
+  margin-right: 0;
+}
+
+/* line 42, ../blocks/best.scss */
+.best__pic {
+  display: block;
+  width: 32%;
+  height: 32%;
+  margin-bottom: 9%;
+}
+
+/* line 49, ../blocks/best.scss */
 .best__subtitle {
   font-size: 24px;
   letter-spacing: -1px;
-  /* line-height: 28px; */
-  color: #2f3234;
   font-family: "Lifehack";
   font-weight: 500;
   text-align: center;
 }
 
-/* line 20, ../blocks/best.scss */
+/* line 57, ../blocks/best.scss */
 .best__text {
-  width: 300px;
-  height: 68px;
   font-size: 14px;
-  /* line-height: 24px; */
-  color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;
   text-align: center;
+  line-height: 24px;
 }
 
 /* line 1, ../blocks/order-button.scss */
@@ -673,9 +778,42 @@ li {
   border-radius: 5px;
   background-color: #e45028;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* line 1, ../blocks/feedback.scss */
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+/* line 11, ../blocks/feedback.scss */
+.feedback__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+
+/* line 20, ../blocks/feedback.scss */
+.feedback__item {
+  width: 25%;
+  height: 50%;
+  border: 1px solid red;
+}
+
+/* line 26, ../blocks/feedback.scss */
+.feedback__username {
+  text-transform: uppercase;
+}
+
+/* line 30, ../blocks/feedback.scss */
 .feedback__button {
   text-transform: uppercase;
 }
