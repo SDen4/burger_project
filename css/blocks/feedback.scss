@@ -1,3 +1,32 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+.feedback__list {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.feedback__item {
+    width: 25%;
+    height: 50%;
+    border: 1px solid red;
+}
+
+.feedback__username {
+    text-transform: uppercase;
+}
+
 .feedback__button {
     text-transform: uppercase;
 }
