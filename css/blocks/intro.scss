@@ -1,4 +1,4 @@
-.wrapper__intro {
+.intro {
     background: url('../../img/bg-intro.jpg') center center no-repeat;
     display: flex;
     flex-direction: column;
@@ -12,9 +12,12 @@
     width: 100%;
 }
 
-.wrapper__frame {
+.intro__frame {
     background: url('../../img/texture.png');
     background-size: cover;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

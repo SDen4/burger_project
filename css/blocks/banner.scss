@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 5.4%;
+    /* margin-bottom: 5.4%; */
 }
 
 .banner__img {
@@ -14,19 +14,19 @@
 }
 
 .banner__drops {
-    width: 24%;
+    width: 23.7%;
     height: 60%;
     position: absolute;
-    top: 14%;
-    left: 26%;
+    top: 14.5%;
+    left: 25.5%;
 }
 
 .banner__descr {
     display: flex;
     flex-flow: column wrap;
     width: 22%;
-    margin-top: 3.5%;
-    margin-left: 2%;
+    margin-top: 3.9%;
+    margin-left: .5%;
 }
 
 .banner__descr-top {
