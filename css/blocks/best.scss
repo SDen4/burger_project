@@ -1,29 +1,63 @@
+.best {
+    background: url('../../img/bg-best.jpg') center center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #2f3234;
+}
+
 .best__title {
     text-transform: uppercase;
-    /* font-size: 72px; */
+    font-size: 72px;
     line-height: 64px;
-    color: #2f3234;
     font-family: "Gagalin";
     text-align: center;
+    padding-bottom: 5%;
+}
+
+.best__list {
+    display: flex;
+    justify-content: center;
+}
+
+.best__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    margin-right: 3.5%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.best__pic {
+    display: block;
+    width: 32%;
+    height: 32%;
+    margin-bottom: 9%;
 }
 
 .best__subtitle {
     font-size: 24px;
     letter-spacing: -1px;
-    /* line-height: 28px; */
-    color: #2f3234;
     font-family: "Lifehack";
     font-weight: 500;
     text-align: center;
 }
 
 .best__text {
-    width: 300px;
-    height: 68px;
     font-size: 14px;
-    /* line-height: 24px; */
-    color: #2f3234;
     font-family: "Ubuntu";
     font-weight: 300;
     text-align: center;
+    line-height: 24px;
 }

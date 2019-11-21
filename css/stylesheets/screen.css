@@ -397,6 +397,7 @@ h6 {
 .wrapper {
   display: flex;
   animation: loading .3s;
+  flex-direction: column;
 }
 
 @keyframes loading {
@@ -407,18 +408,18 @@ h6 {
     opacity: 1;
   }
 }
-/* line 34, ../layout/base.scss */
+/* line 35, ../layout/base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 39, ../layout/base.scss */
+/* line 40, ../layout/base.scss */
 li {
   list-style-type: none;
 }
 
-/* line 43, ../layout/base.scss */
+/* line 44, ../layout/base.scss */
 .container {
   margin: 0px auto;
   width: 1100px;
@@ -597,11 +598,8 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -647,8 +645,8 @@ li {
   display: flex;
   flex-flow: column wrap;
   width: 22%;
-  /* margin-top: 3.5%; */
-  margin-left: 2%;
+  margin-top: 3.9%;
+  margin-left: .5%;
 }
 
 /* line 32, ../blocks/banner.scss */
@@ -677,45 +675,93 @@ li {
   justify-content: center;
   margin-bottom: 5%;
   /*скорректировать по РР*/
+  position: relative;
+  height: 18.2px;
+}
+/* line 8, ../blocks/scroll.scss */
+.scroll:hover .scroll__pic {
+  top: -5px;
+  width: 37.7px;
+  height: 18.2px;
 }
 
-/* line 7, ../blocks/scroll.scss */
+/* line 15, ../blocks/scroll.scss */
 .scroll__pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 29px;
   height: 14px;
+  transition: .3s;
 }
 
 /* line 1, ../blocks/best.scss */
-.best__title {
-  text-transform: uppercase;
-  /* font-size: 72px; */
-  line-height: 64px;
+.best {
+  background: url("../../img/bg-best.jpg") center center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
   color: #2f3234;
-  font-family: "Gagalin";
-  text-align: center;
 }
 
-/* line 10, ../blocks/best.scss */
+/* line 16, ../blocks/best.scss */
+.best__title {
+  text-transform: uppercase;
+  font-size: 72px;
+  line-height: 64px;
+  font-family: "Gagalin";
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* line 25, ../blocks/best.scss */
+.best__list {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 30, ../blocks/best.scss */
+.best__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+  margin-right: 3.5%;
+}
+/* line 37, ../blocks/best.scss */
+.best__item:last-child {
+  margin-right: 0;
+}
+
+/* line 42, ../blocks/best.scss */
+.best__pic {
+  display: block;
+  width: 32%;
+  height: 32%;
+  margin-bottom: 9%;
+}
+
+/* line 49, ../blocks/best.scss */
 .best__subtitle {
   font-size: 24px;
   letter-spacing: -1px;
-  /* line-height: 28px; */
-  color: #2f3234;
   font-family: "Lifehack";
   font-weight: 500;
   text-align: center;
 }
 
-/* line 20, ../blocks/best.scss */
+/* line 57, ../blocks/best.scss */
 .best__text {
-  width: 300px;
-  height: 68px;
   font-size: 14px;
-  /* line-height: 24px; */
-  color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;
   text-align: center;
+  line-height: 24px;
 }
 
 /* line 1, ../blocks/order-button.scss */
