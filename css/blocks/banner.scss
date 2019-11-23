@@ -4,29 +4,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    /* margin-bottom: 5.4%; */
+}
+
+.banner__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .banner__img {
     display: block;
-    width: 21%;
-    height: 100%;
-}
-
-.banner__drops {
-    width: 23.7%;
-    height: 60%;
-    position: absolute;
-    top: 14.5%;
-    left: 25.5%;
+    width: 41%;
+    // height: 100%;
+    object-fit: cover;
 }
 
 .banner__descr {
     display: flex;
     flex-flow: column wrap;
-    width: 22%;
-    margin-top: 3.9%;
-    margin-left: .5%;
+    width: 40%;
+    margin-top: 6.9%;
+    margin-left: 1.5%;
 }
 
 .banner__descr-top {
@@ -43,6 +43,6 @@
     font-size: 62px;
     line-height: 60px;
     font-family: 'Lifehack';
-    color: #fff;
+    color: $white;
     width: 98%;
 }

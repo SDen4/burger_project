@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -427,6 +426,16 @@ li {
   flex-wrap: wrap;
 }
 
+/* line 51, ../layout/base.scss */
+.section {
+  height: 100vh;
+  min-height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @font-face {
   font-family: 'Gagalin';
   src: url("../../fonts/Gagalin-Regular.woff2") format("woff2"), url("../../fonts/Gagalin-Regular.woff") format("woff");
@@ -470,8 +479,8 @@ li {
   width: 20px;
   height: 190px;
   position: fixed;
-  top: 17.7%;
-  left: 74.6%;
+  top: 9.5%;
+  left: 95%;
   z-index: 1;
 }
 
@@ -481,7 +490,7 @@ li {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-bottom: 14px;
   position: relative;
   cursor: pointer;
@@ -548,58 +557,66 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: -10px;
 }
 
-/* line 13, ../blocks/navigation.scss */
+/* line 14, ../blocks/navigation.scss */
 .navigation__item {
-  display: inline-block;
+  display: flex;
   position: relative;
+  align-items: center;
 }
-
-/* line 18, ../blocks/navigation.scss */
+/* line 19, ../blocks/navigation.scss */
 .navigation__item:after {
   content: "";
   display: inline-block;
-  vertical-align: middle;
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background-color: #ffffff;
-  margin-left: 12px;
+  background-color: #fff;
+  margin: 0px 8px 0px 17px;
 }
-
 /* line 29, ../blocks/navigation.scss */
 .navigation__item:last-child:after {
   content: "";
   display: none;
 }
 
-/* line 34, ../blocks/navigation.scss */
+/* line 35, ../blocks/navigation.scss */
 .navigation__link {
   text-decoration: none;
   font-size: 13px;
-  color: #ffffff;
+  color: #fff;
   font-family: "Ubuntu";
   font-weight: 500;
+  transition: .5s;
+  position: relative;
 }
-/* line 41, ../blocks/navigation.scss */
-.navigation__link:hover {
-  text-decoration: underline;
+/* line 44, ../blocks/navigation.scss */
+.navigation__link:before {
+  content: "";
+  display: block;
+  opacity: 0;
+  width: inherit;
+  height: 2px;
+  background-color: #fff;
+  transition: .5s;
+  position: inherit;
+  top: 18px;
+}
+/* line 56, ../blocks/navigation.scss */
+.navigation__link:hover:before {
+  opacity: 1;
 }
 
 /* line 1, ../blocks/intro.scss */
 .intro {
   background: url("../../img/bg-intro.jpg") center center no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
 }
 
-/* line 15, ../blocks/intro.scss */
+/* line 7, ../blocks/intro.scss */
 .intro__frame {
   background: url("../../img/texture.png");
   background-size: cover;
@@ -617,32 +634,31 @@ li {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* margin-bottom: 5.4%; */
 }
 
-/* line 10, ../blocks/banner.scss */
+/* line 9, ../blocks/banner.scss */
+.banner__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* line 17, ../blocks/banner.scss */
 .banner__img {
   display: block;
-  width: 21%;
-  height: 100%;
-}
-
-/* line 16, ../blocks/banner.scss */
-.banner__drops {
-  width: 23.7%;
-  height: 60%;
-  position: absolute;
-  top: 14.5%;
-  left: 25.5%;
+  width: 41%;
+  object-fit: cover;
 }
 
 /* line 24, ../blocks/banner.scss */
 .banner__descr {
   display: flex;
   flex-flow: column wrap;
-  width: 22%;
-  margin-top: 3.9%;
-  margin-left: .5%;
+  width: 40%;
+  margin-top: 6.9%;
+  margin-left: 1.5%;
 }
 
 /* line 32, ../blocks/banner.scss */
@@ -670,7 +686,6 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
-  /*скорректировать по РР*/
   position: relative;
   height: 18.2px;
 }
@@ -695,17 +710,12 @@ li {
 /* line 1, ../blocks/best.scss */
 .best {
   background: url("../../img/bg-best.jpg") center center no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
   color: #2f3234;
 }
 
-/* line 16, ../blocks/best.scss */
+/* line 8, ../blocks/best.scss */
 .best__title {
   text-transform: uppercase;
   font-size: 72px;
@@ -715,13 +725,13 @@ li {
   padding-bottom: 5%;
 }
 
-/* line 25, ../blocks/best.scss */
+/* line 17, ../blocks/best.scss */
 .best__list {
   display: flex;
   justify-content: center;
 }
 
-/* line 30, ../blocks/best.scss */
+/* line 22, ../blocks/best.scss */
 .best__item {
   display: flex;
   flex-direction: column;
@@ -729,12 +739,12 @@ li {
   width: 26%;
   margin-right: 3.5%;
 }
-/* line 37, ../blocks/best.scss */
+/* line 29, ../blocks/best.scss */
 .best__item:last-child {
   margin-right: 0;
 }
 
-/* line 42, ../blocks/best.scss */
+/* line 34, ../blocks/best.scss */
 .best__pic {
   display: block;
   width: 32%;
@@ -742,7 +752,7 @@ li {
   margin-bottom: 9%;
 }
 
-/* line 49, ../blocks/best.scss */
+/* line 41, ../blocks/best.scss */
 .best__subtitle {
   font-size: 24px;
   letter-spacing: -1px;
@@ -751,7 +761,7 @@ li {
   text-align: center;
 }
 
-/* line 57, ../blocks/best.scss */
+/* line 49, ../blocks/best.scss */
 .best__text {
   font-size: 14px;
   font-family: "Ubuntu";
@@ -761,38 +771,27 @@ li {
 }
 
 /* line 1, ../blocks/order-button.scss */
-.order-button {
+.button {
+  border: 0;
+  padding: 3px 15px;
+  border-radius: 5px;
+  background-color: #e45028;
+  color: #fff;
+  cursor: pointer;
   font-size: 13px;
   line-height: 30px;
   font-family: "Ubuntu";
   font-weight: 500;
-  text-align: right;
-  /* outline: none; */
-}
-
-/* line 10, ../blocks/order-button.scss */
-.order-button__btn {
-  border: 0;
-  width: 97px;
-  height: 35px;
-  border-radius: 5px;
-  background-color: #e45028;
-  color: #ffffff;
-  cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* line 1, ../blocks/feedback.scss */
 .feedback {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
   color: #fff;
 }
 
-/* line 11, ../blocks/feedback.scss */
+/* line 6, ../blocks/feedback.scss */
 .feedback__list {
   display: flex;
   justify-content: center;
@@ -801,19 +800,68 @@ li {
   width: 100%;
 }
 
-/* line 20, ../blocks/feedback.scss */
+/* line 14, ../blocks/feedback.scss */
 .feedback__item {
   width: 25%;
   height: 50%;
-  border: 1px solid red;
+  filter: grayscale(100%);
+}
+/* line 19, ../blocks/feedback.scss */
+.feedback__item:nth-child(3n+2) .feedback__avatar {
+  transform: scale(-1, 1);
+}
+/* line 23, ../blocks/feedback.scss */
+.feedback__item:nth-child(2) .feedback__avatar {
+  object-position: 10% 50%;
 }
 
-/* line 26, ../blocks/feedback.scss */
+/* line 28, ../blocks/feedback.scss */
+.feedback__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 35, ../blocks/feedback.scss */
+.feedback__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  padding: 5% 5%;
+  transition: .3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 47, ../blocks/feedback.scss */
+.feedback__content:hover {
+  opacity: 1;
+}
+
+/* line 51, ../blocks/feedback.scss */
 .feedback__username {
   text-transform: uppercase;
 }
 
-/* line 30, ../blocks/feedback.scss */
+/* line 55, ../blocks/feedback.scss */
+.feedback__username {
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "Gagalin";
+}
+
+/* line 61, ../blocks/feedback.scss */
+.feedback__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Ubuntu";
+  font-weight: 300;
+}
+
+/* line 68, ../blocks/feedback.scss */
 .feedback__button {
-  text-transform: uppercase;
+  background-color: #2f3234;
 }
