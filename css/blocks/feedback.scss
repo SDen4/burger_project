@@ -1,16 +1,10 @@
 .feedback {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-    color: #fff;
+    color: $white;
 }
 
 .feedback__list {
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     height: 100vh;
@@ -20,13 +14,57 @@
 .feedback__item {
     width: 25%;
     height: 50%;
-    border: 1px solid red;
+    filter: grayscale(100%);
+
+    &:nth-child(3n+2) .feedback__avatar {
+        transform: scale(-1, 1);
+    };
+
+    &:nth-child(2) .feedback__avatar {
+        object-position: 10% 50%;
+    };
+}
+
+.feedback__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feedback__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 5% 5%;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.feedback__content:hover {
+    opacity: 1;
 }
 
 .feedback__username {
     text-transform: uppercase;
 }
 
+.feedback__username {
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "Gagalin";
+}
+
+.feedback__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+}
+
 .feedback__button {
-    text-transform: uppercase;
+    background-color: $black;
 }

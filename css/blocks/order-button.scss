@@ -1,18 +1,13 @@
-.order-button {
+.button {
+    border: 0;
+    padding: 3px 15px;
+    border-radius: 5px;
+    background-color: $red;
+    color: $white;
+    cursor: pointer;
     font-size: 13px;
     line-height: 30px;
     font-family: "Ubuntu";
     font-weight: 500;
-    text-align: right;
-    /* outline: none; */
-}
-
-.order-button__btn {
-    border: 0;
-    width: 97px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: #e45028;
-    color: #ffffff;
-    cursor: pointer;
+    text-transform: uppercase;
 }

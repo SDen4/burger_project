@@ -13,10 +13,9 @@
 <body>
     <div class="wrapper">
         <div class="pagination">
-            <!------------------Исправить------------------------->
-            <a class="pagination__link pagination__link_active" href="#id_of_page"></a>
-            <a class="pagination__link" href="#id_of_page"></a>
-            <a class="pagination__link" href="#id_of_page"></a>
+            <a class="pagination__link pagination__link_active" href="#intro"></a>
+            <a class="pagination__link" href="#best"></a>
+            <a class="pagination__link" href="#feedback"></a>
             <a class="pagination__link" href="#id_of_page"></a>
             <a class="pagination__link" href="#id_of_page"></a>
             <a class="pagination__link" href="#id_of_page"></a>
@@ -24,7 +23,7 @@
             <a class="pagination__link" href="#id_of_page"></a>
             <a class="pagination__link" href="#id_of_page"></a>
         </div>
-        <section class="intro">
+        <section class="section intro" id="intro">
             <div class="intro__frame">
                 <header class="header">
                     <div class="container">
@@ -57,28 +56,27 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="order-button">
-                                <button class="order-button__btn">ЗАКАЗАТЬ</button>
-                            </div>
+                            <button class="button">ЗАКАЗАТЬ</button>
                         </div>
                     </div>
                 </header>
                 <div class="banner">
-                    <img class="banner__img" src="./img/banner-intro.png">
-                    <img class="banner__drops" src="./img/drops.png">
-                    <div class="banner__descr">
-                        <h2 class="banner__descr-top">мы делаем</h2>
-                        <div class="banner__descr-bottom">натуральные бургеры</div>
+                    <div class="container banner__container">
+                        <img class="banner__img" src="./img/burger_with_drops.png">
+                        <div class="banner__descr">
+                            <h2 class="banner__descr-top">мы делаем</h2>
+                            <div class="banner__descr-bottom">натуральные бургеры</div>
+                        </div>
                     </div>
                 </div>
                 <div class="scroll">
-                    <a class="scroll__link" href="#id">
-                        <img src='./img/icons/arrow-scroll.png' class="scroll__pic" alt="scroll-pic">
+                    <a class="scroll__link" href="#best">
+                        <img src='./img/icons/arrow-scroll.png' class="scroll__pic" alt="scroll-pic" aria-label="Прокрутка на следующую страницу">
                     </a> <!--Добавить айдишник "якоря" - ссылки на следующую страницу-->
                 </div>
             </div>
         </section>
-        <section class="best">
+        <section class="section best" id="best">
             <div class="container">
                 <div class="best__frame">
                     <h2 class="best__title">мы лучшие</h2>
@@ -122,98 +120,106 @@
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <div class="section feedback" id="feedback">
             <ul class="feedback__list">
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava1.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava2.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava3.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                        <img src="./img/avatars/ava4.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava5.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava6.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava7.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
                 <li class="feedback__item">
+                    <img src="./img/avatars/ava8.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
-                        <div class="feedbacl__text">
+                        <div class="feedback__text">
                             <p>
                             Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                             </p>
                         </div>
+                        <button class="feedback__button button" type="button">подробнее</button>
                     </div>
-                    <button class="feedback__button">подробнее</button>
                 </li>
             </ul>
-        </section>
+        </div>
     </div>
 
 </body>

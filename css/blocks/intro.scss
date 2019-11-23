@@ -1,15 +1,7 @@
 .intro {
     background: url('../../img/bg-intro.jpg') center center no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    // position: absolute;
-    // left: 0;
-    // top: 0;
     background-size: cover;
-    height: 100vh;
-    width: 100%;
 }
 
 .intro__frame {

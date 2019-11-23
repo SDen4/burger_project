@@ -1,16 +1,8 @@
 .best {
     background: url('../../img/bg-best.jpg') center center no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    // position: absolute;
-    // left: 0;
-    // top: 0;
     background-size: cover;
-    height: 100vh;
-    width: 100%;
-    color: #2f3234;
+    color: $black;
 }
 
 .best__title {
