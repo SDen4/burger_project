@@ -685,18 +685,34 @@ li {
 .scroll {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5%;
   position: relative;
-  height: 18.2px;
+  height: 14px;
 }
-/* line 8, ../blocks/scroll.scss */
-.scroll:hover .scroll__pic {
+
+/* line 10, ../blocks/scroll.scss */
+.scroll__link {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+/* line 15, ../blocks/scroll.scss */
+.scroll__link::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+/* line 23, ../blocks/scroll.scss */
+.scroll__link:hover .scroll__pic {
   top: -5px;
   width: 37.7px;
   height: 18.2px;
 }
 
-/* line 15, ../blocks/scroll.scss */
+/* line 30, ../blocks/scroll.scss */
 .scroll__pic {
   position: absolute;
   top: 50%;
