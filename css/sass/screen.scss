@@ -1,4 +1,4 @@
-@import "../layout/main.scss";
+@import "../layout/var.scss";
 @import "../layout/normalize.scss";
 @import "../layout/base.scss";
 @import "../layout/fonts.scss";
@@ -7,9 +7,12 @@
 
 @import "../blocks/header.scss";
 @import "../blocks/navigation.scss";
+@import "../blocks/order-button.scss";
+
 @import "../blocks/intro.scss";
 @import "../blocks/banner.scss";
 @import "../blocks/scroll.scss";
+
 @import "../blocks/best.scss";
-@import "../blocks/order-button.scss";
+
 @import "../blocks/feedback.scss";
