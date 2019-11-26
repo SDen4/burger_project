@@ -441,6 +441,12 @@ li {
   justify-content: center;
 }
 
+/* line 64, ../layout/base.scss */
+.logo__pic {
+  width: 10%;
+  height: 50%;
+}
+
 @font-face {
   font-family: 'Gagalin';
   src: url("../../fonts/Gagalin-Regular.woff2") format("woff2"), url("../../fonts/Gagalin-Regular.woff") format("woff");
@@ -547,14 +553,14 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 83px 0px 77px;
+  padding: 13px 78px 0px 77px;
 }
 
 /* line 1, ../blocks/navigation.scss */
 .navigation {
   flex: 2;
-  margin-left: 6.5%;
-  margin-right: 1.6%;
+  margin-left: 6.9%;
+  margin-right: .7%;
 }
 
 /* line 7, ../blocks/navigation.scss */
@@ -781,7 +787,7 @@ li {
 }
 
 /* line 34, ../blocks/best.scss */
-.best__pic {
+.best__pic-svg {
   display: block;
   width: 32%;
   height: 32%;
@@ -789,6 +795,21 @@ li {
 }
 
 /* line 41, ../blocks/best.scss */
+.best__pic-svg_meat {
+  fill: #e35028;
+}
+
+/* line 45, ../blocks/best.scss */
+.best__pic-svg_hand {
+  fill: #f9b43b;
+}
+
+/* line 49, ../blocks/best.scss */
+.best__pic-svg_leaf {
+  fill: #8bc03f;
+}
+
+/* line 53, ../blocks/best.scss */
 .best__subtitle {
   font-size: 24px;
   letter-spacing: -1px;
@@ -797,7 +818,7 @@ li {
   text-align: center;
 }
 
-/* line 49, ../blocks/best.scss */
+/* line 61, ../blocks/best.scss */
 .best__text {
   font-size: 14px;
   font-family: "Ubuntu";
