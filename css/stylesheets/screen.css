@@ -441,6 +441,12 @@ li {
   justify-content: center;
 }
 
+/* line 64, ../layout/base.scss */
+.logo__pic {
+  width: 10%;
+  height: 50%;
+}
+
 @font-face {
   font-family: 'Gagalin';
   src: url("../../fonts/Gagalin-Regular.woff2") format("woff2"), url("../../fonts/Gagalin-Regular.woff") format("woff");
@@ -547,14 +553,14 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 83px 0px 77px;
+  padding: 13px 78px 0px 77px;
 }
 
 /* line 1, ../blocks/navigation.scss */
 .navigation {
   flex: 2;
-  margin-left: 6.5%;
-  margin-right: 1.6%;
+  margin-left: 6.9%;
+  margin-right: .7%;
 }
 
 /* line 7, ../blocks/navigation.scss */
@@ -781,7 +787,7 @@ li {
 }
 
 /* line 34, ../blocks/best.scss */
-.best__pic {
+.best__pic-svg {
   display: block;
   width: 32%;
   height: 32%;
@@ -789,6 +795,21 @@ li {
 }
 
 /* line 41, ../blocks/best.scss */
+.best__pic-svg_meat {
+  fill: #e35028;
+}
+
+/* line 45, ../blocks/best.scss */
+.best__pic-svg_hand {
+  fill: #f9b43b;
+}
+
+/* line 49, ../blocks/best.scss */
+.best__pic-svg_leaf {
+  fill: #8bc03f;
+}
+
+/* line 53, ../blocks/best.scss */
 .best__subtitle {
   font-size: 24px;
   letter-spacing: -1px;
@@ -797,7 +818,7 @@ li {
   text-align: center;
 }
 
-/* line 49, ../blocks/best.scss */
+/* line 61, ../blocks/best.scss */
 .best__text {
   font-size: 14px;
   font-family: "Ubuntu";
@@ -920,7 +941,7 @@ li {
   line-height: 64px;
   color: #f9b43b;
   font-family: "Gagalin";
-  margin-bottom: 11.5%;
+  margin-bottom: 8%;
 }
 
 /* line 33, ../blocks/team.scss */
@@ -944,7 +965,6 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 2%;
 }
 /* line 53, ../blocks/team.scss */
 .accordeon__username:before {
@@ -953,14 +973,14 @@ li {
   background: url("../../img/icons/team-down.png");
   width: 12px;
   height: 9px;
-  margin-right: 2%;
+  margin-right: 1%;
 }
 
 /* line 63, ../blocks/team.scss */
 .accordeon__content {
   display: flex;
   flex-direction: row;
-  margin-left: 4%;
+  margin-left: 3%;
   height: 0;
   overflow: hidden;
 }
@@ -968,21 +988,22 @@ li {
 /* line 71, ../blocks/team.scss */
 .accordeon__item_active .accordeon__username {
   color: #f9b43b;
+  margin-bottom: 1%;
 }
 
-/* line 75, ../blocks/team.scss */
+/* line 76, ../blocks/team.scss */
 .accordeon__item_active .accordeon__username:before {
   background: url("../../img/icons/team-up.png");
 }
 
-/* line 79, ../blocks/team.scss */
+/* line 80, ../blocks/team.scss */
 .accordeon__item_active .accordeon__content {
   height: inherit;
   overflow: unset;
-  margin-bottom: 4.8%;
+  margin-bottom: 3%;
 }
 
-/* line 85, ../blocks/team.scss */
+/* line 86, ../blocks/team.scss */
 .accordeon__photo {
   display: flex;
   flex-wrap: nowrap;
@@ -990,10 +1011,10 @@ li {
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 6%;
+  margin-right: 3.8%;
 }
 
-/* line 95, ../blocks/team.scss */
+/* line 96, ../blocks/team.scss */
 .accordeon__avatar {
   display: block;
   max-width: 100%;
@@ -1001,14 +1022,14 @@ li {
   object-fit: cover;
 }
 
-/* line 102, ../blocks/team.scss */
+/* line 103, ../blocks/team.scss */
 .accordeon__info {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-/* line 108, ../blocks/team.scss */
+/* line 109, ../blocks/team.scss */
 .accordeon__skill, .accordeon__text {
   font-size: 14px;
   color: #fff;
@@ -1016,12 +1037,12 @@ li {
   font-weight: 700;
 }
 
-/* line 115, ../blocks/team.scss */
+/* line 116, ../blocks/team.scss */
 .accordeon__skill {
-  padding-bottom: 5%;
+  padding-bottom: 6%;
 }
 
-/* line 119, ../blocks/team.scss */
+/* line 120, ../blocks/team.scss */
 .accordeon__text {
   font-weight: 400;
   line-height: 24px;

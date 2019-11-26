@@ -31,11 +31,23 @@
     }
 }
 
-.best__pic {
+.best__pic-svg {
     display: block;
     width: 32%;
     height: 32%;
     margin-bottom: 9%;
+}
+
+.best__pic-svg_meat {
+    fill: $red_new;
+}
+
+.best__pic-svg_hand {
+    fill: $yellow;
+}
+
+.best__pic-svg_leaf {
+    fill: $green;
 }
 
 .best__subtitle {
