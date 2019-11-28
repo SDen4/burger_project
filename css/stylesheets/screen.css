@@ -911,21 +911,21 @@ li {
 /* line 1, ../blocks/menu.scss */
 .menu {
   background: url("../../img/bg-menu.jpg") center center no-repeat;
-  align-items: flex-end;
   background-size: cover;
-  position: relative;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-/* line 9, ../blocks/menu.scss */
+/* line 10, ../blocks/menu.scss */
 .menu__title {
   text-transform: uppercase;
   font-size: 72px;
   line-height: 64px;
   font-family: "Gagalin";
-  position: absolute;
-  top: 20%;
-  left: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 /* line 19, ../blocks/menu.scss */
@@ -955,28 +955,51 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(76, 78, 80, 0.9);
   height: 100vh;
 }
 
-/* line 47, ../blocks/menu.scss */
-.accordeon-vert__item_active .accordeon-vert__text {
-  width: 470px;
-  z-index: 1;
+/* line 46, ../blocks/menu.scss */
+.accordeon-vert__item_meet {
+  background: url("../../img/accordeon-vert/for-meet-lovers.jpg") center center no-repeat;
+  background-size: cover;
 }
 
-/* line 52, ../blocks/menu.scss */
+/* line 51, ../blocks/menu.scss */
+.accordeon-vert__item_vegan {
+  background: url("../../img/accordeon-vert/vegan.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 56, ../blocks/menu.scss */
+.accordeon-vert__item_diet {
+  background: url("../../img/accordeon-vert/diet.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 61, ../blocks/menu.scss */
+.accordeon-vert__item_active .accordeon-vert__text {
+  width: 550px;
+  padding: 5%;
+}
+
+/* line 66, ../blocks/menu.scss */
+.accordeon-vert__subtitle, .accordeon-vert__text {
+  background-color: rgba(76, 78, 80, 0.8);
+}
+
+/* line 70, ../blocks/menu.scss */
 .accordeon-vert__subtitle {
-  width: 50px;
+  width: 80px;
   height: 100vh;
   font-size: 40px;
   font-family: "Gagalin";
-  text-align: center;
   writing-mode: tb-rl;
   transform: rotate(-180deg);
+  line-height: 80px;
+  padding-top: 45px;
 }
 
-/* line 62, ../blocks/menu.scss */
+/* line 81, ../blocks/menu.scss */
 .accordeon-vert__text {
   width: 0;
   overflow: hidden;
@@ -984,28 +1007,6 @@ li {
   font-family: "Ubuntu";
   font-weight: 400;
   line-height: 24px;
-  padding: 5%;
-}
-
-/* line 72, ../blocks/menu.scss */
-.accordeon-vert__item_meet {
-  background: url("../../img/accordeon-vert/for-meet-lovers.jpg") center center no-repeat;
-  width: inherit;
-  height: 100%;
-}
-
-/* line 78, ../blocks/menu.scss */
-.accordeon-vert__item_vegan {
-  background: url("../../img/accordeon-vert/vegan.jpg") center center no-repeat;
-  width: inherit;
-  height: 100%;
-}
-
-/* line 84, ../blocks/menu.scss */
-.accordeon-vert__item_diet {
-  background: url("../../img/accordeon-vert/diet.jpg") center center no-repeat;
-  width: inherit;
-  height: 100%;
 }
 
 /* line 1, ../blocks/team.scss */
