@@ -911,21 +911,21 @@ li {
 /* line 1, ../blocks/menu.scss */
 .menu {
   background: url("../../img/bg-menu.jpg") center center no-repeat;
-  align-items: flex-end;
   background-size: cover;
-  position: relative;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-/* line 9, ../blocks/menu.scss */
+/* line 10, ../blocks/menu.scss */
 .menu__title {
   text-transform: uppercase;
   font-size: 72px;
   line-height: 64px;
   font-family: "Gagalin";
-  position: absolute;
-  top: 20%;
-  left: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 /* line 19, ../blocks/menu.scss */
@@ -955,28 +955,51 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(76, 78, 80, 0.9);
   height: 100vh;
 }
 
-/* line 47, ../blocks/menu.scss */
-.accordeon-vert__item_active .accordeon-vert__text {
-  width: 470px;
-  z-index: 1;
+/* line 46, ../blocks/menu.scss */
+.accordeon-vert__item_meet {
+  background: url("../../img/accordeon-vert/for-meet-lovers.jpg") center center no-repeat;
+  background-size: cover;
 }
 
-/* line 52, ../blocks/menu.scss */
+/* line 51, ../blocks/menu.scss */
+.accordeon-vert__item_vegan {
+  background: url("../../img/accordeon-vert/vegan.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 56, ../blocks/menu.scss */
+.accordeon-vert__item_diet {
+  background: url("../../img/accordeon-vert/diet.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 61, ../blocks/menu.scss */
+.accordeon-vert__item_active .accordeon-vert__text {
+  width: 550px;
+  padding: 5%;
+}
+
+/* line 66, ../blocks/menu.scss */
+.accordeon-vert__subtitle, .accordeon-vert__text {
+  background-color: rgba(76, 78, 80, 0.8);
+}
+
+/* line 70, ../blocks/menu.scss */
 .accordeon-vert__subtitle {
-  width: 50px;
+  width: 80px;
   height: 100vh;
   font-size: 40px;
   font-family: "Gagalin";
-  text-align: center;
   writing-mode: tb-rl;
   transform: rotate(-180deg);
+  line-height: 80px;
+  padding-top: 45px;
 }
 
-/* line 62, ../blocks/menu.scss */
+/* line 81, ../blocks/menu.scss */
 .accordeon-vert__text {
   width: 0;
   overflow: hidden;
@@ -984,28 +1007,6 @@ li {
   font-family: "Ubuntu";
   font-weight: 400;
   line-height: 24px;
-  padding: 5%;
-}
-
-/* line 72, ../blocks/menu.scss */
-.accordeon-vert__item_meet {
-  background: url("../../img/accordeon-vert/for-meet-lovers.jpg") center center no-repeat;
-  width: inherit;
-  height: 100%;
-}
-
-/* line 78, ../blocks/menu.scss */
-.accordeon-vert__item_vegan {
-  background: url("../../img/accordeon-vert/vegan.jpg") center center no-repeat;
-  width: inherit;
-  height: 100%;
-}
-
-/* line 84, ../blocks/menu.scss */
-.accordeon-vert__item_diet {
-  background: url("../../img/accordeon-vert/diet.jpg") center center no-repeat;
-  width: inherit;
-  height: 100%;
 }
 
 /* line 1, ../blocks/team.scss */
@@ -1146,4 +1147,95 @@ li {
 .accordeon__text {
   font-weight: 400;
   line-height: 24px;
+}
+
+/* line 1, ../blocks/contacts.scss */
+.contacts {
+  background: url("../../img/map-marker.jpg") center center no-repeat;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 8, ../blocks/contacts.scss */
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 13, ../blocks/contacts.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2f3234;
+}
+
+/* line 21, ../blocks/contacts.scss */
+.contacts__data {
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu";
+  margin-left: 5%;
+  width: 50%;
+}
+
+/* line 29, ../blocks/contacts.scss */
+.contacts__address {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  padding: 2% 0%;
+}
+
+/* line 37, ../blocks/contacts.scss */
+.contacts__phone {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 42, ../blocks/contacts.scss */
+.phone__pic {
+  fill: #e45028;
+  height: 12%;
+  width: 7%;
+}
+
+/* line 48, ../blocks/contacts.scss */
+.phone__number {
+  color: #e45028;
+  font-weight: 500;
+}
+
+/* line 53, ../blocks/contacts.scss */
+.contacts__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* line 60, ../blocks/contacts.scss */
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* line 66, ../blocks/contacts.scss */
+.social__link {
+  display: flex;
+}
+
+/* line 70, ../blocks/contacts.scss */
+.social__pic {
+  width: 25%;
+  height: 20%;
+  fill: #6d6f71;
+  transition: .3s;
+}
+/* line 76, ../blocks/contacts.scss */
+.social__pic:hover {
+  fill: #fff;
 }
