@@ -1148,3 +1148,94 @@ li {
   font-weight: 400;
   line-height: 24px;
 }
+
+/* line 1, ../blocks/contacts.scss */
+.contacts {
+  background: url("../../img/map-marker.jpg") center center no-repeat;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 8, ../blocks/contacts.scss */
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 13, ../blocks/contacts.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2f3234;
+}
+
+/* line 21, ../blocks/contacts.scss */
+.contacts__data {
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu";
+  margin-left: 5%;
+  width: 50%;
+}
+
+/* line 29, ../blocks/contacts.scss */
+.contacts__address {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  padding: 2% 0%;
+}
+
+/* line 37, ../blocks/contacts.scss */
+.contacts__phone {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 42, ../blocks/contacts.scss */
+.phone__pic {
+  fill: #e45028;
+  height: 12%;
+  width: 7%;
+}
+
+/* line 48, ../blocks/contacts.scss */
+.phone__number {
+  color: #e45028;
+  font-weight: 500;
+}
+
+/* line 53, ../blocks/contacts.scss */
+.contacts__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* line 60, ../blocks/contacts.scss */
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* line 66, ../blocks/contacts.scss */
+.social__link {
+  display: flex;
+}
+
+/* line 70, ../blocks/contacts.scss */
+.social__pic {
+  width: 25%;
+  height: 20%;
+  fill: #6d6f71;
+  transition: .3s;
+}
+/* line 76, ../blocks/contacts.scss */
+.social__pic:hover {
+  fill: #fff;
+}

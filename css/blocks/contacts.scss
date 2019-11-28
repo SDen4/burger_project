@@ -1,0 +1,79 @@
+.contacts {
+    background: url('../../img/map-marker.jpg') center center no-repeat;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $black;
+}
+
+.contacts__data {
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu";
+    margin-left: 5%;
+    width: 50%;
+}
+
+.contacts__address {
+    font-size: 14px;
+    // line-height: 24px;
+    color: $white;
+    font-weight: 300;
+    padding: 2% 0%;
+}
+
+.contacts__phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone__pic {
+    fill: $red;
+    height: 12%;
+    width: 7%;
+}
+
+.phone__number {
+    color: $red;
+    font-weight: 500;
+}
+
+.contacts__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.social__link {
+    display: flex;
+}
+
+.social__pic {
+    width: 25%;
+    height: 20%;
+    fill: $gray;
+    transition: .3s;
+
+    &:hover {
+        fill: $white;
+    };
+}
