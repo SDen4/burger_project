@@ -275,7 +275,7 @@
                     </div>
                 </li>
                 <li class="feedback__item">
-                        <img src="./img/avatars/ava4.jpg" alt="Фото пользователя" class="feedback__avatar">
+                    <img src="./img/avatars/ava4.jpg" alt="Фото пользователя" class="feedback__avatar">
                     <div class="feedback__content">
                         <div class="feedback__username">Константин Спилберг</div>
                         <div class="feedback__text">
@@ -336,6 +336,79 @@
                 </li>
             </ul>
         </div>
+        <section class="section delivery">
+            <div class="container">
+                <div class="delivery__container">
+                    <h2 class="delivery__title">Закажите доставку</h2>
+                    <form action="/" class="form">
+                        <div class="form__left">
+                            <div class="form__content">
+                                <label class="form__data">
+                                    <div class="form__subtitle">Имя</div>
+                                    <input class="form__input form__input_half" type="text" name="fist-name" placeholder="">
+                                </label>
+                                <label class="form__data">
+                                    <div class="form__subtitle">Телефон</div>
+                                    <input class="form__input form__input_half" type="text" name="phone_number" placeholder="89212264923">
+                                </label>
+                            </div>
+                            <div class="form__content">
+                                <label class="form__data">
+                                    <div class="form__subtitle">Улица</div>
+                                    <input class="form__input form__input_long" type="text" name="street" placeholder="">
+                                </label>
+                            </div>
+                            <div class="form__content">
+                                <label class="form__data">
+                                    <div class="form__subtitle">Дом</div>
+                                    <input class="form__input" type="text" name="house" placeholder="">
+                                </label>
+                                <label class="form__data">
+                                    <div class="form__subtitle">Корпус</div>
+                                    <input class="form__input" type="text" name="corp" placeholder="">
+                                </label>
+                                <label class="form__data">
+                                    <div class="form__subtitle">Квартира</div>
+                                    <input class="form__input" type="text" name="appartment" placeholder="">
+                                </label>
+                                <label class="form__data">
+                                    <div class="form__subtitle">Этаж</div>
+                                    <input class="form__input" type="text" name="floor" placeholder="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__right">
+                            <div class="form__content">
+                                <label class="form__data">
+                                    <div class="form__subtitle">Комментарий</div>
+                                    <textarea class="form__input form__input_comment" type="text" name="comment" placeholder=""></textarea>
+                                </label>
+                            </div>
+                            <div class="form__content form__content_left">
+                                <label class="form__payment">
+                                    <input class="form__radio-input" name="cash" type="radio">
+                                    <span class="form__subtitle form__subtitle_radio">Потребуется сдача</span>
+                                </label>
+                                <label class="form__payment">
+                                    <input class="form__radio-input" name="cash" type="radio">
+                                    <span class="form__subtitle form__subtitle_radio">Оплата по карте</span>
+                                </label>
+                            </div>
+                            <div class="form__content form__content_down">
+                                <label class="form__callback">
+                                    <input class="form__checkbox-input" name="callback" type="checkbox">
+                                    <span class="form__subtitle form__subtitle_checkbox">Не перезванивать</span>
+                                </label>
+                            </div>
+                            <div class="form__content form__content_left">
+                                <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                                <button class="button button_clear" type="reset">ОЧИСТИТЬ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
         <div class="section contacts">
             <div class="footer">
                 <div class="container">
@@ -343,30 +416,30 @@
                         <div class="contacts__data">
                             <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
                             <div class="contacts__phone">
-                                <svg class="phone__pic">
+                                <svg class="contacts__pic">
                                     <use xlink:href="./img/svg/sprite.svg#phone"></use>
                                 </svg>
-                                <div class="phone__number">+7 (812) 377-13-77</div>
+                                <div class="contacts__number">+7 (812) 377-13-77</div>
                             </div>
                         </div>
                         <div class="contacts__social">
                             <ul class="social__list">
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="#" class="social__link">
                                         <svg class="social__pic">
                                             <use xlink:href="./img/svg/sprite.svg#vk"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="#" class="social__link">
                                         <svg class="social__pic">
                                             <use xlink:href="./img/svg/sprite.svg#fb"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="#" class="social__link">
                                         <svg class="social__pic">
                                             <use xlink:href="./img/svg/sprite.svg#inst"></use>
                                         </svg>
