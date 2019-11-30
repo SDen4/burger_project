@@ -3,21 +3,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 190px;
+    width: rem(20px);
+    height: rem(190px);
     position: fixed;
     top: 9.5%;
     left: 95%;
     z-index: 1;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .pagination__link {
     display: block;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background-color: $white;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
     position: relative;
     cursor: pointer;
 
@@ -28,10 +32,10 @@
     &::before {
         content: "";
         display: block;
-        width: 6px;
-        height: 6px;
+        width: rem(6px);
+        height: rem(6px);
         border-radius: 50%;
-        border: 1px solid $white;
+        border: rem(1px) solid $white;
         opacity: 0;
         position: absolute;
         top: 50%;
@@ -41,14 +45,14 @@
     };
 
     &:hover::before {
-        width: 16px;
-        height: 16px;
+        width: rem(16px);
+        height: rem(16px);
         opacity: 1;
     }
 }
 
 .pagination__link_active::before {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     opacity: 1;
 }

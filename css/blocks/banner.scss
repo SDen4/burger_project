@@ -12,13 +12,24 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
 }
 
 .banner__img {
     display: block;
     width: 41%;
-    // height: 100%;
     object-fit: cover;
+
+    @include tablet {
+        width: 60%;
+        margin: -3% 0 3% 2%;
+    };
 }
 
 .banner__descr {
@@ -27,22 +38,40 @@
     width: 40%;
     margin-top: 6.9%;
     margin-left: 1.5%;
+
+    @include tablet {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+        width: 70%;
+    };
 }
 
 .banner__descr-top {
     text-transform: uppercase;
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
     font-family: "Gagalin";
     width: 93%;
     padding-bottom: 6%;
+
+    @include tablet {
+        padding-left: 10%;
+        letter-spacing: 3px;
+    };
+
 }
 
 .banner__descr-bottom {
     text-transform: lowercase;
-    font-size: 62px;
-    line-height: 60px;
+    font-size: rem(62px);
+    line-height: rem(60px);
     font-family: 'Lifehack';
     color: $white;
     width: 98%;
+
+    @include tablet {
+        letter-spacing: 3px;
+        padding-left: 5%;
+    };
 }

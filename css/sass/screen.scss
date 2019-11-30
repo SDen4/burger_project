@@ -1,9 +1,11 @@
+@import "../layout/media.scss";
 @import "../layout/var.scss";
 @import "../layout/normalize.scss";
 @import "../layout/base.scss";
 @import "../layout/fonts.scss";
 
 @import "../blocks/pagination.scss";
+@import "../blocks/gamgurger-menu.scss";
 
 @import "../blocks/header.scss";
 @import "../blocks/navigation.scss";
@@ -19,4 +21,4 @@
 @import "../blocks/menu.scss";
 @import "../blocks/team.scss";
 @import "../blocks/contacts.scss";
-@import "../blocks/delivery.scss";  
+@import "../blocks/delivery.scss";

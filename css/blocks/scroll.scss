@@ -4,26 +4,26 @@
     align-items: center;
     margin-bottom: 5%;
     position: relative;
-    height: 14px;
+    height: rem(14px);
 }
 
 .scroll__link {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: rem(30px);
+    height: rem(30px);
     
     &::after {
         content: "";
         display: block;
-        width: 30px;
-        height: 30px;
+        width: rem(30px);
+        height: rem(30px);
         position: absolute;
     };
 
     &:hover .scroll__pic {
-        top: -5px;
-        width: 29px * 1.3;
-        height: 14px * 1.3;
+        top: rem(-5px);
+        width: rem(29px) * 1.3;
+        height: rem(14px) * 1.3;
     };
 }
 
@@ -32,7 +32,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 29px;
-    height: 14px;
+    width: rem(29px);
+    height: rem(14px);
     transition: .3s;
 }

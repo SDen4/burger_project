@@ -1,12 +1,12 @@
 .button {
     border: 0;
-    padding: 3px 15px;
-    border-radius: 5px;
+    padding: rem(3px) rem(15px);
+    border-radius: rem(5px);
     background-color: $red;
     color: $white;
     cursor: pointer;
-    font-size: 13px;
-    line-height: 30px;
+    font-size: rem(13px);
+    line-height: rem(30px);
     font-family: "Ubuntu";
     font-weight: 500;
     text-transform: uppercase;

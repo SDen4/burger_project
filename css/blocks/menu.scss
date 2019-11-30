@@ -9,16 +9,23 @@
 
 .menu__title {
     text-transform: uppercase;
-    font-size: 72px;
-    line-height: 64px;
+    font-size: rem(72px);
+    line-height: rem(64px);
     font-family: "Gagalin";
     padding-left: 5%;
     padding-top: 5%;
+    width: 30%;
+
+    @include tablet {
+        padding-left: 3%;
+        padding-top: 14%;
+        letter-spacing: 3px;
+    };
 }
 
 .menu__frame {
     height: 100vh;
-    width: 100%;
+    width: 70%;
     position: relative;
 }
 
@@ -34,13 +41,17 @@
 .accordeon-vert__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 100%;
 }
 
 .accordeon-vert__item {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     height: 100vh;
+    width: rem(80px);
 }
 
 .accordeon-vert__item_meet {
@@ -58,8 +69,12 @@
     background-size: cover;
 }
 
+.accordeon-vert__item_active {
+    width: 80%;
+}
+
 .accordeon-vert__item_active .accordeon-vert__text {
-    width: 550px;
+    width: 90%;
     padding: 5%;
 }
 
@@ -68,21 +83,30 @@
 }
 
 .accordeon-vert__subtitle {
-    width: 80px;
+    width: 100%;
+    min-width: rem(80px);
     height: 100vh;
-    font-size: 40px;
+    font-size: rem(40px);
     font-family: "Gagalin";
     writing-mode: tb-rl;
     transform: rotate(-180deg);
-    line-height: 80px;
-    padding-top: 45px;
+    line-height: rem(80px);
+    padding-top: rem(45px);
+
+    @include tablet {
+        letter-spacing: 1px;
+    }
+}
+
+.accordeon-vert__item_active .accordeon-vert__subtitle {
+    width: 10%;
 }
 
 .accordeon-vert__text {
     width: 0;
     overflow: hidden;
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: "Ubuntu";
     font-weight: 400;
-    line-height: 24px;
+    line-height: rem(24px);
 }

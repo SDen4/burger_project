@@ -1,3 +1,15 @@
+html {
+    font-size: 16px;
+
+    @include tablet {
+        font-size: 15px;
+    }
+
+    @include phone {
+        font-size: 14px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -22,18 +34,7 @@ p {
 
 .wrapper {
     display: flex;
-    animation: loading .3s;
     flex-direction: column;
-}
-
-@keyframes loading {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 ul {
@@ -46,8 +47,9 @@ li {
 }
 
 .container {
-    margin: 0px auto;
-    width: 1100px;
+    margin: 0 auto;
+    max-width: rem(1100px);
+    width: 98%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -55,7 +57,7 @@ li {
 
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -63,6 +65,6 @@ li {
 }
 
 .logo__pic {
-    width: 10%;
-    height: 75px;
+    width: rem(100px); /* 10% */
+    height: rem(75px);
 }

@@ -10,18 +10,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+        width: 95%;
+    };
 }
 
 .delivery__title {
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
     font-family: "Gagalin"; 
     padding-bottom: 4.5%;
+
+    @include tablet {
+        letter-spacing: 2px;
+        padding-bottom: 7.5%;
+    };
 }
 
 .form {
     display: flex;
     width: 100%;
+
+    @include tablet {
+        flex-direction: column;
+        width: 67%;
+    };
 }
 
 .form__left, .form__right {
@@ -33,6 +47,11 @@
     &:last-child {
         margin-right: 0;
     };
+
+    @include tablet {
+        margin-right: 0;
+        width: 100%;
+    };
 }
 
 .form__content {
@@ -40,6 +59,10 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 3.5%;
+
+    @include tablet {
+        margin-bottom: 4.5%;
+    };
 }
 
 .form__content_left {
@@ -49,6 +72,10 @@
 
 .form__content_down {
     margin-bottom: 4%;
+
+    @include tablet {
+        margin-bottom: 9%;
+    };
 }
 
 .form__data {
@@ -63,22 +90,22 @@
 }
 
 .form__subtitle {
-    font-size: 14px;
+    font-size: rem(14px);
     color: $white;
     font-family: "Ubuntu";
     font-weight: 300;
-    margin-bottom: 7px;
+    margin-bottom: rem(7px);
 }
 
 .form__input {
     width: 100%;
-    height: 35px;
-    border-radius: 5px;
+    height: rem(35px);
+    border-radius: rem(5px);
     background-color: $white;
     border: 2px solid transparent/*$lite-gray*/;
-    padding: 6px 6px;
-    font-size: 14px;
-    line-height: 24px;
+    padding: rem(6px) rem(6px);
+    font-size: rem(14px);
+    line-height: rem(24px);
     color: $black;
     font-family: "Ubuntu";
     font-weight: 300;
@@ -90,7 +117,7 @@
 }
 
 .form__input_comment {
-    height: 109px;
+    height: rem(109px);
 }
 
 .form__payment, .form__callback {
@@ -112,30 +139,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 26px;
+    margin-left: rem(26px);
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:before {
         content: "";
         display: block;
-        width: 16px;
-        height: 16px;
+        width: rem(16px);
+        height: rem(16px);
         border-radius: 50%;
         background-color: $white;
         position: absolute;
-        left: 0px;
+        left: 0;
     };
 
     &:after {
         content: "";
         display: none;
-        width: 8px;
-        height: 8px;
+        width: rem(8px);
+        height: rem(8px);
         border-radius: 50%;
         background-color: $red_new;
         position: absolute;
-        left: 4px;
+        left: rem(4px);
     };
 }
 
@@ -150,27 +177,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 26px;
+    margin-left: rem(26px);
     margin-bottom: 0;
-    margin-right: 24px;
+    margin-right: rem(24px);
 
     &:before {
         content: "";
         display: block;
-        width: 16px;
-        height: 16px;
+        width: rem(16px);
+        height: rem(16px);
         background-color: $white;
         position: absolute;
-        left: 0px;
+        left: 0;
     };
 
     &:after {
         content: "";
-        width: 16px;
-        height: 16px;
+        width: rem(16px);
+        height: rem(16px);
         display: none;
         background: url("../../img/icons/checkbox.png") center center no-repeat;
         position: absolute;
-        left: 0px;
+        left: 0;
     };
 }

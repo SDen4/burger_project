@@ -10,6 +10,10 @@
     flex-direction: row;
     width: 100%;
     padding: 1% 7%;
+
+    @include tablet {
+        padding: 1% 1% 1% 3%;
+    };  
 }
 
 .footer {
@@ -28,7 +32,7 @@
 }
 
 .contacts__address {
-    font-size: 14px;
+    font-size: rem(14px);
     color: $white;
     font-weight: 300;
     padding-bottom: 1%;
@@ -41,15 +45,16 @@
 }
 
 .contacts__pic {    
-    fill: #e45028;
-    height: 11px;
-    width: 12px;
+    fill: $red;
+    height: rem(11px);
+    width: rem(12px);
 }
 
 .contacts__number {
-    color: #e45028;
+    color: $red;
     font-weight: 500;
     padding-left: 2%;
+    text-decoration: none;
 }
 
 .contacts__social {
@@ -66,6 +71,10 @@
     &:first-child {
         margin-left: 0;
     };
+
+    @include tablet {
+        margin-left: 5%;
+    };
 }
 
 .social__list {
@@ -80,8 +89,8 @@
 }
 
 .social__pic {
-    width: 23px;
-    height: 23px;
+    width: rem(23px);
+    height: rem(23px);
     fill: $gray;
     transition: .3s;
 

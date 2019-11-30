@@ -1,0 +1,38 @@
+.gamburger-menu {
+    display: none;
+    width: rem(25px);
+    height: rem(25px);
+    position: absolute;
+    top: 3.5%;
+    left: 95%;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.gamburger-menu__section {
+    display: block;
+    width: rem(24px);
+    height: rem(4px);
+    border-radius: rem(2px);
+    background-color: $white;
+    position: relative;
+
+    &:after, &:before {
+        content: "";
+        width: rem(24px);
+        height: rem(4px);
+        border-radius: rem(2px);
+        position: absolute;
+        background-color: $white;
+    };
+
+    &:after {
+        top: rem(20px);
+    }
+
+    &:before {
+        top: rem(10px);
+    };
+}
