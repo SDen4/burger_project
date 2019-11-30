@@ -938,16 +938,17 @@ li {
   font-family: "Gagalin";
   padding-left: 5%;
   padding-top: 5%;
+  width: 30%;
 }
 
-/* line 19, ../blocks/menu.scss */
+/* line 20, ../blocks/menu.scss */
 .menu__frame {
   height: 100vh;
-  width: 100%;
+  width: 70%;
   position: relative;
 }
 
-/* line 25, ../blocks/menu.scss */
+/* line 26, ../blocks/menu.scss */
 .accordeon-vert {
   display: flex;
   height: 100vh;
@@ -956,52 +957,61 @@ li {
   right: 0;
 }
 
-/* line 34, ../blocks/menu.scss */
+/* line 35, ../blocks/menu.scss */
 .accordeon-vert__list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 100%;
 }
 
-/* line 39, ../blocks/menu.scss */
+/* line 43, ../blocks/menu.scss */
 .accordeon-vert__item {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   height: 100vh;
+  width: 80px;
 }
 
-/* line 46, ../blocks/menu.scss */
+/* line 51, ../blocks/menu.scss */
 .accordeon-vert__item_meet {
   background: url("../../img/accordeon-vert/for-meet-lovers.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 51, ../blocks/menu.scss */
+/* line 56, ../blocks/menu.scss */
 .accordeon-vert__item_vegan {
   background: url("../../img/accordeon-vert/vegan.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 56, ../blocks/menu.scss */
+/* line 61, ../blocks/menu.scss */
 .accordeon-vert__item_diet {
   background: url("../../img/accordeon-vert/diet.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 61, ../blocks/menu.scss */
+/* line 66, ../blocks/menu.scss */
+.accordeon-vert__item_active {
+  width: 80%;
+}
+
+/* line 70, ../blocks/menu.scss */
 .accordeon-vert__item_active .accordeon-vert__text {
-  width: 550px;
+  width: 90%;
   padding: 5%;
 }
 
-/* line 66, ../blocks/menu.scss */
+/* line 75, ../blocks/menu.scss */
 .accordeon-vert__subtitle, .accordeon-vert__text {
   background-color: rgba(76, 78, 80, 0.8);
 }
 
-/* line 70, ../blocks/menu.scss */
+/* line 79, ../blocks/menu.scss */
 .accordeon-vert__subtitle {
-  width: 80px;
+  width: 100%;
+  min-width: 80px;
   height: 100vh;
   font-size: 40px;
   font-family: "Gagalin";
@@ -1011,7 +1021,12 @@ li {
   padding-top: 45px;
 }
 
-/* line 81, ../blocks/menu.scss */
+/* line 91, ../blocks/menu.scss */
+.accordeon-vert__item_active .accordeon-vert__subtitle {
+  width: 10%;
+}
+
+/* line 95, ../blocks/menu.scss */
 .accordeon-vert__text {
   width: 0;
   overflow: hidden;
