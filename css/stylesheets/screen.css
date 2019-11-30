@@ -1499,13 +1499,15 @@ li {
 
 /* line 53, ../blocks/contacts.scss */
 .contacts__number {
+  display: block;
+  width: 100%;
   color: #e45028;
   font-weight: 500;
   padding-left: 2%;
   text-decoration: none;
 }
 
-/* line 60, ../blocks/contacts.scss */
+/* line 62, ../blocks/contacts.scss */
 .contacts__social {
   display: flex;
   flex-direction: row;
@@ -1514,22 +1516,22 @@ li {
   align-items: center;
 }
 
-/* line 68, ../blocks/contacts.scss */
+/* line 70, ../blocks/contacts.scss */
 .social__item {
   margin-left: 3.5%;
 }
-/* line 71, ../blocks/contacts.scss */
+/* line 73, ../blocks/contacts.scss */
 .social__item:first-child {
   margin-left: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 68, ../blocks/contacts.scss */
+  /* line 70, ../blocks/contacts.scss */
   .social__item {
     margin-left: 5%;
   }
 }
 
-/* line 80, ../blocks/contacts.scss */
+/* line 82, ../blocks/contacts.scss */
 .social__list {
   display: flex;
   flex-direction: row;
@@ -1537,19 +1539,19 @@ li {
   width: 100%;
 }
 
-/* line 87, ../blocks/contacts.scss */
+/* line 89, ../blocks/contacts.scss */
 .social__link {
   display: flex;
 }
 
-/* line 91, ../blocks/contacts.scss */
+/* line 93, ../blocks/contacts.scss */
 .social__pic {
   width: 1.4375rem;
   height: 1.4375rem;
   fill: #6d6f71;
   transition: .3s;
 }
-/* line 97, ../blocks/contacts.scss */
+/* line 99, ../blocks/contacts.scss */
 .social__pic:hover {
   fill: #fff;
 }

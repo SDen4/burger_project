@@ -44,13 +44,15 @@
     align-items: center;
 }
 
-.contacts__pic {    
+.contacts__pic {
     fill: $red;
     height: rem(11px);
     width: rem(12px);
 }
 
 .contacts__number {
+    display: block;
+    width: 100%;
     color: $red;
     font-weight: 500;
     padding-left: 2%;
