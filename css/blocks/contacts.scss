@@ -8,6 +8,8 @@
 .contacts__wrapper {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding: 1% 7%;
 }
 
 .footer {
@@ -22,32 +24,32 @@
     display: flex;
     flex-direction: column;
     font-family: "Ubuntu";
-    margin-left: 5%;
     width: 50%;
 }
 
 .contacts__address {
     font-size: 14px;
-    // line-height: 24px;
     color: $white;
     font-weight: 300;
-    padding: 2% 0%;
+    padding-bottom: 1%;
 }
 
 .contacts__phone {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.phone__pic {
-    fill: $red;
-    height: 12%;
-    width: 7%;
+.contacts__pic {    
+    fill: #e45028;
+    height: 11px;
+    width: 12px;
 }
 
-.phone__number {
-    color: $red;
+.contacts__number {
+    color: #e45028;
     font-weight: 500;
+    padding-left: 2%;
 }
 
 .contacts__social {
@@ -55,12 +57,22 @@
     flex-direction: row;
     justify-content: space-between;
     width: 50%;
+    align-items: center;
+}
+
+.social__item{
+    margin-left: 3.5%;
+
+    &:first-child {
+        margin-left: 0;
+    };
 }
 
 .social__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .social__link {
@@ -68,8 +80,8 @@
 }
 
 .social__pic {
-    width: 25%;
-    height: 20%;
+    width: 23px;
+    height: 23px;
     fill: $gray;
     transition: .3s;
 

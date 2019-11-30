@@ -49,6 +49,7 @@ li {
     margin: 0px auto;
     width: 1100px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -63,5 +64,5 @@ li {
 
 .logo__pic {
     width: 10%;
-    height: 50%;
+    height: 75px;
 }
