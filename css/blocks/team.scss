@@ -15,6 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+        width: 100%;
+    };
 }
 
 .team__content {
@@ -23,11 +27,17 @@
 
 .team__title {
     text-transform: uppercase;
-    font-size: 72px;
-    line-height: 64px;
+    font-size: rem(72px);
+    line-height: rem(64px);
     color: $yellow;
     font-family: "Gagalin";
     margin-bottom: 8%;
+
+    @include tablet {
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 12%;
+    }
 }
 
 .accordeon__list {
@@ -37,12 +47,17 @@
 
 .accordeon__item {
     margin-bottom: 4%;
+
+    @include tablet {
+        margin-bottom: 7%;
+    }
 }
 
 .accordeon__username {
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 28px;
+    text-decoration: none;
+    font-size: rem(14px);
+    line-height: rem(28px);
     color: $white;
     font-family: "Gagalin";
     display: flex;
@@ -53,9 +68,15 @@
         content: "";
         display: block;
         background: url('../../img/icons/team-down.png');
-        width: 12px;
-        height: 9px;
+        width: rem(12px);
+        height: rem(9px);
         margin-right: 1%;
+    };
+
+    @include tablet {
+        font-size: rem(24px);
+        letter-spacing: 1px;
+        justify-content: center;
     };
 }
 
@@ -65,11 +86,27 @@
     margin-left: 3%;
     height: 0;
     overflow: hidden;
+
+    @include tablet {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    };
+}
+
+.accordeon__item_active {
+    @include tablet {
+        margin-bottom: 5%;
+    };
 }
 
 .accordeon__item_active .accordeon__username {
     color: $yellow;
     margin-bottom: 1%;
+
+    @include tablet {
+        margin-bottom: 3%;
+    }
 }
 
 .accordeon__item_active .accordeon__username:before {
@@ -80,16 +117,25 @@
     height: inherit;
     overflow: unset;
     margin-bottom: 3%;
+
+    @include tablet {
+        margin-bottom: 1%;
+    };
 }
 
 .accordeon__photo {
     display: flex;
     flex-wrap: nowrap;
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     overflow: hidden;
     margin-right: 3.8%;
+
+    @include tablet {
+        margin-right: 0;
+        margin-bottom: 5.5%;
+    };
 }
 
 .accordeon__avatar {
@@ -103,10 +149,16 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+
+    @include tablet {
+        align-items: center;
+        text-align: center;
+        width: 75%;
+    };
 }
 
 .accordeon__skill, .accordeon__text {
-    font-size: 14px;
+    font-size: rem(15px);
     color: $white;
     font-family: "Ubuntu";
     font-weight: 700;
@@ -114,9 +166,13 @@
 
 .accordeon__skill {
     padding-bottom: 6%;
+
+    @include tablet {
+        padding-bottom: 5%;
+    }
 }
 
 .accordeon__text {
     font-weight: 400;
-    line-height: 24px;
+    line-height: rem(24px);
 }

@@ -23,6 +23,11 @@
     &:nth-child(2) .feedback__avatar {
         object-position: 10% 50%;
     };
+
+    @include tablet {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .feedback__avatar {
@@ -42,6 +47,11 @@
     padding: 5% 5%;
     transition: .3s;
     background-color: rgba(0, 0, 0, .5);
+
+    @include tablet {
+        text-align: center;
+        padding: 7% 13%;
+    };
 }
 
 .feedback__content:hover {
@@ -53,16 +63,26 @@
 }
 
 .feedback__username {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: rem(14px);
+    line-height: rem(28px);
     font-family: "Gagalin";
+
+    @include tablet {
+        padding-bottom: 2%;
+        line-height: rem(28px);
+    };
 }
 
 .feedback__text {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: "Ubuntu";
     font-weight: 300;
+
+    @include tablet {
+        line-height: rem(24px);
+        margin-bottom: 6%;
+    };
 }
 
 .feedback__button {

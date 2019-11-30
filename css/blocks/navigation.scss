@@ -2,13 +2,17 @@
     flex: 2;
     margin-left: 6.9%;
     margin-right: 1.2%;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .navigation__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: -10px;
+    margin-top: rem(-10px);
 }
 
 .navigation__item {
@@ -19,11 +23,11 @@
     &:after {
         content: "";
         display: inline-block;
-        width: 3px;
-        height: 3px;
+        width: rem(3px);
+        height: rem(3px);
         border-radius: 50%;
         background-color: $white;
-        margin: 0px 8px 0px 17px;
+        margin: 0 rem(8px) 0 rem(17px);
     };
 
     &:last-child:after{
@@ -34,7 +38,7 @@
 
 .navigation__link {
     text-decoration: none;
-    font-size: 13px;
+    font-size: rem(13px);
     color: $white;
     font-family: "Ubuntu";
     font-weight: 500;
@@ -46,11 +50,11 @@
         display: block;
         opacity: 0;
         width: inherit;
-        height: 2px;
+        height: rem(2px);
         background-color: $white;
         transition: .5s;
         position: inherit;
-        top: 18px;
+        top: rem(18px);
     };
 
     &:hover:before {

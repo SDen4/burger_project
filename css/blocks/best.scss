@@ -5,18 +5,33 @@
     color: $black;
 }
 
+.best__frame {
+    @include tablet {
+        width: 96%;
+    };
+}
+
 .best__title {
     text-transform: uppercase;
-    font-size: 72px;
-    line-height: 64px;
+    font-size: rem(72px);
+    line-height: rem(64px);
     font-family: "Gagalin";
     text-align: center;
     padding-bottom: 5%;
+
+    @include tablet {
+        font-size: rem(76px);
+        padding-bottom: 8%;
+    };
 }
 
 .best__list {
     display: flex;
     justify-content: center;
+
+    @include tablet {
+        justify-content: space-between;
+    };
 }
 
 .best__item {
@@ -29,6 +44,10 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablet {
+        width: 29%;
+    }
 }
 
 .best__pic-svg {
@@ -36,6 +55,10 @@
     width: 32%;
     height: 32%;
     margin-bottom: 9%;
+
+    @include tablet {
+        width: 45%;
+    };
 }
 
 .best__pic-svg_meat {
@@ -51,17 +74,17 @@
 }
 
 .best__subtitle {
-    font-size: 24px;
-    letter-spacing: -1px;
+    font-size: rem(24px);
+    letter-spacing: rem(-1px);
     font-family: "Lifehack";
     font-weight: 500;
     text-align: center;
 }
 
 .best__text {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: "Ubuntu";
     font-weight: 300;
     text-align: center;
-    line-height: 24px;
+    line-height: rem(24px);
 }
