@@ -19,6 +19,8 @@
     display: flex;
     position: relative;
     align-items: center;
+    flex: 1 1 auto;
+    justify-content: space-around;
     
     &:after {
         content: "";
@@ -27,7 +29,7 @@
         height: rem(3px);
         border-radius: 50%;
         background-color: $white;
-        margin: 0 rem(8px) 0 rem(17px);
+        // margin: 0 rem(8px) 0 rem(17px);
     };
 
     &:last-child:after{

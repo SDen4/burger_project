@@ -104,10 +104,15 @@
 }
 
 .feedback__button {
+    transition: .3s;
     background-color: $black;
     @include phone {
         display: none;
     };
+}
+
+.feedback__button:hover {
+    background-color: transparent;
 }
 
 .feedback__button_mobile {
