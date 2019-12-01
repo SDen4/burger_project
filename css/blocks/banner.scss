@@ -30,6 +30,11 @@
         width: 60%;
         margin: -3% 0 3% 2%;
     };
+
+    @include phone {
+        width: 75%;
+        margin: -7% 0 8% 1%;
+    };
 }
 
 .banner__descr {
@@ -37,13 +42,20 @@
     flex-flow: column wrap;
     width: 40%;
     margin-top: 6.9%;
-    margin-left: 1.5%;
+    margin-left: 1%;
 
     @include tablet {
         margin-left: 0;
         margin-top: 0;
         text-align: center;
-        width: 70%;
+        width: 85%;
+    };
+
+    @include phone {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+        width: 95%;
     };
 }
 
@@ -60,6 +72,11 @@
         letter-spacing: 3px;
     };
 
+    @include phone {
+        padding-left: 7%;
+        letter-spacing: 0px;
+        padding-bottom: 1%;
+    };
 }
 
 .banner__descr-bottom {
@@ -73,5 +90,11 @@
     @include tablet {
         letter-spacing: 3px;
         padding-left: 5%;
+    };
+
+    @include phone {
+        letter-spacing: -1px;
+        padding-left: 2%;
+        line-height: rem(70px);
     };
 }

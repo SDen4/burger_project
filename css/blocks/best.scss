@@ -9,6 +9,10 @@
     @include tablet {
         width: 96%;
     };
+
+    @include phone {
+        margin-bottom: 14%;
+    };
 }
 
 .best__title {
@@ -23,6 +27,12 @@
         font-size: rem(76px);
         padding-bottom: 8%;
     };
+
+    @include phone {
+        font-size: rem(58px);
+        letter-spacing: -1px;
+        padding-bottom: 0;
+    };
 }
 
 .best__list {
@@ -31,6 +41,10 @@
 
     @include tablet {
         justify-content: space-between;
+    };
+
+    @include phone {
+        flex-direction: column;
     };
 }
 
@@ -43,11 +57,16 @@
 
     &:last-child {
         margin-right: 0;
-    }
+    };
 
     @include tablet {
         width: 29%;
-    }
+    };
+
+    @include phone {
+        width: 100%;
+        flex-direction: row;
+    };
 }
 
 .best__pic-svg {
@@ -58,6 +77,14 @@
 
     @include tablet {
         width: 45%;
+    };
+
+    @include phone {
+        width: 20%;
+        min-width: 80px;
+        margin-right: 8%;
+        margin-left: 3%;
+        margin-bottom: 5%;
     };
 }
 
@@ -71,6 +98,18 @@
 
 .best__pic-svg_leaf {
     fill: $green;
+
+    @include phone {
+        margin-bottom: 0;
+    };
+}
+
+.best__descr {
+    @include phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    };
 }
 
 .best__subtitle {
@@ -79,6 +118,12 @@
     font-family: "Lifehack";
     font-weight: 500;
     text-align: center;
+
+    @include phone {
+        padding-bottom: 5%;
+        font-size: rem(28px);
+        text-align: start;
+    };
 }
 
 .best__text {
@@ -87,4 +132,10 @@
     font-weight: 300;
     text-align: center;
     line-height: rem(24px);
+
+    @include phone {
+        text-align: start;
+        letter-spacing: rem(1px);
+        line-height: rem(28px);
+    };
 }

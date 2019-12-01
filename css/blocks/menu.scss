@@ -21,6 +21,13 @@
         padding-top: 14%;
         letter-spacing: 3px;
     };
+
+    @include phone {
+        font-size: rem(60px);
+        letter-spacing: -1px;
+        padding-left: 13%;
+        padding-top: 10%;
+    };
 }
 
 .menu__frame {
@@ -52,6 +59,10 @@
     // flex-wrap: wrap;
     height: 100vh;
     width: rem(80px);
+
+    @include phone {
+        width: 5.7rem;
+    };
 }
 
 .accordeon-vert__item_meet {
@@ -88,14 +99,22 @@
     height: 100vh;
     font-size: rem(40px);
     font-family: "Gagalin";
+    color: $white;
     writing-mode: tb-rl;
     transform: rotate(-180deg);
     line-height: rem(80px);
     padding-top: rem(45px);
+    cursor: pointer;
+    text-decoration: none;
 
     @include tablet {
         letter-spacing: 1px;
-    }
+    };
+
+    @include phone {
+        padding-top: 4.4rem;
+        letter-spacing: 2.5px;
+    };
 }
 
 .accordeon-vert__item_active .accordeon-vert__subtitle {

@@ -14,6 +14,10 @@
     @include tablet {
         width: 95%;
     };
+
+    @include phone {
+        width: 98%;
+    };
 }
 
 .delivery__title {
@@ -21,10 +25,18 @@
     color: $yellow;
     font-family: "Gagalin"; 
     padding-bottom: 4.5%;
+    text-align: center;
 
     @include tablet {
-        letter-spacing: 2px;
+        letter-spacing: rem(2px);
         padding-bottom: 7.5%;
+    };
+
+    @include phone {
+        font-size: rem(56px);
+        letter-spacing: rem(1px);
+        line-height: 4.1rem;
+        padding-bottom: 6.5%;
     };
 }
 
@@ -35,6 +47,10 @@
     @include tablet {
         flex-direction: column;
         width: 67%;
+    };
+
+    @include phone {
+        width: 100%;
     };
 }
 
@@ -63,11 +79,28 @@
     @include tablet {
         margin-bottom: 4.5%;
     };
+
+    @include phone {
+        margin-bottom: 4%;
+    };
 }
 
 .form__content_left {
     justify-content: flex-start;
     margin-bottom: 6.5%;
+
+    &:last-child {
+
+        @include phone {
+            margin-bottom: 0;
+            margin-top: 0;
+        };
+    };
+
+    @include phone {
+        justify-content: center;
+        margin-top: 5%;
+    };
 }
 
 .form__content_down {
@@ -75,6 +108,10 @@
 
     @include tablet {
         margin-bottom: 9%;
+    };
+
+    @include phone {
+        justify-content: center;
     };
 }
 
@@ -95,7 +132,24 @@
     font-family: "Ubuntu";
     font-weight: 300;
     margin-bottom: rem(7px);
+
+    @include phone {
+        font-size: rem(16px);
+    };
 }
+
+.form__clear{
+    @include phone {
+        display: none;
+    };
+}
+
+.form__data_phone {
+    @include phone {
+        margin-right: 0;
+    };
+};
+
 
 .form__input {
     width: 100%;
@@ -110,6 +164,10 @@
     font-family: "Ubuntu";
     font-weight: 300;
     outline: none;
+
+    @include phone {
+        height: rem(40px);
+    };
 }
 
 .form__input:focus {
@@ -118,6 +176,10 @@
 
 .form__input_comment {
     height: rem(109px);
+
+    @include phone {
+        height: 7.8125rem;
+    };
 }
 
 .form__payment, .form__callback {
