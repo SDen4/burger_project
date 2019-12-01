@@ -5,6 +5,10 @@
     margin-bottom: 5%;
     position: relative;
     height: rem(14px);
+
+    @include phone {
+        margin-bottom: 6%;
+    };
 }
 
 .scroll__link {

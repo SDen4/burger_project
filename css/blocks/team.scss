@@ -37,7 +37,14 @@
         text-align: center;
         letter-spacing: 3px;
         margin-bottom: 12%;
-    }
+    };
+
+    @include phone {
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 8%;
+        font-size: rem(56px);
+    };
 }
 
 .accordeon__list {
@@ -50,7 +57,48 @@
 
     @include tablet {
         margin-bottom: 7%;
-    }
+    };
+
+    @include phone {
+        margin-bottom: 10%;
+    };
+}
+
+.accordeon__item_active {
+    @include tablet {
+        margin-bottom: 5%;
+    };
+
+    @include phone{
+        margin-bottom: 9%;
+    };
+}
+
+.accordeon__item_active .accordeon__username {
+    color: $yellow;
+    margin-bottom: 1%;
+
+    @include tablet {
+        margin-bottom: 3%;
+    };
+
+    @include phone {
+        margin-bottom: 5%;
+    };
+}
+
+.accordeon__item_active .accordeon__username:before {
+    background: url('../../img/icons/team-up.png');
+}
+
+.accordeon__item_active .accordeon__content {
+    height: inherit;
+    overflow: unset;
+    margin-bottom: 3%;
+
+    @include tablet {
+        margin-bottom: 1%;
+    };
 }
 
 .accordeon__username {
@@ -71,12 +119,22 @@
         width: rem(12px);
         height: rem(9px);
         margin-right: 1%;
+
+        @include phone {
+            margin-right: 3%;
+        };
     };
 
     @include tablet {
         font-size: rem(24px);
         letter-spacing: 1px;
         justify-content: center;
+    };
+
+    @include phone {
+        font-size: rem(28px);
+        justify-content: center;
+        letter-spacing: 0px;
     };
 }
 
@@ -94,35 +152,6 @@
     };
 }
 
-.accordeon__item_active {
-    @include tablet {
-        margin-bottom: 5%;
-    };
-}
-
-.accordeon__item_active .accordeon__username {
-    color: $yellow;
-    margin-bottom: 1%;
-
-    @include tablet {
-        margin-bottom: 3%;
-    }
-}
-
-.accordeon__item_active .accordeon__username:before {
-    background: url('../../img/icons/team-up.png');
-}
-
-.accordeon__item_active .accordeon__content {
-    height: inherit;
-    overflow: unset;
-    margin-bottom: 3%;
-
-    @include tablet {
-        margin-bottom: 1%;
-    };
-}
-
 .accordeon__photo {
     display: flex;
     flex-wrap: nowrap;
@@ -135,6 +164,11 @@
     @include tablet {
         margin-right: 0;
         margin-bottom: 5.5%;
+    };
+
+    @include phone {
+        width: 7.25rem;
+        height: 7.25rem;
     };
 }
 
@@ -154,6 +188,10 @@
         align-items: center;
         text-align: center;
         width: 75%;
+    };
+
+    @include phone {
+        width: 100%;
     };
 }
 
@@ -175,4 +213,8 @@
 .accordeon__text {
     font-weight: 400;
     line-height: rem(24px);
+
+    @include phone{
+        letter-spacing: .3px;
+    };
 }

@@ -1,6 +1,6 @@
 .button {
     border: 0;
-    padding: rem(3px) rem(15px);
+    padding: 0.1875rem .9rem;
     border-radius: rem(5px);
     background-color: $red;
     color: $white;
@@ -10,6 +10,11 @@
     font-family: "Ubuntu";
     font-weight: 500;
     text-transform: uppercase;
+
+    @include phone {
+        padding: 0.1875rem 1.2rem;
+        letter-spacing: 1px;
+    };
 }
 
 .button_clear {
