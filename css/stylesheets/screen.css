@@ -1755,7 +1755,7 @@ li {
 @media screen and (max-width: 480px) {
   /* line 35, ../blocks/contacts.scss */
   .contacts__data {
-    width: 65%;
+    width: 80%;
     align-items: center;
     margin-top: 3.1%;
   }
