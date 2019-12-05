@@ -10,7 +10,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: .7rem 4.2rem 0 4.2rem;
+    padding-top: .7rem;
+    max-width: rem(946px);
 
     @include tablet {
         padding: .75rem 3.9rem 0 .5rem;

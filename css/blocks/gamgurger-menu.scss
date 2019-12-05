@@ -21,7 +21,7 @@
     display: block;
     width: rem(24px);
     height: rem(4px);
-    border-radius: rem(2px);
+    border-radius: 2px;
     background-color: $white;
     position: relative;
 
@@ -29,7 +29,7 @@
         content: "";
         width: rem(24px);
         height: rem(4px);
-        border-radius: rem(2px);
+        border-radius: 2px;
         position: absolute;
         background-color: $white;
     };
