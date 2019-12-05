@@ -208,8 +208,8 @@
     &:before {
         content: "";
         display: block;
-        width: rem(16px);
-        height: rem(16px);
+        width: 16px;
+        height: 16px;
         border-radius: 50%;
         background-color: $white;
         position: absolute;
@@ -219,12 +219,12 @@
     &:after {
         content: "";
         display: none;
-        width: rem(8px);
-        height: rem(8px);
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         background-color: $red_new;
         position: absolute;
-        left: rem(4px);
+        left: 4px;
     };
 }
 

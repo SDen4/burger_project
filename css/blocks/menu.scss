@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .menu__title {
@@ -12,28 +13,30 @@
     font-size: rem(72px);
     line-height: rem(64px);
     font-family: "Gagalin";
-    padding-left: 5%;
-    padding-top: 5%;
-    width: 30%;
+    position: absolute;
+    top: rem(100px);
+    left: rem(80px);
+    z-index: 1;
 
     @include tablet {
-        padding-left: 3%;
-        padding-top: 14%;
         letter-spacing: 3px;
+        top: 7rem;
+        left: 1.5rem;
     };
 
     @include phone {
         font-size: rem(60px);
         letter-spacing: -1px;
-        padding-left: 13%;
-        padding-top: 10%;
+        top: 3.5rem;
+        left: 4.5rem;
     };
 }
 
 .menu__frame {
     height: 100vh;
     width: 70%;
-    position: relative;
+    // position: relative;
+    margin-left: auto;
 }
 
 .accordeon-vert {
@@ -47,9 +50,10 @@
 
 .accordeon-vert__list {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    // flex-wrap: wrap;
+    // flex-direction: column;
     align-content: flex-end;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -81,7 +85,7 @@
 }
 
 .accordeon-vert__item_active {
-    width: 80%;
+    width: 50%;
 }
 
 .accordeon-vert__item_active .accordeon-vert__text {

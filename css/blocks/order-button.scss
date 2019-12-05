@@ -10,6 +10,7 @@
     font-family: "Ubuntu";
     font-weight: 500;
     text-transform: uppercase;
+    outline: none;
 
     @include phone {
         padding: 0.1875rem 1.2rem;
