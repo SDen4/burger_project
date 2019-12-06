@@ -629,7 +629,7 @@ li {
 
 /* line 39, ../blocks/navigation.scss */
 .navigation__link {
-  display: inline-flex;
+  display: block;
   text-decoration: none;
   font-size: 0.8125rem;
   color: #fff;
@@ -639,7 +639,7 @@ li {
   position: relative;
 }
 /* line 49, ../blocks/navigation.scss */
-.navigation__link:before {
+.navigation__link:after {
   content: "";
   display: block;
   opacity: 0;
@@ -648,10 +648,9 @@ li {
   background-color: #fff;
   transition: .5s;
   position: inherit;
-  top: 1.125rem;
 }
 /* line 61, ../blocks/navigation.scss */
-.navigation__link:hover:before {
+.navigation__link:hover:after {
   opacity: 1;
 }
 
