@@ -621,13 +621,13 @@ li {
   border-radius: 50%;
   background-color: #fff;
 }
-/* line 33, ../blocks/navigation.scss */
+/* line 32, ../blocks/navigation.scss */
 .navigation__item:last-child:after {
   content: "";
   display: none;
 }
 
-/* line 39, ../blocks/navigation.scss */
+/* line 38, ../blocks/navigation.scss */
 .navigation__link {
   display: block;
   text-decoration: none;
@@ -638,7 +638,7 @@ li {
   transition: .5s;
   position: relative;
 }
-/* line 49, ../blocks/navigation.scss */
+/* line 48, ../blocks/navigation.scss */
 .navigation__link:after {
   content: "";
   display: block;
@@ -649,7 +649,7 @@ li {
   transition: .5s;
   position: inherit;
 }
-/* line 61, ../blocks/navigation.scss */
+/* line 59, ../blocks/navigation.scss */
 .navigation__link:hover:after {
   opacity: 1;
 }
@@ -1060,6 +1060,183 @@ li {
     letter-spacing: 0.0625rem;
     line-height: 1.75rem;
   }
+}
+
+/* line 1, ../blocks/slider.scss */
+.slider {
+  background-image: linear-gradient(0deg, #f9b33b 0%, #ea8c38 48%, #f9b33b 74%);
+}
+
+/* line 5, ../blocks/slider.scss */
+.container_slider {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 10, ../blocks/slider.scss */
+.slider__left, .slider__right {
+  width: 2%;
+}
+
+/* line 14, ../blocks/slider.scss */
+.slider__left {
+  margin-left: 4%;
+}
+
+/* line 18, ../blocks/slider.scss */
+.slider__right {
+  margin-right: 4%;
+}
+
+/* line 22, ../blocks/slider.scss */
+.slider__contant {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 29, ../blocks/slider.scss */
+.slider__pic {
+  width: 48%;
+  position: relative;
+}
+
+/* line 34, ../blocks/slider.scss */
+.slider__ingridients, .slider__ccal {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 0.3125rem;
+  background-color: #f08c33;
+  position: absolute;
+  bottom: 95%;
+  left: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 48, ../blocks/slider.scss */
+.slider__ingridients-svg {
+  fill: #fff;
+  width: 2.875rem;
+  height: 2.75rem;
+}
+
+/* line 54, ../blocks/slider.scss */
+.slider__ingridients-title {
+  font-size: 0.875rem;
+  color: #fff;
+  font-family: "Gagalin";
+  text-transform: uppercase;
+  margin-top: 0.5625rem;
+}
+
+/* line 62, ../blocks/slider.scss */
+.slider__ccal {
+  background-color: transparent;
+  top: 97%;
+  left: 0rem;
+}
+
+/* line 68, ../blocks/slider.scss */
+.slider__ccal-svg {
+  width: 3.75rem;
+  height: 3.75rem;
+  fill: #fff;
+  opacity: .5;
+}
+
+/* line 75, ../blocks/slider.scss */
+.slider__ccal-title, .slider__ccal-number {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Gagalin";
+  color: #fff;
+  opacity: .5;
+}
+
+/* line 83, ../blocks/slider.scss */
+.slider__ccal-number {
+  font-size: 1.25rem;
+  top: 2.5rem;
+  left: 1.875rem;
+}
+
+/* line 89, ../blocks/slider.scss */
+.slider__ccal-title {
+  font-size: 14px;
+  top: 4.875rem;
+  left: 2rem;
+  text-transform: uppercase;
+}
+
+/* line 96, ../blocks/slider.scss */
+.slider__image {
+  display: block;
+  object-fit: cover;
+  width: 105%;
+}
+
+/* line 102, ../blocks/slider.scss */
+.slider__info {
+  width: 49%;
+  height: 41vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 111, ../blocks/slider.scss */
+.slider__title {
+  font-size: 72px;
+  line-height: 65px;
+  color: #fff;
+  font-family: "Gagalin";
+  padding-bottom: 10%;
+}
+
+/* line 119, ../blocks/slider.scss */
+.slider__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 125, ../blocks/slider.scss */
+.slider__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  margin-bottom: 3%;
+}
+
+/* line 134, ../blocks/slider.scss */
+.slider__price {
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 139, ../blocks/slider.scss */
+.slider__rub-num, .slider__rub-let {
+  font-size: 72px;
+  letter-spacing: -2px;
+  color: #e35028;
+  font-family: "Gagalin";
+}
+
+/* line 146, ../blocks/slider.scss */
+.slider__rub-num {
+  margin-right: 2%;
+}
+
+/* line 150, ../blocks/slider.scss */
+.slider__rub-let {
+  font-size: 32px;
+  margin-right: 6%;
 }
 
 /* line 1, ../blocks/feedback.scss */
