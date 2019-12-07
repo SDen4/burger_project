@@ -11,7 +11,7 @@
     width: 2%;
 
     @include tablet {
-        margin-bottom: 7.5%;
+        margin-bottom: 0.5%;
     }
 
     @include phone {
@@ -66,6 +66,7 @@
     @include tablet {
         width: 75%;
         margin-bottom: 2%;
+        margin-top: 8%;
     }
 
     @include phone {
@@ -92,7 +93,7 @@
         width: 6rem;
         height: 6rem;
         bottom: 95%;
-        left: 15px;
+        left: rem(15px);
     }
 
     @include phone {
@@ -125,7 +126,7 @@
 .slider__ccal {
     background-color: transparent;
     top: 97%;
-    left: rem(0px);
+    left: 0;
 
     @include tablet {
         top: -27%;
@@ -170,7 +171,7 @@
 }
 
 .slider__ccal-title{
-    font-size: 14px;
+    font-size: rem(14px);
     top: rem(78px);
     left: rem(32px);
     text-transform: uppercase;
@@ -188,13 +189,13 @@
 
 .slider__info {
     width: 49%;
-    // height: 41vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
     @include tablet {
         width: 87%;
+        align-items: center;
     }
 
     @include phone {
@@ -205,15 +206,19 @@
 }
 
 .slider__title {
-    font-size: 72px;
-    line-height: 65px;
+    font-size: rem(72px);
+    line-height: rem(65px);
     color: $white;
     font-family: "Gagalin";
     padding-bottom: 10%;
 
     @include tablet {
+        font-size: rem(78px);
+        line-height: rem(69px);
+        width: 70%;
         text-align: center;
         padding-bottom: 8%;
+        letter-spacing: -1px;
     }
 
     @include phone {
