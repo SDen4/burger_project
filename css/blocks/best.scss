@@ -3,6 +3,14 @@
     align-items: center;
     background-size: cover;
     color: $black;
+
+    @include tablet {
+        background: url('../../img/bg-best-768px.jpg') center center no-repeat;
+    }
+
+    @include phone {
+        background: url('../../img/bg-best-480px.jpg') center center no-repeat;
+    }
 }
 
 .best__frame {

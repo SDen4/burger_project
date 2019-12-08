@@ -27,7 +27,6 @@
         height: rem(3px);
         border-radius: 50%;
         background-color: $white;
-        // margin: 0 rem(8px) 0 rem(17px);
     };
 
     &:last-child:after{
@@ -55,7 +54,6 @@
         background-color: $white;
         transition: .5s;
         position: inherit;
-        // top: rem(18px);
     };
 
     &:hover:after {
