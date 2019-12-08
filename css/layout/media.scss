@@ -2,6 +2,12 @@
     @return $px / 16px + 0rem;
 }
 
+@mixin additional {
+    @media screen and (max-width: 825px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (max-width: 768px) {
         @content;
@@ -10,12 +16,6 @@
 
 @mixin phone {
     @media screen and (max-width: 480px) {
-        @content;
-    }
-}
-
-@mixin additional {
-    @media screen and (max-width: 825px) {
         @content;
     }
 }
