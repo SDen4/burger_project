@@ -82,7 +82,7 @@
     border-radius: rem(5px);
     background-color: $orange;
     position: absolute;
-    bottom: 95%;
+    bottom: 97%;
     left: 3%;
     display: flex;
     flex-direction: column;
@@ -93,14 +93,15 @@
         width: 6rem;
         height: 6rem;
         bottom: 95%;
-        left: rem(15px);
+        left: 3%;
     }
 
     @include phone {
         width: 6.428rem;
         height: 6.428rem;
-        bottom: 111%;
-        left: -3.2rem;
+        bottom: unset;
+        top: -44%;
+        left: -12.5%;
     }
 }
 
@@ -135,7 +136,8 @@
 
     @include phone {
         top: -52%;
-        left: 91%;
+        left: unset;
+        right: -14%;
     }
 }
 

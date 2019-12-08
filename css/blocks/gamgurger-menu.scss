@@ -64,8 +64,11 @@
     opacity: .9;
     z-index: 10;
     align-items: center;
+    display: none; //!!!Полноэкранное меню!!!
+}
+
+.gamburger-menu__content_active {
     display: flex; //!!!Показать полноэкранное меню!!!
-    display: none; //!!!Показать gолноэкранное меню!!!
 }
 
 .navigation_gamburger {
