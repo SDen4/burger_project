@@ -1722,17 +1722,27 @@ li {
 }
 
 /* line 86, ../blocks/menu.scss */
+.accordeon-vert__item_active .accordeon-vert__subtitle {
+  color: #f9b43b;
+}
+
+/* line 90, ../blocks/menu.scss */
 .accordeon-vert__item_active .accordeon-vert__text {
   width: 90%;
   padding: 5%;
 }
 
-/* line 91, ../blocks/menu.scss */
-.accordeon-vert__subtitle, .accordeon-vert__text {
-  background-color: rgba(76, 78, 80, 0.8);
+/* line 95, ../blocks/menu.scss */
+.accordeon-vert__subtitle {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 95, ../blocks/menu.scss */
+/* line 99, ../blocks/menu.scss */
+.accordeon-vert__text {
+  background-color: rgba(76, 78, 80, 0.9);
+}
+
+/* line 103, ../blocks/menu.scss */
 .accordeon-vert__subtitle {
   width: 100%;
   min-width: 5rem;
@@ -1748,25 +1758,25 @@ li {
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 95, ../blocks/menu.scss */
+  /* line 103, ../blocks/menu.scss */
   .accordeon-vert__subtitle {
     letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 95, ../blocks/menu.scss */
+  /* line 103, ../blocks/menu.scss */
   .accordeon-vert__subtitle {
     padding-top: 4.4rem;
     letter-spacing: 2.5px;
   }
 }
 
-/* line 119, ../blocks/menu.scss */
+/* line 127, ../blocks/menu.scss */
 .accordeon-vert__item_active .accordeon-vert__subtitle {
   width: 10%;
 }
 
-/* line 123, ../blocks/menu.scss */
+/* line 131, ../blocks/menu.scss */
 .accordeon-vert__text {
   width: 0;
   overflow: hidden;

@@ -83,13 +83,21 @@
     width: 50%;
 }
 
+.accordeon-vert__item_active .accordeon-vert__subtitle {
+    color: $yellow;
+}
+
 .accordeon-vert__item_active .accordeon-vert__text {
     width: 90%;
     padding: 5%;
 }
 
-.accordeon-vert__subtitle, .accordeon-vert__text {
-    background-color: rgba(76, 78, 80, .8);
+.accordeon-vert__subtitle {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.accordeon-vert__text {
+    background-color: rgba(76, 78, 80, .9);
 }
 
 .accordeon-vert__subtitle {
