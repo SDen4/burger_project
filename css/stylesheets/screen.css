@@ -1667,7 +1667,7 @@ li {
   margin-left: auto;
 }
 
-/* line 42, ../blocks/menu.scss */
+/* line 41, ../blocks/menu.scss */
 .accordeon-vert {
   display: flex;
   height: 100vh;
@@ -1676,7 +1676,7 @@ li {
   right: 0;
 }
 
-/* line 51, ../blocks/menu.scss */
+/* line 49, ../blocks/menu.scss */
 .accordeon-vert__list {
   display: flex;
   align-content: flex-end;
@@ -1684,7 +1684,7 @@ li {
   width: 100%;
 }
 
-/* line 60, ../blocks/menu.scss */
+/* line 56, ../blocks/menu.scss */
 .accordeon-vert__item {
   display: flex;
   flex-direction: row;
@@ -1692,47 +1692,47 @@ li {
   width: 5rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 60, ../blocks/menu.scss */
+  /* line 56, ../blocks/menu.scss */
   .accordeon-vert__item {
     width: 5.7rem;
   }
 }
 
-/* line 72, ../blocks/menu.scss */
+/* line 67, ../blocks/menu.scss */
 .accordeon-vert__item_meet {
   background: url("../../img/accordeon-vert/for-meet-lovers.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 77, ../blocks/menu.scss */
+/* line 72, ../blocks/menu.scss */
 .accordeon-vert__item_vegan {
   background: url("../../img/accordeon-vert/vegan.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 82, ../blocks/menu.scss */
+/* line 77, ../blocks/menu.scss */
 .accordeon-vert__item_diet {
   background: url("../../img/accordeon-vert/diet.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 87, ../blocks/menu.scss */
+/* line 82, ../blocks/menu.scss */
 .accordeon-vert__item_active {
   width: 50%;
 }
 
-/* line 91, ../blocks/menu.scss */
+/* line 86, ../blocks/menu.scss */
 .accordeon-vert__item_active .accordeon-vert__text {
   width: 90%;
   padding: 5%;
 }
 
-/* line 96, ../blocks/menu.scss */
+/* line 91, ../blocks/menu.scss */
 .accordeon-vert__subtitle, .accordeon-vert__text {
   background-color: rgba(76, 78, 80, 0.8);
 }
 
-/* line 100, ../blocks/menu.scss */
+/* line 95, ../blocks/menu.scss */
 .accordeon-vert__subtitle {
   width: 100%;
   min-width: 5rem;
@@ -1748,25 +1748,25 @@ li {
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 100, ../blocks/menu.scss */
+  /* line 95, ../blocks/menu.scss */
   .accordeon-vert__subtitle {
     letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 100, ../blocks/menu.scss */
+  /* line 95, ../blocks/menu.scss */
   .accordeon-vert__subtitle {
     padding-top: 4.4rem;
     letter-spacing: 2.5px;
   }
 }
 
-/* line 124, ../blocks/menu.scss */
+/* line 119, ../blocks/menu.scss */
 .accordeon-vert__item_active .accordeon-vert__subtitle {
   width: 10%;
 }
 
-/* line 128, ../blocks/menu.scss */
+/* line 123, ../blocks/menu.scss */
 .accordeon-vert__text {
   width: 0;
   overflow: hidden;
