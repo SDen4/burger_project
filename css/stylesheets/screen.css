@@ -1243,20 +1243,66 @@ li {
 }
 
 /* line 127, ../blocks/slider.scss */
+.slider__ingridients-structure {
+  width: 16.875rem;
+  border-radius: 5px;
+  display: none;
+  background-color: #fff;
+  opacity: .9;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+/* line 139, ../blocks/slider.scss */
+.slider__ingridients-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2% 0;
+}
+
+/* line 147, ../blocks/slider.scss */
+.slider__ingridients-type, .slider__ingridients-weight {
+  font-size: 14px;
+  color: #2f3234;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+/* line 154, ../blocks/slider.scss */
+.slider__ingridients-type {
+  width: 30%;
+}
+
+/* line 158, ../blocks/slider.scss */
+.slider__ingridients-weight {
+  width: 15%;
+  text-align: end;
+}
+
+/* line 163, ../blocks/slider.scss */
+.slider__ingridients:hover .slider__ingridients-structure {
+  display: flex;
+}
+
+/* line 167, ../blocks/slider.scss */
 .slider__ccal {
   background-color: transparent;
   top: 97%;
   left: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 127, ../blocks/slider.scss */
+  /* line 167, ../blocks/slider.scss */
   .slider__ccal {
     top: -27%;
     left: 83%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 127, ../blocks/slider.scss */
+  /* line 167, ../blocks/slider.scss */
   .slider__ccal {
     top: -52%;
     left: unset;
@@ -1264,7 +1310,7 @@ li {
   }
 }
 
-/* line 144, ../blocks/slider.scss */
+/* line 184, ../blocks/slider.scss */
 .slider__ccal-svg {
   width: 3.75rem;
   height: 3.75rem;
@@ -1272,14 +1318,14 @@ li {
   opacity: .5;
 }
 @media screen and (max-width: 480px) {
-  /* line 144, ../blocks/slider.scss */
+  /* line 184, ../blocks/slider.scss */
   .slider__ccal-svg {
     width: 4.285rem;
     height: 4.285rem;
   }
 }
 
-/* line 156, ../blocks/slider.scss */
+/* line 196, ../blocks/slider.scss */
 .slider__ccal-title, .slider__ccal-number {
   position: absolute;
   text-transform: uppercase;
@@ -1288,21 +1334,21 @@ li {
   opacity: .5;
 }
 
-/* line 164, ../blocks/slider.scss */
+/* line 204, ../blocks/slider.scss */
 .slider__ccal-number {
   font-size: 1.25rem;
   top: 2.5rem;
   left: 1.875rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 164, ../blocks/slider.scss */
+  /* line 204, ../blocks/slider.scss */
   .slider__ccal-number {
     top: 2.857rem;
     left: 2.142rem;
   }
 }
 
-/* line 175, ../blocks/slider.scss */
+/* line 215, ../blocks/slider.scss */
 .slider__ccal-title {
   font-size: 0.875rem;
   top: 4.875rem;
@@ -1310,20 +1356,20 @@ li {
   text-transform: uppercase;
 }
 @media screen and (max-width: 480px) {
-  /* line 175, ../blocks/slider.scss */
+  /* line 215, ../blocks/slider.scss */
   .slider__ccal-title {
     top: 5.375rem;
   }
 }
 
-/* line 186, ../blocks/slider.scss */
+/* line 226, ../blocks/slider.scss */
 .slider__image {
   display: block;
   object-fit: cover;
   width: 105%;
 }
 
-/* line 192, ../blocks/slider.scss */
+/* line 232, ../blocks/slider.scss */
 .slider__info {
   width: 49%;
   display: flex;
@@ -1331,21 +1377,21 @@ li {
   justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
-  /* line 192, ../blocks/slider.scss */
+  /* line 232, ../blocks/slider.scss */
   .slider__info {
     width: 87%;
     align-items: center;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 192, ../blocks/slider.scss */
+  /* line 232, ../blocks/slider.scss */
   .slider__info {
     width: 100%;
     align-items: center;
   }
 }
 
-/* line 210, ../blocks/slider.scss */
+/* line 250, ../blocks/slider.scss */
 .slider__title {
   font-size: 4.5rem;
   line-height: 4.0625rem;
@@ -1354,7 +1400,7 @@ li {
   padding-bottom: 10%;
 }
 @media screen and (max-width: 768px) {
-  /* line 210, ../blocks/slider.scss */
+  /* line 250, ../blocks/slider.scss */
   .slider__title {
     font-size: 4.875rem;
     line-height: 4.3125rem;
@@ -1365,7 +1411,7 @@ li {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 210, ../blocks/slider.scss */
+  /* line 250, ../blocks/slider.scss */
   .slider__title {
     font-size: 3.5625rem;
     line-height: 3.6875rem;
@@ -1374,20 +1420,20 @@ li {
   }
 }
 
-/* line 234, ../blocks/slider.scss */
+/* line 274, ../blocks/slider.scss */
 .slider__descr {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
-  /* line 234, ../blocks/slider.scss */
+  /* line 274, ../blocks/slider.scss */
   .slider__descr {
     text-align: center;
   }
 }
 
-/* line 244, ../blocks/slider.scss */
+/* line 284, ../blocks/slider.scss */
 .slider__text {
   font-size: 14px;
   line-height: 24px;
@@ -1397,31 +1443,31 @@ li {
   margin-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
-  /* line 244, ../blocks/slider.scss */
+  /* line 284, ../blocks/slider.scss */
   .slider__text {
     margin-bottom: 4.5%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 244, ../blocks/slider.scss */
+  /* line 284, ../blocks/slider.scss */
   .slider__text {
     margin-bottom: 2%;
   }
 }
 
-/* line 261, ../blocks/slider.scss */
+/* line 301, ../blocks/slider.scss */
 .slider__price {
   display: flex;
   align-items: baseline;
 }
 @media screen and (max-width: 768px) {
-  /* line 261, ../blocks/slider.scss */
+  /* line 301, ../blocks/slider.scss */
   .slider__price {
     justify-content: center;
   }
 }
 
-/* line 270, ../blocks/slider.scss */
+/* line 310, ../blocks/slider.scss */
 .slider__rub-num, .slider__rub-let {
   font-size: 72px;
   letter-spacing: -2px;
@@ -1429,18 +1475,18 @@ li {
   font-family: "Gagalin";
 }
 @media screen and (max-width: 480px) {
-  /* line 270, ../blocks/slider.scss */
+  /* line 310, ../blocks/slider.scss */
   .slider__rub-num, .slider__rub-let {
     font-size: 3.5625rem;
   }
 }
 
-/* line 281, ../blocks/slider.scss */
+/* line 321, ../blocks/slider.scss */
 .slider__rub-num {
   margin-right: 2%;
 }
 
-/* line 285, ../blocks/slider.scss */
+/* line 325, ../blocks/slider.scss */
 .slider__rub-let {
   font-size: 32px;
   margin-right: 6%;
