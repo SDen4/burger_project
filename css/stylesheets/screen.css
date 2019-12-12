@@ -1663,45 +1663,10 @@ li {
   transition: .3s;
   background-color: #2f3234;
 }
-@media screen and (max-width: 480px) {
-  /* line 106, ../blocks/feedback.scss */
-  .feedback__button {
-    display: none;
-  }
-}
 
-/* line 114, ../blocks/feedback.scss */
+/* line 111, ../blocks/feedback.scss */
 .feedback__button:hover {
   background-color: transparent;
-}
-
-/* line 118, ../blocks/feedback.scss */
-.feedback__button_mobile {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  /* line 118, ../blocks/feedback.scss */
-  .feedback__button_mobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 118, ../blocks/feedback.scss */
-  .feedback__button_mobile {
-    display: inline-block;
-    border: 0;
-    padding: 0.1875rem .9rem;
-    border-radius: 0.3125rem;
-    background-color: #2f3234;
-    color: #fff;
-    cursor: pointer;
-    font-size: 0.875rem;
-    letter-spacing: 0.5px;
-    line-height: 1.875rem;
-    font-family: "Ubuntu";
-    font-weight: 500;
-    text-transform: uppercase;
-  }
 }
 
 /* line 1, ../blocks/menu.scss */

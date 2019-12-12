@@ -106,35 +106,8 @@
 .feedback__button {
     transition: .3s;
     background-color: $black;
-    @include phone {
-        display: none;
-    };
 }
 
 .feedback__button:hover {
     background-color: transparent;
-}
-
-.feedback__button_mobile {
-    display: none;
-
-    @include tablet {
-        display: none;
-    };
-
-    @include phone {
-        display: inline-block;
-        border: 0;
-        padding: 0.1875rem .9rem;
-        border-radius: rem(5px);
-        background-color: $black;
-        color: $white;
-        cursor: pointer;
-        font-size: rem(14px);
-        letter-spacing: 0.5px;
-        line-height: rem(30px);
-        font-family: "Ubuntu";
-        font-weight: 500;
-        text-transform: uppercase;
-    };
 }
