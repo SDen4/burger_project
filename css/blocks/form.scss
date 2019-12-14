@@ -1,0 +1,243 @@
+
+.form {
+    display: flex;
+    width: 100%;
+
+    @include tablet {
+        flex-direction: column;
+        width: 67%;
+    };
+
+    @include phone {
+        width: 100%;
+    };
+}
+
+.form__left, .form__right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 2%;
+
+    &:last-child {
+        margin-right: 0;
+    };
+
+    @include tablet {
+        margin-right: 0;
+        width: 100%;
+    };
+}
+
+.form__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3.5%;
+
+    @include tablet {
+        margin-bottom: 4.5%;
+    };
+
+    @include phone {
+        margin-bottom: 4%;
+    };
+}
+
+.form__content_left {
+    justify-content: flex-start;
+    margin-bottom: 6.5%;
+
+    &:last-child {
+
+        @include phone {
+            margin-bottom: 0;
+            margin-top: 0;
+        };
+    };
+
+    @include phone {
+        justify-content: center;
+        margin-top: 5%;
+    };
+}
+
+.form__content_down {
+    margin-bottom: 4%;
+
+    @include tablet {
+        margin-bottom: 9%;
+    };
+
+    @include phone {
+        justify-content: center;
+    };
+}
+
+.form__data {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 4%;
+
+    &:last-child {
+        margin-right: 0;
+    };
+}
+
+.form__subtitle {
+    font-size: rem(14px);
+    color: $white;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    margin-bottom: rem(7px);
+
+    @include phone {
+        font-size: rem(16px);
+    };
+}
+
+.form__clear{
+    @include phone {
+        display: none;
+    };
+}
+
+.form__data_phone {
+    @include phone {
+        margin-right: 0;
+    };
+};
+
+.form__input {
+    width: 100%;
+    height: rem(35px);
+    border-radius: rem(5px);
+    background-color: $white;
+    border: 2px solid transparent/*$lite-gray*/;
+    padding: rem(6px) rem(6px);
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $black;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    outline: none;
+
+    @include phone {
+        height: rem(40px);
+    };
+}
+
+.form__input:focus {
+    border: 2px solid $yellow;
+}
+
+.form__input_comment {
+    height: rem(109px);
+
+    @include phone {
+        height: 7.8125rem;
+    };
+}
+
+.form__payment, .form__callback {
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    };
+}
+
+.form__radio-input {
+    display: none;
+    &:checked ~.form__subtitle_radio:after {
+        display: block;
+    };
+}
+
+.form__subtitle_radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: rem(26px);
+    margin-bottom: 0;
+    margin-right: rem(20px);
+
+    &:before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+    };
+
+    &:after {
+        content: "";
+        display: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $red_new;
+        position: absolute;
+        left: 4px;
+    };
+}
+
+.form__checkbox-input {
+    display: none;
+    &:checked ~.form__subtitle_checkbox:after {
+        display: block;
+    };
+}
+
+.form__subtitle_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: rem(26px);
+    margin-bottom: 0;
+    margin-right: rem(24px);
+
+    &:before {
+        content: "";
+        display: block;
+        width: rem(16px);
+        height: rem(16px);
+        background-color: $white;
+        position: absolute;
+        left: 0;
+    };
+
+    &:after {
+        content: "";
+        width: rem(16px);
+        height: rem(16px);
+        display: none;
+        background: url("../../img/icons/checkbox.png") center center no-repeat;
+        position: absolute;
+        left: 0;
+    };
+}
+
+.form__error {
+    width: 90%;
+    height: 25%;
+    color: $red;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    font-weight: 300;
+
+}
+
+.form__error_textarea {
+    top: 0%;
+    left: 25%;
+}

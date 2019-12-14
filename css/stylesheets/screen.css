@@ -667,13 +667,14 @@ li {
   border-radius: 0.3125rem;
   background-color: #e45028;
   color: #fff;
-  cursor: pointer;
   font-size: 0.8125rem;
   line-height: 1.875rem;
   font-family: "Ubuntu";
   font-weight: 500;
   text-transform: uppercase;
   outline: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   /* line 1, ../blocks/order-button.scss */
@@ -683,13 +684,13 @@ li {
   }
 }
 
-/* line 21, ../blocks/order-button.scss */
+/* line 22, ../blocks/order-button.scss */
 .button_clear {
   margin-left: 2%;
   background-color: transparent;
   transition: .5s;
 }
-/* line 26, ../blocks/order-button.scss */
+/* line 27, ../blocks/order-button.scss */
 .button_clear:hover {
   background-color: #e45028;
 }
@@ -2274,9 +2275,10 @@ li {
   background: url("../../img/bg-delivery2.png") center center no-repeat, url("../../img/bg-delivery.jpg") center center no-repeat;
   align-items: center;
   background-size: cover;
+  position: relative;
 }
 
-/* line 8, ../blocks/delivery.scss */
+/* line 9, ../blocks/delivery.scss */
 .delivery__container {
   width: 85%;
   display: flex;
@@ -2284,19 +2286,19 @@ li {
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 8, ../blocks/delivery.scss */
+  /* line 9, ../blocks/delivery.scss */
   .delivery__container {
     width: 95%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 8, ../blocks/delivery.scss */
+  /* line 9, ../blocks/delivery.scss */
   .delivery__container {
     width: 98%;
   }
 }
 
-/* line 23, ../blocks/delivery.scss */
+/* line 24, ../blocks/delivery.scss */
 .delivery__title {
   font-size: 4.5rem;
   color: #f9b43b;
@@ -2305,14 +2307,14 @@ li {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 23, ../blocks/delivery.scss */
+  /* line 24, ../blocks/delivery.scss */
   .delivery__title {
     letter-spacing: 0.125rem;
     padding-bottom: 7.5%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 23, ../blocks/delivery.scss */
+  /* line 24, ../blocks/delivery.scss */
   .delivery__title {
     font-size: 3.5rem;
     letter-spacing: 0.0625rem;
@@ -2321,45 +2323,45 @@ li {
   }
 }
 
-/* line 43, ../blocks/delivery.scss */
+/* line 2, ../blocks/form.scss */
 .form {
   display: flex;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  /* line 43, ../blocks/delivery.scss */
+  /* line 2, ../blocks/form.scss */
   .form {
     flex-direction: column;
     width: 67%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 43, ../blocks/delivery.scss */
+  /* line 2, ../blocks/form.scss */
   .form {
     width: 100%;
   }
 }
 
-/* line 57, ../blocks/delivery.scss */
+/* line 16, ../blocks/form.scss */
 .form__left, .form__right {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-right: 2%;
 }
-/* line 63, ../blocks/delivery.scss */
+/* line 22, ../blocks/form.scss */
 .form__left:last-child, .form__right:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 57, ../blocks/delivery.scss */
+  /* line 16, ../blocks/form.scss */
   .form__left, .form__right {
     margin-right: 0;
     width: 100%;
   }
 }
 
-/* line 73, ../blocks/delivery.scss */
+/* line 32, ../blocks/form.scss */
 .form__content {
   display: flex;
   justify-content: space-between;
@@ -2367,68 +2369,69 @@ li {
   margin-bottom: 3.5%;
 }
 @media screen and (max-width: 768px) {
-  /* line 73, ../blocks/delivery.scss */
+  /* line 32, ../blocks/form.scss */
   .form__content {
     margin-bottom: 4.5%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 73, ../blocks/delivery.scss */
+  /* line 32, ../blocks/form.scss */
   .form__content {
     margin-bottom: 4%;
   }
 }
 
-/* line 88, ../blocks/delivery.scss */
+/* line 47, ../blocks/form.scss */
 .form__content_left {
   justify-content: flex-start;
   margin-bottom: 6.5%;
 }
 @media screen and (max-width: 480px) {
-  /* line 92, ../blocks/delivery.scss */
+  /* line 51, ../blocks/form.scss */
   .form__content_left:last-child {
     margin-bottom: 0;
     margin-top: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 88, ../blocks/delivery.scss */
+  /* line 47, ../blocks/form.scss */
   .form__content_left {
     justify-content: center;
     margin-top: 5%;
   }
 }
 
-/* line 106, ../blocks/delivery.scss */
+/* line 65, ../blocks/form.scss */
 .form__content_down {
   margin-bottom: 4%;
 }
 @media screen and (max-width: 768px) {
-  /* line 106, ../blocks/delivery.scss */
+  /* line 65, ../blocks/form.scss */
   .form__content_down {
     margin-bottom: 9%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 106, ../blocks/delivery.scss */
+  /* line 65, ../blocks/form.scss */
   .form__content_down {
     justify-content: center;
   }
 }
 
-/* line 118, ../blocks/delivery.scss */
+/* line 77, ../blocks/form.scss */
 .form__data {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-right: 4%;
 }
-/* line 124, ../blocks/delivery.scss */
+/* line 84, ../blocks/form.scss */
 .form__data:last-child {
   margin-right: 0;
 }
 
-/* line 129, ../blocks/delivery.scss */
+/* line 89, ../blocks/form.scss */
 .form__subtitle {
   font-size: 0.875rem;
   color: #fff;
@@ -2437,27 +2440,27 @@ li {
   margin-bottom: 0.4375rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 129, ../blocks/delivery.scss */
+  /* line 89, ../blocks/form.scss */
   .form__subtitle {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 141, ../blocks/delivery.scss */
+  /* line 101, ../blocks/form.scss */
   .form__clear {
     display: none;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 147, ../blocks/delivery.scss */
+  /* line 107, ../blocks/form.scss */
   .form__data_phone {
     margin-right: 0;
   }
 }
 
-/* line 154, ../blocks/delivery.scss */
+/* line 113, ../blocks/form.scss */
 .form__input {
   width: 100%;
   height: 2.1875rem;
@@ -2473,47 +2476,47 @@ li {
   outline: none;
 }
 @media screen and (max-width: 480px) {
-  /* line 154, ../blocks/delivery.scss */
+  /* line 113, ../blocks/form.scss */
   .form__input {
     height: 2.5rem;
   }
 }
 
-/* line 173, ../blocks/delivery.scss */
+/* line 132, ../blocks/form.scss */
 .form__input:focus {
   border: 2px solid #f9b43b;
 }
 
-/* line 177, ../blocks/delivery.scss */
+/* line 136, ../blocks/form.scss */
 .form__input_comment {
   height: 6.8125rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 177, ../blocks/delivery.scss */
+  /* line 136, ../blocks/form.scss */
   .form__input_comment {
     height: 7.8125rem;
   }
 }
 
-/* line 185, ../blocks/delivery.scss */
+/* line 144, ../blocks/form.scss */
 .form__payment, .form__callback {
   position: relative;
 }
-/* line 188, ../blocks/delivery.scss */
+/* line 147, ../blocks/form.scss */
 .form__payment:hover, .form__callback:hover {
   cursor: pointer;
 }
 
-/* line 193, ../blocks/delivery.scss */
+/* line 152, ../blocks/form.scss */
 .form__radio-input {
   display: none;
 }
-/* line 195, ../blocks/delivery.scss */
+/* line 154, ../blocks/form.scss */
 .form__radio-input:checked ~ .form__subtitle_radio:after {
   display: block;
 }
 
-/* line 200, ../blocks/delivery.scss */
+/* line 159, ../blocks/form.scss */
 .form__subtitle_radio {
   display: flex;
   align-items: center;
@@ -2522,7 +2525,7 @@ li {
   margin-bottom: 0;
   margin-right: 1.25rem;
 }
-/* line 208, ../blocks/delivery.scss */
+/* line 167, ../blocks/form.scss */
 .form__subtitle_radio:before {
   content: "";
   display: block;
@@ -2533,7 +2536,7 @@ li {
   position: absolute;
   left: 0;
 }
-/* line 219, ../blocks/delivery.scss */
+/* line 178, ../blocks/form.scss */
 .form__subtitle_radio:after {
   content: "";
   display: none;
@@ -2545,16 +2548,16 @@ li {
   left: 4px;
 }
 
-/* line 231, ../blocks/delivery.scss */
+/* line 190, ../blocks/form.scss */
 .form__checkbox-input {
   display: none;
 }
-/* line 233, ../blocks/delivery.scss */
+/* line 192, ../blocks/form.scss */
 .form__checkbox-input:checked ~ .form__subtitle_checkbox:after {
   display: block;
 }
 
-/* line 238, ../blocks/delivery.scss */
+/* line 197, ../blocks/form.scss */
 .form__subtitle_checkbox {
   display: flex;
   align-items: center;
@@ -2563,7 +2566,7 @@ li {
   margin-bottom: 0;
   margin-right: 1.5rem;
 }
-/* line 246, ../blocks/delivery.scss */
+/* line 205, ../blocks/form.scss */
 .form__subtitle_checkbox:before {
   content: "";
   display: block;
@@ -2573,7 +2576,7 @@ li {
   position: absolute;
   left: 0;
 }
-/* line 256, ../blocks/delivery.scss */
+/* line 215, ../blocks/form.scss */
 .form__subtitle_checkbox:after {
   content: "";
   width: 1rem;
@@ -2582,6 +2585,25 @@ li {
   background: url("../../img/icons/checkbox.png") center center no-repeat;
   position: absolute;
   left: 0;
+}
+
+/* line 226, ../blocks/form.scss */
+.form__error {
+  width: 90%;
+  height: 25%;
+  color: #e45028;
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  font-size: 0.875rem;
+  font-family: "Ubuntu";
+  font-weight: 300;
+}
+
+/* line 240, ../blocks/form.scss */
+.form__error_textarea {
+  top: 0%;
+  left: 25%;
 }
 
 /* line 1, ../blocks/gamgurger-menu.scss */
@@ -2702,4 +2724,41 @@ li {
   position: absolute;
   top: 0.75rem;
   left: 1rem;
+}
+
+/* line 1, ../blocks/modal.scss */
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 50, 52, 0.92);
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 14, ../blocks/modal.scss */
+.modal__content {
+  width: 12.1875rem;
+  height: 6.5625rem;
+  border-radius: 5px;
+  background-color: #fff;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 26, ../blocks/modal.scss */
+.modal__text {
+  text-align: center;
+  padding-bottom: 9%;
+  font-size: 14px;
+  color: #2f3234;
+  font-family: "Ubuntu";
+  font-weight: 300;
 }
