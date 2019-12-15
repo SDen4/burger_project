@@ -1169,7 +1169,7 @@ li {
 .slider__items {
   display: flex;
   position: relative;
-  transition: 0.3s;
+  transition: .2s;
 }
 @media screen and (max-width: 768px) {
   /* line 63, ../blocks/slider.scss */
@@ -1252,7 +1252,7 @@ li {
     bottom: unset;
     top: unset;
     bottom: 95%;
-    left: -6.5%;
+    left: -3.5%;
   }
 }
 

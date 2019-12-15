@@ -63,7 +63,7 @@
 .slider__items {
     display: flex;
     position: relative;
-    transition: 0.3s;
+    transition: .2s;
 
     @include tablet {
         align-items: center;
@@ -129,7 +129,7 @@
         bottom: unset;
         top: unset;
         bottom: 95%;
-        left: -6.5%;
+        left: -3.5%;
     }
 }
 
