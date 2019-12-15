@@ -44,8 +44,35 @@
     }
 }
 
+.slider__watch-zone {
+    display: flex;
+    width: 81vw;
+    height: 135%;
+    overflow: hidden;
+
+    @include tablet {
+        height: 109%;
+        align-items: center;
+    }
+
+    @include phone {
+        width: 92vw;
+    }
+}
+
+.slider__items {
+    display: flex;
+    position: relative;
+    transition: 0.3s;
+
+    @include tablet {
+        align-items: center;
+    }
+}
+
 .slider__contant {
-    width: 90%;
+    width: 81vw;
+    max-width: rem(980px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +82,7 @@
     }
 
     @include phone {
-        width: 100%;;
+        width: 86vw;
     }
 }
 
@@ -100,8 +127,9 @@
         width: 6.428rem;
         height: 6.428rem;
         bottom: unset;
-        top: -44%;
-        left: -12.5%;
+        top: unset;
+        bottom: 95%;
+        left: -6.5%;
     }
 }
 
@@ -124,20 +152,62 @@
     margin-top: rem(9px);
 }
 
+.slider__ingridients-structure {
+    width: rem(270px);
+    border-radius: 5px;
+    display: none;
+    background-color: $white;
+    opacity: .9;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.slider__ingridients-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.slider__ingridients-type, .slider__ingridients-weight {
+    font-size: 14px;
+    color: $black;
+    font-family: "Ubuntu";
+    font-weight: 500;
+}
+
+.slider__ingridients-type {
+    width: 30%;
+}
+
+.slider__ingridients-weight {
+    width: 15%;
+    text-align: end;
+}
+
+.slider__ingridients:hover .slider__ingridients-structure {
+    display: flex;
+};
+
 .slider__ccal {
     background-color: transparent;
     top: 97%;
     left: 0;
 
     @include tablet {
-        top: -27%;
+        top: unset;
+        bottom: 95%;
         left: 83%;
     }
 
     @include phone {
-        top: -52%;
+        top: unset;
+        bottom: 95%;
         left: unset;
-        right: -14%;
+        right: -10%;
     }
 }
 
@@ -217,7 +287,7 @@
     @include tablet {
         font-size: rem(78px);
         line-height: rem(69px);
-        width: 70%;
+        width: 100%;
         text-align: center;
         padding-bottom: 8%;
         letter-spacing: -1px;
@@ -226,7 +296,7 @@
     @include phone {
         font-size: rem(57px);
         line-height: rem(59px);
-        width: 80%;
+        width: 100%;
         margin-bottom: -2%;
     }
 }
@@ -261,6 +331,7 @@
 .slider__price {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 
     @include tablet {
         justify-content: center;
@@ -268,7 +339,7 @@
 }
 
 .slider__rub-num, .slider__rub-let {
-    font-size: 72px;
+    font-size: rem(72px);
     letter-spacing: -2px;
     color: $red_new;
     font-family: "Gagalin";
@@ -283,6 +354,6 @@
 }
 
 .slider__rub-let {
-    font-size: 32px;
-    margin-right: 6%;
+    font-size: rem(32px);
+    margin-right: 5%;
 }

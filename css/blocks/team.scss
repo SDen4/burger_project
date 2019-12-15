@@ -96,9 +96,21 @@
     overflow: unset;
     margin-bottom: 3%;
 
+    animation: appear .6s;
+    animation-fill-mode: backwards;
+
     @include tablet {
         margin-bottom: 1%;
     };
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(rem(-110px));
+    }
+    100% {
+        transform: translateY(rem(0px));
+    }
 }
 
 .accordeon__username {
@@ -136,6 +148,11 @@
         justify-content: center;
         letter-spacing: 0px;
     };
+}
+
+.accordeon-hid {
+    display: block;
+    overflow: hidden;
 }
 
 .accordeon__content {
