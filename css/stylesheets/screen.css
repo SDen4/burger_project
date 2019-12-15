@@ -1536,9 +1536,10 @@ li {
 .feedback {
   align-items: center;
   color: #fff;
+  position: relative;
 }
 
-/* line 6, ../blocks/feedback.scss */
+/* line 7, ../blocks/feedback.scss */
 .feedback__list {
   display: flex;
   justify-content: center;
@@ -1547,29 +1548,29 @@ li {
   width: 100%;
 }
 
-/* line 14, ../blocks/feedback.scss */
+/* line 15, ../blocks/feedback.scss */
 .feedback__item {
   width: 25%;
   height: 50%;
   filter: grayscale(100%);
 }
-/* line 19, ../blocks/feedback.scss */
+/* line 20, ../blocks/feedback.scss */
 .feedback__item:nth-child(3n+2) .feedback__avatar {
   transform: scale(-1, 1);
 }
-/* line 23, ../blocks/feedback.scss */
+/* line 24, ../blocks/feedback.scss */
 .feedback__item:nth-child(2) .feedback__avatar {
   object-position: 10% 50%;
 }
 @media screen and (max-width: 768px) {
-  /* line 14, ../blocks/feedback.scss */
+  /* line 15, ../blocks/feedback.scss */
   .feedback__item {
     width: 50%;
     height: 25%;
   }
 }
 
-/* line 33, ../blocks/feedback.scss */
+/* line 34, ../blocks/feedback.scss */
 .feedback__avatar {
   width: 100%;
   height: 100%;
@@ -1577,7 +1578,7 @@ li {
   object-position: center;
 }
 
-/* line 40, ../blocks/feedback.scss */
+/* line 41, ../blocks/feedback.scss */
 .feedback__content {
   position: absolute;
   top: 0;
@@ -1590,14 +1591,14 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-  /* line 40, ../blocks/feedback.scss */
+  /* line 41, ../blocks/feedback.scss */
   .feedback__content {
     text-align: center;
     padding: 7% 13%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 40, ../blocks/feedback.scss */
+  /* line 41, ../blocks/feedback.scss */
   .feedback__content {
     display: flex;
     flex-direction: column;
@@ -1606,31 +1607,31 @@ li {
   }
 }
 
-/* line 64, ../blocks/feedback.scss */
+/* line 65, ../blocks/feedback.scss */
 .feedback__content:hover {
   opacity: 1;
 }
 
-/* line 68, ../blocks/feedback.scss */
+/* line 69, ../blocks/feedback.scss */
 .feedback__username {
   text-transform: uppercase;
 }
 
-/* line 72, ../blocks/feedback.scss */
+/* line 73, ../blocks/feedback.scss */
 .feedback__username {
   font-size: 0.875rem;
   line-height: 1.75rem;
   font-family: "Gagalin";
 }
 @media screen and (max-width: 768px) {
-  /* line 72, ../blocks/feedback.scss */
+  /* line 73, ../blocks/feedback.scss */
   .feedback__username {
     padding-bottom: 2%;
     line-height: 1.75rem;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 72, ../blocks/feedback.scss */
+  /* line 73, ../blocks/feedback.scss */
   .feedback__username {
     font-size: 1.75rem;
     line-height: 1.875rem;
@@ -1639,7 +1640,7 @@ li {
   }
 }
 
-/* line 90, ../blocks/feedback.scss */
+/* line 91, ../blocks/feedback.scss */
 .feedback__text {
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -1647,26 +1648,26 @@ li {
   font-weight: 300;
 }
 @media screen and (max-width: 768px) {
-  /* line 90, ../blocks/feedback.scss */
+  /* line 91, ../blocks/feedback.scss */
   .feedback__text {
     line-height: 1.5rem;
     margin-bottom: 6%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 90, ../blocks/feedback.scss */
+  /* line 91, ../blocks/feedback.scss */
   .feedback__text {
     display: none;
   }
 }
 
-/* line 106, ../blocks/feedback.scss */
+/* line 107, ../blocks/feedback.scss */
 .feedback__button {
   transition: .3s;
   background-color: #2f3234;
 }
 
-/* line 111, ../blocks/feedback.scss */
+/* line 112, ../blocks/feedback.scss */
 .feedback__button:hover {
   background-color: transparent;
 }
@@ -2785,4 +2786,49 @@ li {
   color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;
+}
+
+/* line 1, ../blocks/modal-feedback.scss */
+.modal__content_feedback {
+  width: 28.8125rem;
+  height: 15.9375rem;
+  position: relative;
+  margin: 3%;
+}
+
+/* line 8, ../blocks/modal-feedback.scss */
+.modal__content-wrapper {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 14, ../blocks/modal-feedback.scss */
+.feedback__username_modal, .feedback__text_modal {
+  color: #2f3234;
+  font-size: 0.875rem;
+}
+
+/* line 19, ../blocks/modal-feedback.scss */
+.feedback__username_modal {
+  line-height: 1.75rem;
+  font-family: "Gagalin";
+  padding-bottom: 5%;
+}
+
+/* line 25, ../blocks/modal-feedback.scss */
+.feedback__text_modal {
+  line-height: 1.5rem;
+  font-family: "Ubuntu";
+  font-weight: 300;
+}
+
+/* line 30, ../blocks/modal-feedback.scss */
+.feedback__close {
+  position: absolute;
+  top: 5%;
+  left: 93%;
+  width: 1.1875rem;
+  height: 1.1875rem;
+  background: url("../../img/icons/close_modal-feedback.png") center center;
 }

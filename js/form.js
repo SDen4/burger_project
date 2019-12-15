@@ -2,7 +2,7 @@ const formDel = document.querySelector('#form__delivery'),
       btnDel = document.querySelector('#button__delivery'),
       error = document.getElementsByClassName('form__error'),
       modalText = document.querySelector('.modal__text'),
-      modal = document.querySelector('.modal'),
+      modal = document.querySelector('#modal-delivery'),
       closeModal = document.querySelector('.button_close');
 
 btnDel.addEventListener('click', function(event) {
