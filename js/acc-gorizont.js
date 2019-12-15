@@ -1,5 +1,5 @@
-const user = document.getElementsByClassName('accordeon__username');
-const card = document.getElementsByClassName('accordeon__item');
+const user = document.getElementsByClassName('accordeon__username'),
+      card = document.getElementsByClassName('accordeon__item');
 
 for (let i=0; i<user.length; i++) {
     const userEl = user[i], cardEl = card[i];

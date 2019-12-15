@@ -1,5 +1,5 @@
-const menuLink = document.getElementsByClassName('accordeon-vert__subtitle');
-const menuItem = document.getElementsByClassName('accordeon-vert__item');
+const menuLink = document.getElementsByClassName('accordeon-vert__subtitle'),
+      menuItem = document.getElementsByClassName('accordeon-vert__item');
 
 for (let i=0; i<menuLink.length; i++) {
     const menuLinkEl = menuLink[i], menuItemEl = menuItem[i];

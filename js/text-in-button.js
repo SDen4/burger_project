@@ -1,5 +1,6 @@
-const feedList = document.querySelector('.feedback__list');
-const feedBtn = document.getElementsByClassName('feedback__button');
+const feedList = document.querySelector('.feedback__list'),
+      feedBtn = document.getElementsByClassName('feedback__button');
+
 
 for (let i = 0; i < feedBtn.length; i++) {
     let btn = feedBtn[i];
