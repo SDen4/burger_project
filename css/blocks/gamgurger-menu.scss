@@ -69,12 +69,15 @@
 
 .gamburger-menu__content_active {
     display: flex; //!!!Показать полноэкранное меню!!!
+    justify-content: center;
 }
 
 .navigation_gamburger {
-    display: block;
-    width: 100%;
+    display: flex;
+    width: rem(150px);
     margin: 0;
+    flex: none;
+    justify-content: center;
 }
 
 .navigation__list_gamburger {
@@ -83,6 +86,7 @@
     align-items: center;
     justify-content: center;
     min-height: 420px;
+    width: fit-content;
 }
 
 .navigation__item_gamburger {
