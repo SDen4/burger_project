@@ -5,8 +5,8 @@ const formDel = document.querySelector('#form__delivery'),
       modal = document.querySelector('#modal-delivery'),
       closeModal = document.querySelector('.button_close');
 
-btnDel.addEventListener('click', function(event) {
-    event.preventDefault();
+btnDel.addEventListener('click', function(e) {
+    e.preventDefault();
     if (validateForm(formDel)) {
 
         let formData = new FormData(formDel);

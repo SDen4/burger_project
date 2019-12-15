@@ -1,8 +1,8 @@
-const open = document.querySelector(".gamburger-menu__link");
-const close = document.querySelector(".gamburger-menu__close");
-const content = document.querySelector(".gamburger-menu__content");
-const bodyFixed = document.querySelector('body');
-const navLink = document.getElementsByClassName('navigation__link');
+const open = document.querySelector(".gamburger-menu__link"),
+      close = document.querySelector(".gamburger-menu__close"),
+      content = document.querySelector(".gamburger-menu__content"),
+      bodyFixed = document.querySelector('body'),
+      navLink = document.getElementsByClassName('navigation__link');
 
 open.addEventListener('click', function () {
     content.classList.add('gamburger-menu__content_active');
