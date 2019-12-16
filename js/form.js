@@ -1,6 +1,5 @@
 const formDel = document.querySelector('#form__delivery'),
       btnDel = document.querySelector('#button__delivery'),
-      error = document.getElementsByClassName('form__error'),
       modalText = document.querySelector('.modal__text'),
       modal = document.querySelector('#modal-delivery'),
       closeModal = document.querySelector('.button_close');
@@ -47,18 +46,13 @@ function validateForm(form) {
     return valid;
 };
 
-for(let i = 0; i<error.length; i++) {
-    function validateField(field) {
-
-        console.log(error[i]);
-
-        if ( !field.checkValidity() ) {
-            field.nextElementSibling.textContent = field.validationMessage;
-            return false;
-        } else {
-            field.nextElementSibling.textContent = "";
-            return true;
-        };
+function validateField(field) {
+    if ( !field.checkValidity() ) {
+        field.nextElementSibling.textContent = field.validationMessage;
+        return false;
+    } else {
+        field.nextElementSibling.textContent = "";
+        return true;
     };
 };
 
