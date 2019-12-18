@@ -8,39 +8,40 @@
 }
 
 .slider__left, .slider__right {
-    width: 2%;
+    width: 4.5vw;
 
     @include tablet {
         margin-bottom: 0.5%;
     }
 
     @include phone {
-        width: 4%;
+        //width: 4%;
         margin-bottom: 7%;
     }
 }
 
 .slider__left {
-    margin-left: 4%;
+    // margin-left: 4%;
+    text-align: right;
 
     @include tablet {
-        margin-left: 5%;
+        //margin-left: 5%;
     }
 
     @include phone {
-        margin-left: 1%;
+        //margin-left: 1%;
     }
 }
 
 .slider__right {
-    margin-right: 4%;
+    //margin-right: 4%;
 
     @include tablet {
-        margin-right: 3%;
+        //margin-right: 3%;
     }
 
     @include phone {
-        margin-right: 1%;
+        //margin-right: 1%;
     }
 }
 
@@ -49,6 +50,7 @@
     width: 81vw;
     height: 135%;
     overflow: hidden;
+    max-width: rem(980px);
 
     @include tablet {
         height: 109%;
@@ -56,7 +58,7 @@
     }
 
     @include phone {
-        width: 92vw;
+        //width: 86vw;
     }
 }
 
@@ -71,8 +73,8 @@
 }
 
 .slider__contant {
-    width: 81vw;
     max-width: rem(980px);
+    width: 81vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +84,7 @@
     }
 
     @include phone {
-        width: 86vw;
+        //width: 86vw;
     }
 }
 
