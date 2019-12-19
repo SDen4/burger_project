@@ -58,6 +58,7 @@
     flex-direction: row;
     height: 100vh;
     width: rem(80px);
+    justify-content: flex-end;
 
     transition-property: width;
     transition-duration: .3s;
@@ -90,15 +91,14 @@
 }
 
 .accordeon-vert__item_active .accordeon-vert__subtitle {
+    width: 10%;
+    max-width: rem(80px);
     color: $yellow;
 }
 
 .accordeon-vert__item_active .accordeon-vert__text {
-    width: 90%;
+    width: 100%;
     padding: 5%;
-
-    transition-property: width;
-    transition-duration: .3s;
 }
 
 .accordeon-vert__subtitle {
@@ -133,10 +133,6 @@
     };
 }
 
-.accordeon-vert__item_active .accordeon-vert__subtitle {
-    width: 10%;
-}
-
 .accordeon-vert__text {
     width: 0;
     overflow: hidden;
@@ -144,4 +140,7 @@
     font-family: "Ubuntu";
     font-weight: 400;
     line-height: rem(24px);
+
+    transition-property: width;
+    transition-duration: .3s;
 }
