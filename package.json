@@ -1,0 +1,24 @@
+{
+  "name": "burger_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDen4/burger_project.git"
+  },
+  "author": "skryabin denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDen4/burger_project/issues"
+  },
+  "homepage": "https://github.com/SDen4/burger_project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rm": "^2.0.0"
+  }
+}
