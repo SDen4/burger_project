@@ -25,29 +25,31 @@ $(function(){
     // }, 1000)
     // })
 
-let sections = $('.section'); //все секции
-let heightWindow = $('.section').height(); //высота окна
-console.log(sections);
-console.log(heightWindow);
-
-$('body').on('click', '.pagination__link', function(event) {
-    //event.preventDefault();
-    $('.pagination__link').removeClass('pagination__link_active');
-    $(this).addClass('pagination__link_active');
-
-    let ind = $(this).index();
-    let res = ind*heightWindow;
-console.log(res)
-    $('html, body').animate({
-        'scrollTop' : res
-    }, 600)
-
-
-console.log($(this).index());
-})
-
-
-})
+    let sections = $('.section');
+    let heightWindow = $('.section').height();
+//console.log(sections);
+//console.log('высота окна = ' + heightWindow);
 
 
 
+    $('body').on('click', '.pagination__link', function() {
+
+        $('.pagination__link').removeClass('pagination__link_active');
+        $(this).addClass('pagination__link_active');
+
+        let ind = $(this).index();
+        let res = ind*heightWindow;
+
+console.log('res = ' + res);
+
+        $('html, body').animate({
+            'scrollTop' : res
+        }, 600);
+
+console.log("индекс = " + ind);
+
+    })
+
+    $('.pagination__link').first().addClass('pagination__link_active');
+
+});

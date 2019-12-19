@@ -15,34 +15,12 @@
     }
 
     @include phone {
-        //width: 4%;
         margin-bottom: 7%;
     }
 }
 
 .slider__left {
-    // margin-left: 4%;
     text-align: right;
-
-    @include tablet {
-        //margin-left: 5%;
-    }
-
-    @include phone {
-        //margin-left: 1%;
-    }
-}
-
-.slider__right {
-    //margin-right: 4%;
-
-    @include tablet {
-        //margin-right: 3%;
-    }
-
-    @include phone {
-        //margin-right: 1%;
-    }
 }
 
 .slider__watch-zone {
@@ -55,10 +33,6 @@
     @include tablet {
         height: 109%;
         align-items: center;
-    }
-
-    @include phone {
-        //width: 86vw;
     }
 }
 
@@ -81,10 +55,6 @@
 
     @include tablet {
         flex-direction: column;
-    }
-
-    @include phone {
-        //width: 86vw;
     }
 }
 
