@@ -56,20 +56,22 @@
 
 .gamburger-menu__content {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $black;
-    opacity: .9;
+    left: -9990px;
+    background-color: #2f3234;
+    opacity: 0;
     z-index: 10;
     align-items: center;
-    display: none; //!!!Полноэкранное меню!!!
+    display: flex;
+    transition: opacity .6s;
 }
 
 .gamburger-menu__content_active {
-    display: flex; //!!!Показать полноэкранное меню!!!
     justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .9;
 }
 
 .navigation_gamburger {
