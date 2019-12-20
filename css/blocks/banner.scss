@@ -87,18 +87,20 @@
     color: $white;
     width: 98%;
 
+    @include additional {
+        font-size: rem(56px);
+    };
+
     @include tablet {
+        font-size: rem(62px);
         letter-spacing: 3px;
         padding-left: 5%;
     };
 
     @include phone {
+        font-size: rem(52px);
         letter-spacing: -1px;
         padding-left: 2%;
         line-height: rem(70px);
-    };
-
-    @include additional {
-        font-size: rem(56px);
     };
 }
