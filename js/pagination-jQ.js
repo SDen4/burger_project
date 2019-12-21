@@ -1,55 +1,108 @@
-$(function(){
-    let generateDots = function(){
-        $('.section').each(function() {
-            var dot = $('<a>', {
-                attr : {
-                    class : 'pagination__link'
-                }
-            });
-            $('.pagination').append(dot);
-            
-        })
+// let generateDots = function(){
+//     $('.section').each(function() {
+
+//         let ind = $('.pagination__link').index();
+//         var dot = $('<a>', {
+//             attr : {
+//                 class : 'pagination__link',
+//                 data_scroll_to : ind
+//             }
+//         });
+//         $('.pagination').append(dot);
+
+
+//     })
+// };
+// generateDots();
+
+const sections = $('.section');
+const display = $('.main-content');
+let flagScroll = false;
+
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
+
+const perform = sectionNum => {
+    if (flagScroll) return;
+
+    flagScroll = true;
+    const num = -100*sectionNum;
+    const scrollDuration = 900; //600 - единая длительность анимации + 300 - инерция
+
+    if(isNaN(num)) {
+        console.error('Передано неверное значение в perform()');
     };
 
-    generateDots();
+    sections.eq(sectionNum).addClass('section_active').siblings().removeClass('section_active');
 
-    // $(window).scroll(function() {
-    // })
-    // var wTop = $(window).scrollTop();
-    // var $this = $(this);
-    // var container = $this.closest('.wrapper');
-    // var best = $('.section').offset().top;
-    // $('body').on('wheel', function(){
-    // $('html, body').animate({
-    //     'scrollTop' : best
-    // }, 1000)
-    // })
+    display.css({
+        transform: `translateY(${num}%)`
+    });
 
-    let sections = $('.section');
-    let heightWindow = $('.section').height();
-//console.log(sections);
-//console.log('высота окна = ' + heightWindow);
+    setTimeout(() => {
+        flagScroll = false;
+        $('.pagination__link').eq(sectionNum).addClass('pagination__link_active').siblings().removeClass('pagination__link_active');
 
+    }, scrollDuration)
+};
 
+const scrollToSection = directionToScroll => {
+    const activeSection = sections.filter('.section_active');
+    const nextSection = activeSection.next();
+    const prevSection = activeSection.prev();
 
-    $('body').on('click', '.pagination__link', function() {
+    if (directionToScroll === 'next' && nextSection.length) {
+        perform(nextSection.index());
+    };
+    if (directionToScroll === 'prev' && prevSection.length) {
+        perform(prevSection.index());
+    };
+};
 
-        $('.pagination__link').removeClass('pagination__link_active');
-        $(this).addClass('pagination__link_active');
+$(window).on('wheel', e => {
+    const deltaY = e.originalEvent.deltaY;
 
-        let ind = $(this).index();
-        let res = ind*heightWindow;
+    if (deltaY > 0) {
+        scrollToSection('next');
+    };
 
-console.log('res = ' + res);
-
-        $('html, body').animate({
-            'scrollTop' : res
-        }, 600);
-
-console.log("индекс = " + ind);
-
-    })
-
-    $('.pagination__link').first().addClass('pagination__link_active');
-
+    if (deltaY < 0) {
+        scrollToSection('prev');
+    };
 });
+
+$(window).on('keydown', e => {
+
+    const tagName = e.target.tagName.toLowerCase();
+    const typeInArea = tagName !== 'input' && tagName !== 'textarea'
+    
+    if(!typeInArea) return;
+    switch (e.keyCode) {
+        case 38 : return scrollToSection('prev');
+        case 40 : return scrollToSection('next');
+    };
+});
+
+$('[data_scroll_to]').on('click', e => {
+    e.preventDefault();
+    const $this = $(e.currentTarget);
+    var target = $this.attr('data_scroll_to');
+
+    perform(target);
+});
+
+if(isMobile) {
+    $('body').swipe({
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            const directionSwipe = direction === 'up' ? 'next' : 'prev';
+            scrollToSection (directionSwipe);
+        }
+    })
+};
+
+
+// let ind = $('.pagination-link').index();
+// console.log(ind);
+// if(ind == 1 || ind == 6 || ind == 8) {
+//     $('.pagination-link').addClass('pagination__link_black');
+// }
