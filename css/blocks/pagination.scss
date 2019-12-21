@@ -51,6 +51,13 @@
     }
 }
 
+.pagination__link_black {
+    background-color: $black;
+    &::before {
+        border: rem(1px) solid $black;
+    }
+}
+
 .pagination__link_active::before {
     width: rem(16px);
     height: rem(16px);
