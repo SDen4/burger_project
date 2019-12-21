@@ -456,7 +456,7 @@ li {
 
 /* line 69, ../layout/base.scss */
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   width: 100%;
   display: flex;

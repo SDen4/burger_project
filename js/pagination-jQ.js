@@ -15,28 +15,35 @@
 // };
 // generateDots();
 
-
 const sections = $('.section');
 const display = $('.main-content');
 let flagScroll = false;
 
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
+
 const perform = sectionNum => {
-    if (flagScroll === false) {
-        flagScroll = true;
-        const num = -100*sectionNum;
+    if (flagScroll) return;
 
-        sections.eq(sectionNum).addClass('section_active').siblings().removeClass('section_active');
-    
-        display.css({
-            transform: `translateY(${num}%)`
-        });
+    flagScroll = true;
+    const num = -100*sectionNum;
+    const scrollDuration = 900; //600 - единая длительность анимации + 300 - инерция
 
-        setTimeout(() => {
-            flagScroll = false;
-            $('.pagination__link').eq(sectionNum).addClass('pagination__link_active').siblings().removeClass('pagination__link_active');
-
-        }, 900)
+    if(isNaN(num)) {
+        console.error('Передано неверное значение в perform()');
     };
+
+    sections.eq(sectionNum).addClass('section_active').siblings().removeClass('section_active');
+
+    display.css({
+        transform: `translateY(${num}%)`
+    });
+
+    setTimeout(() => {
+        flagScroll = false;
+        $('.pagination__link').eq(sectionNum).addClass('pagination__link_active').siblings().removeClass('pagination__link_active');
+
+    }, scrollDuration)
 };
 
 const scrollToSection = directionToScroll => {
@@ -67,14 +74,14 @@ $(window).on('wheel', e => {
 $(window).on('keydown', e => {
 
     const tagName = e.target.tagName.toLowerCase();
+    const typeInArea = tagName !== 'input' && tagName !== 'textarea'
     
-    if(tagName !== 'input' && tagName !== 'textarea') {
-        switch (e.keyCode) {
-            case 38 : return scrollToSection('prev');
-            case 40 : return scrollToSection('next');
-        };
+    if(!typeInArea) return;
+    switch (e.keyCode) {
+        case 38 : return scrollToSection('prev');
+        case 40 : return scrollToSection('next');
     };
-})
+});
 
 $('[data_scroll_to]').on('click', e => {
     e.preventDefault();
@@ -82,40 +89,20 @@ $('[data_scroll_to]').on('click', e => {
     var target = $this.attr('data_scroll_to');
 
     perform(target);
-})
+});
+
+if(isMobile) {
+    $('body').swipe({
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            const directionSwipe = direction === 'up' ? 'next' : 'prev';
+            scrollToSection (directionSwipe);
+        }
+    })
+};
 
 
-
-
-// let ind = $('.section').index()
+// let ind = $('.pagination-link').index();
 // console.log(ind);
 // if(ind == 1 || ind == 6 || ind == 8) {
 //     $('.pagination-link').addClass('pagination__link_black');
 // }
-
-
-
-
-
-//     let sections = $('.section');
-//     let heightWindow = $('.section').height();
-
-//     $('body').on('click', '.pagination__link', function() {
-
-//         $('.pagination__link').removeClass('pagination__link_active');
-//         $(this).addClass('pagination__link_active');
-
-//         let ind = $(this).index();
-//         let res = ind*heightWindow;
-
-// console.log('res = ' + res);
-
-//         $('html, body').animate({
-//             'scrollTop' : res
-//         }, 600);
-
-// console.log("индекс = " + ind);
-
-//     })
-
-//     $('.pagination__link').first().addClass('pagination__link_active');
