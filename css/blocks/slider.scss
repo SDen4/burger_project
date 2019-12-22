@@ -169,6 +169,10 @@
 .slider__ingridients:hover .slider__ingridients-structure {
     opacity: .9;
     left: 100%;
+
+    @include phone {
+        left: 0;
+    }
 };
 
 .slider__ccal {

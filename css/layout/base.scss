@@ -19,8 +19,8 @@ body {
 }
 
 .body__fixed {
-    overflow: hidden;
-    height: 100vh;
+    overflow: hidden !important;
+    height: 100%;
 }
 
 h1,
