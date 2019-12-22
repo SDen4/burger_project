@@ -2823,3 +2823,240 @@ li {
   height: 1.1875rem;
   background: url("../../img/icons/close_modal-feedback.png") center center;
 }
+
+/* line 1, ../blocks/work.scss */
+.work {
+  background: url("../../img/bg-work1280.jpg") center center no-repeat;
+  align-items: center;
+  background-size: cover;
+  color: #2f3234;
+}
+
+/* line 8, ../blocks/work.scss */
+.work__frame {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 8, ../blocks/work.scss */
+  .work__frame {
+    width: 96%;
+  }
+}
+
+/* line 19, ../blocks/work.scss */
+.work__title {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-family: "Gagalin";
+  text-align: center;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+  /* line 19, ../blocks/work.scss */
+  .work__title {
+    font-size: 4.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 19, ../blocks/work.scss */
+  .work__title {
+    font-size: 3.625rem;
+  }
+}
+
+/* line 35, ../blocks/work.scss */
+.work__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* line 42, ../blocks/work.scss */
+.video__contant {
+  position: relative;
+  max-width: 100%;
+}
+
+/* line 47, ../blocks/work.scss */
+.video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* line 54, ../blocks/work.scss */
+.video__big-button {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../../img/svg/play-white-svg.svg") center center no-repeat;
+}
+
+/* line 64, ../blocks/work.scss */
+.player__window {
+  width: 40rem;
+  height: 25rem;
+}
+
+/* line 69, ../blocks/work.scss */
+.player__control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 640px;
+  height: 2.1875rem;
+  background-color: #3e3e3e;
+  position: relative;
+  width: 100%;
+}
+
+/* line 81, ../blocks/work.scss */
+.player__start-button, .player__volume-button {
+  display: block;
+  max-width: 2.1875rem;
+  width: 100%;
+  height: 2.1875rem;
+  margin: 0 2%;
+  position: relative;
+}
+
+/* line 90, ../blocks/work.scss */
+.player__start, .player__volume {
+  cursor: pointer;
+}
+
+/* line 94, ../blocks/work.scss */
+.player__start_unactive {
+  display: none;
+}
+
+/* line 98, ../blocks/work.scss */
+.player__pause {
+  display: none;
+  height: 22px;
+  width: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  cursor: pointer;
+}
+/* line 109, ../blocks/work.scss */
+.player__pause:after {
+  content: "";
+  display: block;
+  height: 22px;
+  width: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+/* line 121, ../blocks/work.scss */
+.player__pause:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: -4px;
+}
+
+/* line 133, ../blocks/work.scss */
+.player__pause_active {
+  display: block;
+}
+
+/* line 137, ../blocks/work.scss */
+.player__start-svg, .player__volume-svg {
+  fill: #626262;
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+/* line 143, ../blocks/work.scss */
+.player__start-svg {
+  transform: scale(-1, 1);
+}
+
+/* line 147, ../blocks/work.scss */
+.player__play-duration, .player__volume-duration {
+  height: 0.25rem;
+  border-radius: 1px;
+  background-color: #626262;
+  position: relative;
+}
+
+/* line 154, ../blocks/work.scss */
+.player__play-duration {
+  max-width: 27.75rem;
+  width: 100%;
+}
+
+/* line 159, ../blocks/work.scss */
+.player__volume-duration {
+  max-width: 3.625rem;
+  width: 100%;
+  margin-right: 3%;
+}
+
+/* line 165, ../blocks/work.scss */
+.player__scroll {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #626262;
+  position: absolute;
+  top: -4px;
+  cursor: pointer;
+}
+
+/* line 175, ../blocks/work.scss */
+.player__mute {
+  display: none;
+  height: 22px;
+  width: 4px;
+  border-radius: 1px;
+  transform: rotate(45deg);
+  background-color: #626262;
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  cursor: pointer;
+}
+/* line 187, ../blocks/work.scss */
+.player__mute:after {
+  content: "";
+  display: block;
+  height: 22px;
+  width: 4px;
+  border-radius: 1px;
+  transform: rotate(90deg);
+  background-color: #626262;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 201, ../blocks/work.scss */
+.player__mute_active {
+  display: block;
+}
+
+/* line 205, ../blocks/work.scss */
+.player__scroll_volume {
+  left: 80%;
+}
