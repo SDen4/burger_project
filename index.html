@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/stylesheets/screen.css">
     <link rel="shortcut icon" href="./img/icons/favicon.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3339098f-2a-9a-4708-bb60-ea44636ecfd1&lang=ru_RU" type="text/javascript">
+    </script>
     <title>Mr.Burger</title>
 </head>
 
@@ -15,15 +17,6 @@
     <div class="wrapper">
 
         <div class="pagination">
-            <a class="pagination__link pagination__link_active" href="" data_scroll_to='0'></a>
-            <a class="pagination__link" href="" data_scroll_to='1'></a>
-            <a class="pagination__link" href="" data_scroll_to='2'></a>
-            <a class="pagination__link" href="" data_scroll_to='3'></a>
-            <a class="pagination__link" href="" data_scroll_to='4'></a>
-            <a class="pagination__link" href="" data_scroll_to='5'></a>
-            <a class="pagination__link" href="" data_scroll_to='6'></a>
-            <a class="pagination__link" href="" data_scroll_to='7'></a>
-            <a class="pagination__link" href="" data_scroll_to='8'></a>
         </div>
         <div class="main-content">
             <section class="section section_active intro" id="intro">
@@ -36,7 +29,7 @@
                         <svg class="logo__pic logo__pic_gamburger">
                             <use xlink:href="./img/svg/sprite.svg#logo"></use>
                         </svg>
-                        <a href="#" class="gamburger-menu__close"></a>
+                        <a href="" class="gamburger-menu__close"></a>
                         <nav class="navigation navigation_gamburger">
                             <ul class="navigation__list navigation__list_gamburger">
                                 <li class="navigation__item navigation__item_gamburger">
@@ -105,11 +98,10 @@
                         </div>
                     </div>
                     <div class="scroll">
-                        <a class="scroll__link" href="#best">
+                        <a class="scroll__link" href="">
                             <img src='./img/icons/arrow-scroll.png' class="scroll__pic" alt="scroll-pic"
                                 aria-label="Прокрутка на следующую страницу">
                         </a>
-                        <!--Добавить айдишник "якоря" - ссылки на следующую страницу-->
                     </div>
                 </div>
             </section>
@@ -960,8 +952,9 @@
                 </div>
             </section>
             <div class="section contacts" id="contacts">
-                <div class="footer">
-                    <div class="container">
+                <div id="map" ></div>
+                <div class="container">
+                    <div class="footer">
                         <div class="contacts__wrapper">
                             <div class="contacts__data">
                                 <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
@@ -1023,8 +1016,12 @@
     <script src="./js/feedback-modal.js"></script>
 
     <script src="./js/slider-jQ.js"></script>
-    <script src="./js/pagination-jQ.js"></script>
+
+    <script src="./js/dots-pagination.js"></script>
+    <script src="./js/one-page-scroll.js"></script>
     <script src="./js/player.js"></script>
+    <script src="./js/map.js"></script>
+
 
 </body>
 
