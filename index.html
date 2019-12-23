@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3339098f-2a-9a-4708-bb60-ea44636ecfd1&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="stylesheet" href="./css/stylesheets/screen.css">
     <link rel="shortcut icon" href="./img/icons/favicon.png" type="image/png">
     <title>Mr.Burger</title>
@@ -15,7 +17,7 @@
     <div class="wrapper">
 
         <div class="pagination">
-            <a class="pagination__link pagination__link_active" href="" data_scroll_to='0'></a>
+            <!-- <a class="pagination__link pagination__link_active" href="" data_scroll_to='0'></a>
             <a class="pagination__link" href="" data_scroll_to='1'></a>
             <a class="pagination__link" href="" data_scroll_to='2'></a>
             <a class="pagination__link" href="" data_scroll_to='3'></a>
@@ -23,7 +25,7 @@
             <a class="pagination__link" href="" data_scroll_to='5'></a>
             <a class="pagination__link" href="" data_scroll_to='6'></a>
             <a class="pagination__link" href="" data_scroll_to='7'></a>
-            <a class="pagination__link" href="" data_scroll_to='8'></a>
+            <a class="pagination__link" href="" data_scroll_to='8'></a> -->
         </div>
         <div class="main-content">
             <section class="section section_active intro" id="intro">
@@ -960,8 +962,9 @@
                 </div>
             </section>
             <div class="section contacts" id="contacts">
-                <div class="footer">
-                    <div class="container">
+                <div id="map" ></div>
+                <div class="container">
+                    <div class="footer">
                         <div class="contacts__wrapper">
                             <div class="contacts__data">
                                 <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
@@ -1021,10 +1024,12 @@
     <script src="./js/text-in-button.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/feedback-modal.js"></script>
-
     <script src="./js/slider-jQ.js"></script>
+    <script src="./js/dot-generator.js"></script>
     <script src="./js/pagination-jQ.js"></script>
     <script src="./js/player.js"></script>
+    <script src="./js/map.js"></script>
+
 
 </body>
 

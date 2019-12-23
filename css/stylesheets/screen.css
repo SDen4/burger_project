@@ -399,12 +399,6 @@ body {
 }
 
 /* line 21, ../layout/base.scss */
-.body__fixed {
-  overflow: hidden !important;
-  height: 100%;
-}
-
-/* line 26, ../layout/base.scss */
 h1,
 h2,
 h3,
@@ -415,12 +409,12 @@ h6 {
   font-weight: normal;
 }
 
-/* line 36, ../layout/base.scss */
+/* line 31, ../layout/base.scss */
 p {
   margin: 0;
 }
 
-/* line 40, ../layout/base.scss */
+/* line 35, ../layout/base.scss */
 .wrapper {
   position: relative;
   width: 100%;
@@ -428,24 +422,24 @@ p {
   overflow: hidden;
 }
 
-/* line 47, ../layout/base.scss */
+/* line 42, ../layout/base.scss */
 .main-content {
   height: 100%;
   transition: transform 1s;
 }
 
-/* line 52, ../layout/base.scss */
+/* line 47, ../layout/base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 57, ../layout/base.scss */
+/* line 52, ../layout/base.scss */
 li {
   list-style-type: none;
 }
 
-/* line 61, ../layout/base.scss */
+/* line 56, ../layout/base.scss */
 .container {
   margin: 0 auto;
   max-width: 68.75rem;
@@ -454,7 +448,7 @@ li {
   justify-content: center;
 }
 
-/* line 69, ../layout/base.scss */
+/* line 64, ../layout/base.scss */
 .section {
   height: 100%;
   min-height: 40.625rem;
@@ -464,7 +458,7 @@ li {
   justify-content: center;
 }
 
-/* line 78, ../layout/base.scss */
+/* line 73, ../layout/base.scss */
 .logo__pic {
   width: 6.25rem;
   /* 10% */
@@ -2129,7 +2123,6 @@ li {
 
 /* line 1, ../blocks/contacts.scss */
 .contacts {
-  background: url("../../img/map-marker.jpg") center center no-repeat;
   align-items: center;
   background-size: cover;
   position: relative;
@@ -2282,6 +2275,12 @@ li {
 /* line 128, ../blocks/contacts.scss */
 .social__pic:hover {
   fill: #fff;
+}
+
+/* line 133, ../blocks/contacts.scss */
+#map {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 1, ../blocks/delivery.scss */
