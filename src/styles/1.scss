@@ -1,0 +1,18 @@
+.new {
+    color: red;
+}
+
+.super_new {
+    display: flex;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 168px) {
+        width: 70px;
+    }
+}
+
+.class {
+    @media (max-width: 168px) {
+        display: block;
+    }
+}

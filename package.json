@@ -18,7 +18,17 @@
   },
   "homepage": "https://github.com/SDen4/burger_project#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-rm": "^2.0.0"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

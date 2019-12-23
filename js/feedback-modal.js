@@ -10,7 +10,7 @@ const feedOpen = document.getElementsByClassName('feedback__button'),
 for (let i = 0; i<feedOpen.length; i++) {
     feedOpen[i].addEventListener('click', function(event) {
         event.preventDefault();
-        bodyFixed.classList.add('body__fixed');
+        flagScroll = true;
         feedModal.style.display = 'flex';
         userInModal.textContent = userInList[i].textContent;
         textInModal.textContent = textInList[i].textContent;
@@ -19,8 +19,8 @@ for (let i = 0; i<feedOpen.length; i++) {
 
 feedClose.addEventListener('click', function(event) {
     event.preventDefault();
+    flagScroll = false;
     feedModal.style.display = 'none';
-    bodyFixed.classList.remove('body__fixed');
 });
 
 feedModal.addEventListener('click', function(e) {

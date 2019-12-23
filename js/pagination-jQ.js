@@ -1,20 +1,3 @@
-// let generateDots = function(){
-//     $('.section').each(function() {
-
-//         let ind = $('.pagination__link').index();
-//         var dot = $('<a>', {
-//             attr : {
-//                 class : 'pagination__link',
-//                 data_scroll_to : ind
-//             }
-//         });
-//         $('.pagination').append(dot);
-
-
-//     })
-// };
-// generateDots();
-
 const sections = $('.section');
 const display = $('.main-content');
 let flagScroll = false;
@@ -89,6 +72,11 @@ $('[data_scroll_to]').on('click', e => {
     var target = $this.attr('data_scroll_to');
 
     perform(target);
+});
+
+$('.scroll__link').on('click', e => {
+    e.preventDefault();
+    scrollToSection('next');
 });
 
 if(isMobile) {
