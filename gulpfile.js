@@ -9,6 +9,9 @@ const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const {SRC_PATH, DIST_PATH} = require('./gulp.config');
+const gulpif = require('gulp-if');
+
+const env = process.env.NODE_ENV;
 
 
 const reload = browserSync.reload;
@@ -43,17 +46,18 @@ task('server', () => {
 
 task('styles', () => {
         return src(styles)
-        .pipe(sourcemaps.init())
+        .pipe(gulpif(env === "dev", sourcemaps.init()))
         .pipe(concat('main.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
-        .pipe(
+        .pipe(gulpif(env === "dev", 
             autoprefixer({
                 cascade: false
-        }))
-        //.pipe(gcmq())
-        .pipe(cleanCSS({}))
-        .pipe(sourcemaps.write())
+            })
+        ))
+        .pipe(gulpif(env === "prod", gcmq()))
+        .pipe(gulpif(env === "prod", cleanCSS({})))
+        .pipe(gulpif(env === "dev", sourcemaps.write()))
         .pipe(dest(DIST_PATH));
     }
 );
@@ -66,10 +70,23 @@ task('scripts', () => {
     .pipe(dest(DIST_PATH));
 });
 
+task('watch', () => {
+    watch(`${SRC_PATH}/styles/*.scss`, series('styles'));
+    watch(`${SRC_PATH}/*.html`, series('copy:html'));
+    watch(`${SRC_PATH}/scripts/*.js`, series('scripts'));
+});
 
-watch(`${SRC_PATH}/styles/*.scss`, series('styles'));
-watch(`${SRC_PATH}/*.html`, series('copy:html'));
-watch(`${SRC_PATH}/scripts/*.js`, series('scripts'));
+task(
+    'default', series(
+        'clean',
+        parallel('copy:html', 'styles', 'scripts'),
+        parallel('watch', 'server')
+    )
+);
 
-
-task('default', series('clean', parallel('copy:html', 'styles', 'scripts'), 'server'));
+task(
+    'build', series(
+        'clean',
+        parallel('copy:html', 'styles', 'scripts')
+    )
+);
