@@ -2646,6 +2646,23 @@ li {
 }
 
 /* line 21, ../blocks/gamgurger-menu.scss */
+.gamburger-menu__link_active {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  /* line 21, ../blocks/gamgurger-menu.scss */
+  .gamburger-menu__link_active {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 21, ../blocks/gamgurger-menu.scss */
+  .gamburger-menu__link_active {
+    display: none;
+  }
+}
+
+/* line 33, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__section {
   display: block;
   width: 1.5rem;
@@ -2654,7 +2671,7 @@ li {
   background-color: #fff;
   position: relative;
 }
-/* line 29, ../blocks/gamgurger-menu.scss */
+/* line 41, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__section:after, .gamburger-menu__section:before {
   content: "";
   width: 1.5rem;
@@ -2663,16 +2680,16 @@ li {
   position: absolute;
   background-color: #fff;
 }
-/* line 39, ../blocks/gamgurger-menu.scss */
+/* line 51, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__section:after {
   top: 1.25rem;
 }
-/* line 43, ../blocks/gamgurger-menu.scss */
+/* line 55, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__section:before {
   top: 0.625rem;
 }
 
-/* line 48, ../blocks/gamgurger-menu.scss */
+/* line 60, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__close {
   width: 1.375rem;
   height: 1.375rem;
@@ -2683,7 +2700,7 @@ li {
   z-index: 20;
 }
 
-/* line 58, ../blocks/gamgurger-menu.scss */
+/* line 70, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__content {
   position: absolute;
   left: -9990px;
@@ -2695,7 +2712,7 @@ li {
   transition: opacity .6s;
 }
 
-/* line 69, ../blocks/gamgurger-menu.scss */
+/* line 81, ../blocks/gamgurger-menu.scss */
 .gamburger-menu__content_active {
   justify-content: center;
   top: 0;
@@ -2705,7 +2722,7 @@ li {
   opacity: .9;
 }
 
-/* line 78, ../blocks/gamgurger-menu.scss */
+/* line 90, ../blocks/gamgurger-menu.scss */
 .navigation_gamburger {
   display: flex;
   width: 9.375rem;
@@ -2714,7 +2731,7 @@ li {
   justify-content: center;
 }
 
-/* line 86, ../blocks/gamgurger-menu.scss */
+/* line 98, ../blocks/gamgurger-menu.scss */
 .navigation__list_gamburger {
   display: flex;
   flex-direction: column;
@@ -2724,23 +2741,23 @@ li {
   width: fit-content;
 }
 
-/* line 95, ../blocks/gamgurger-menu.scss */
+/* line 107, ../blocks/gamgurger-menu.scss */
 .navigation__item_gamburger {
   flex-direction: column;
 }
-/* line 98, ../blocks/gamgurger-menu.scss */
+/* line 110, ../blocks/gamgurger-menu.scss */
 .navigation__item_gamburger::after {
   width: 0.375rem;
   height: 0.375rem;
 }
 
-/* line 104, ../blocks/gamgurger-menu.scss */
+/* line 116, ../blocks/gamgurger-menu.scss */
 .navigation__link_gamburger {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-/* line 109, ../blocks/gamgurger-menu.scss */
+/* line 121, ../blocks/gamgurger-menu.scss */
 .logo__pic_gamburger {
   position: absolute;
   top: 0.75rem;
