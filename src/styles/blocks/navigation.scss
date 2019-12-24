@@ -1,0 +1,62 @@
+.navigation {
+    flex: 2;
+    margin-left: 6.1%;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    
+    &:after {
+        content: "";
+        display: inline-block;
+        width: rem(3px);
+        height: rem(3px);
+        border-radius: 50%;
+        background-color: $white;
+    };
+
+    &:last-child:after{
+        content: "";
+        display: none;
+    };
+}
+
+.navigation__link {
+    display: block;
+    text-decoration: none;
+    font-size: rem(13px);
+    color: $white;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    transition: .5s;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        opacity: 0;
+        width: inherit;
+        height: rem(2px);
+        background-color: $white;
+        transition: .5s;
+        position: inherit;
+    };
+
+    &:hover:after {
+        opacity: 1;
+    };
+}

@@ -1,0 +1,114 @@
+.feedback {
+    align-items: center;
+    color: $white;
+    position: relative;
+}
+
+.feedback__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.feedback__item {
+    width: 25%;
+    height: 50%;
+    filter: grayscale(100%);
+
+    &:nth-child(3n+2) .feedback__avatar {
+        transform: scale(-1, 1);
+    };
+
+    &:nth-child(2) .feedback__avatar {
+        object-position: 10% 50%;
+    };
+
+    @include tablet {
+        width: 50%;
+        height: 25%;
+    }
+}
+
+.feedback__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feedback__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 5% 5%;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, .5);
+
+    @include tablet {
+        text-align: center;
+        padding: 7% 13%;
+    };
+
+    @include phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    };
+}
+
+.feedback__content:hover {
+    opacity: 1;
+}
+
+.feedback__username {
+    text-transform: uppercase;
+}
+
+.feedback__username {
+    font-size: rem(14px);
+    line-height: rem(28px);
+    font-family: "Gagalin";
+
+    @include tablet {
+        padding-bottom: 2%;
+        line-height: rem(28px);
+    };
+
+    @include phone {
+        font-size: rem(28px);
+        line-height: rem(30px);
+        letter-spacing: -1px;
+        padding-bottom: 17%;
+    };
+}
+
+.feedback__text {
+    font-size: rem(14px);
+    line-height: rem(24px);
+    font-family: "Ubuntu";
+    font-weight: 300;
+
+    @include tablet {
+        line-height: rem(24px);
+        margin-bottom: 6%;
+    };
+
+    @include phone {
+        display: none;
+    };
+}
+
+.feedback__button {
+    transition: .3s;
+    background-color: $black;
+}
+
+.feedback__button:hover {
+    background-color: transparent;
+}

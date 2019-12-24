@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .7rem;
+    max-width: rem(946px);
+
+    @include tablet {
+        padding: .75rem 3.9rem 0 .5rem;
+    };
+
+    @include phone {
+        padding: .95rem 4.5rem 0 .9rem;
+    };
+}

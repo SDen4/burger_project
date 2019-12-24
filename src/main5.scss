@@ -1,5 +1,33 @@
-@import "styles/*.scss";
-//@import "2.scss";
-//@import "3.scss";
+//@import "styles/**/*.scss";
 
-$var: #c6c6c6;
+
+@import "styles/layout/media.scss";
+@import "styles/layout/var.scss";
+@import "styles/layout/normalize.scss";
+@import "styles/layout/base.scss";
+@import "styles/layout/fonts.scss";
+
+@import "styles/blocks/pagination.scss";
+
+@import "styles/blocks/header.scss";
+@import "styles/blocks/navigation.scss";
+@import "styles/blocks/order-button.scss";
+
+@import "styles/blocks/intro.scss";
+@import "styles/blocks/banner.scss";
+@import "styles/blocks/scroll.scss";
+
+@import "styles/blocks/best.scss";
+@import "styles/blocks/slider.scss";
+
+@import "styles/blocks/feedback.scss";
+@import "styles/blocks/menu.scss";
+@import "styles/blocks/team.scss";
+@import "styles/blocks/contacts.scss";
+@import "styles/blocks/delivery.scss";
+@import "styles/blocks/form.scss";
+
+@import "styles/blocks/gamgurger-menu.scss";
+@import "styles/blocks/modal.scss";
+@import "styles/blocks/modal-feedback.scss";
+@import "styles/blocks/work.scss";

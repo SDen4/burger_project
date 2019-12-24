@@ -1,0 +1,125 @@
+.gamburger-menu__link {
+    display: none;
+    width: rem(25px);
+    height: rem(25px);
+    position: absolute;
+    top: 3.5%;
+    left: 95%;
+
+    @include tablet {
+        display: block;
+        z-index: 10;
+    }
+
+    @include phone {
+        display: block;
+        top: 4.5%;
+        left: 91%;
+    }
+}
+
+.gamburger-menu__link_active {
+    display: block;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+}
+
+.gamburger-menu__section {
+    display: block;
+    width: rem(24px);
+    height: rem(4px);
+    border-radius: 2px;
+    background-color: $white;
+    position: relative;
+
+    &:after,
+    &:before {
+        content: "";
+        width: rem(24px);
+        height: rem(4px);
+        border-radius: 2px;
+        position: absolute;
+        background-color: $white;
+    }
+
+    &:after {
+        top: rem(20px);
+    }
+
+    &:before {
+        top: rem(10px);
+    }
+}
+
+.gamburger-menu__close {
+    width: rem(22px);
+    height: rem(22px);
+    background: url('../../img/icons/gamburger-menu-close.png') center center;
+    position: absolute;
+    top: rem(32px);
+    right: rem(20px);
+    z-index: 20;
+}
+
+.gamburger-menu__content {
+    position: absolute;
+    left: -9990px;
+    background-color: #2f3234;
+    opacity: 0;
+    z-index: 10;
+    align-items: center;
+    display: flex;
+    transition: opacity .6s;
+}
+
+.gamburger-menu__content_active {
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .9;
+}
+
+.navigation_gamburger {
+    display: flex;
+    width: rem(150px);
+    margin: 0;
+    flex: none;
+    justify-content: center;
+}
+
+.navigation__list_gamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    width: fit-content;
+}
+
+.navigation__item_gamburger {
+    flex-direction: column;
+
+    &::after {
+        width: rem(6px);
+        height: rem(6px);
+    }
+}
+
+.navigation__link_gamburger {
+    font-size: rem(24px);
+    font-weight: 400;
+}
+
+.logo__pic_gamburger {
+    position: absolute;
+    top: rem(12px);
+    left: rem(16px);
+}

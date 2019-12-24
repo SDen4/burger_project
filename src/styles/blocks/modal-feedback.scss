@@ -1,0 +1,37 @@
+.modal__content_feedback {
+    width: rem(461px);
+    height: rem(255px);
+    position: relative;
+    margin: 3%;
+}
+
+.modal__content-wrapper {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__username_modal, .feedback__text_modal {
+    color: $black;
+    font-size: rem(14px);
+}
+
+.feedback__username_modal {
+    line-height: rem(28px);
+    font-family: "Gagalin";
+    padding-bottom: 5%;
+}
+
+.feedback__text_modal {
+    line-height: rem(24px);
+    font-family: "Ubuntu";
+    font-weight: 300;
+}
+.feedback__close {
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    width: rem(19px);
+    height: rem(19px);
+    background: url('../../img/icons/close_modal-feedback.png') center center;
+}

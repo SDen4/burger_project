@@ -1,0 +1,237 @@
+.team {
+    background: url('../../img/bg-team.jpg') center center no-repeat;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.team__frame {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(47, 48, 51, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        width: 100%;
+    };
+}
+
+.team__content {
+    max-width: 70%;
+}
+
+.team__title {
+    text-transform: uppercase;
+    font-size: rem(72px);
+    line-height: rem(64px);
+    color: $yellow;
+    font-family: "Gagalin";
+    margin-bottom: 8%;
+
+    @include tablet {
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 12%;
+    };
+
+    @include phone {
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 8%;
+        font-size: rem(56px);
+    };
+}
+
+.accordeon__list {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.accordeon__item {
+    margin-bottom: 4%;
+
+    @include tablet {
+        margin-bottom: 7%;
+    };
+
+    @include phone {
+        margin-bottom: 10%;
+    };
+}
+
+.accordeon__item_active {
+    @include tablet {
+        margin-bottom: 5%;
+    };
+
+    @include phone{
+        margin-bottom: 9%;
+    };
+}
+
+.accordeon__item_active .accordeon__username {
+    color: $yellow;
+    margin-bottom: 1%;
+
+    @include tablet {
+        margin-bottom: 3%;
+    };
+
+    @include phone {
+        margin-bottom: 5%;
+    };
+}
+
+.accordeon__item_active .accordeon__username:before {
+    background: url('../../img/icons/team-up.png');
+}
+
+.accordeon__item_active .accordeon__content {
+    height: inherit;
+    overflow: unset;
+    margin-bottom: 3%;
+
+    animation: appear .6s;
+    animation-fill-mode: backwards;
+
+    @include tablet {
+        margin-bottom: 1%;
+    };
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(rem(-110px));
+    }
+    100% {
+        transform: translateY(rem(0px));
+    }
+}
+
+.accordeon__username {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: rem(14px);
+    line-height: rem(28px);
+    color: $white;
+    font-family: "Gagalin";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:before {
+        content: "";
+        display: block;
+        background: url('../../img/icons/team-down.png');
+        width: rem(12px);
+        height: rem(9px);
+        margin-right: 1%;
+
+        @include phone {
+            margin-right: 3%;
+        };
+    };
+
+    @include tablet {
+        font-size: rem(24px);
+        letter-spacing: 1px;
+        justify-content: center;
+    };
+
+    @include phone {
+        font-size: rem(28px);
+        justify-content: center;
+        letter-spacing: 0px;
+    };
+}
+
+.accordeon-hid {
+    display: block;
+    overflow: hidden;
+}
+
+.accordeon__content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    height: 0;
+    overflow: hidden;
+
+    @include tablet {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    };
+}
+
+.accordeon__photo {
+    display: flex;
+    flex-wrap: nowrap;
+    width: rem(100px);
+    height: rem(100px);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 3.8%;
+
+    @include tablet {
+        margin-right: 0;
+        margin-bottom: 5.5%;
+    };
+
+    @include phone {
+        width: 7.25rem;
+        height: 7.25rem;
+    };
+}
+
+.accordeon__avatar {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.accordeon__info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @include tablet {
+        align-items: center;
+        text-align: center;
+        width: 75%;
+    };
+
+    @include phone {
+        width: 100%;
+    };
+}
+
+.accordeon__skill, .accordeon__text {
+    font-size: rem(15px);
+    color: $white;
+    font-family: "Ubuntu";
+    font-weight: 700;
+}
+
+.accordeon__skill {
+    padding-bottom: 6%;
+
+    @include tablet {
+        padding-bottom: 5%;
+    }
+}
+
+.accordeon__text {
+    font-weight: 400;
+    line-height: rem(24px);
+
+    @include phone{
+        letter-spacing: .3px;
+    };
+}
