@@ -115,7 +115,7 @@
     height: rem(35px);
     border-radius: rem(5px);
     background-color: $white;
-    border: 2px solid transparent/*$lite-gray*/;
+    border: 2px solid transparent;
     padding: rem(6px) rem(6px);
     font-size: rem(14px);
     line-height: rem(24px);
@@ -217,7 +217,7 @@
         width: rem(16px);
         height: rem(16px);
         display: none;
-        background: url("../../img/icons/checkbox.png") center center no-repeat;
+        background: url("../img/icons/checkbox.png") center center no-repeat;
         position: absolute;
         left: 0;
     };

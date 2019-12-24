@@ -1,15 +1,15 @@
 .best {
-    background: url('../../img/bg-best.jpg') center center no-repeat;
+    background: url('../img/bg-best.jpg') center center no-repeat;
     align-items: center;
     background-size: cover;
     color: $black;
 
     @include tablet {
-        background: url('../../img/bg-best-768px.jpg') center center no-repeat;
+        background: url('../img/bg-best-768px.jpg') center center no-repeat;
     }
 
     @include phone {
-        background: url('../../img/bg-best-480px.jpg') center center no-repeat;
+        background: url('../img/bg-best-480px.jpg') center center no-repeat;
     }
 }
 
