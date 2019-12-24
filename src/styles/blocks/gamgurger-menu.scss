@@ -107,7 +107,9 @@
 .navigation__item_gamburger {
     flex-direction: column;
 
-    &::after {
+    &:after {
+        content: "";
+        display: block;
         width: rem(6px);
         height: rem(6px);
     }
