@@ -87,10 +87,3 @@ if(isMobile) {
         }
     })
 };
-
-
-// let ind = $('.pagination-link').index();
-// console.log(ind);
-// if(ind == 1 || ind == 6 || ind == 8) {
-//     $('.pagination-link').addClass('pagination__link_black');
-// }
