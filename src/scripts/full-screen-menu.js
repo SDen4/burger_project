@@ -1,7 +1,7 @@
 const open = document.querySelector(".gamburger-menu__link"),
-      close = document.querySelector(".gamburger-menu__close"),
-      content = document.querySelector(".gamburger-menu__content"),
-      navLink = document.getElementsByClassName('navigation__link');
+close = document.querySelector(".gamburger-menu__close"),
+content = document.querySelector(".gamburger-menu__content"),
+navLink = document.getElementsByClassName('navigation__link');
 
 open.addEventListener('click', function () {
     flagScroll = true;
