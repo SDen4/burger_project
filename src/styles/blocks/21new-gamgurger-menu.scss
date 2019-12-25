@@ -93,6 +93,10 @@
     margin: 0;
     flex: none;
     justify-content: center;
+
+    @include tablet {
+        display: flex;
+    }
 }
 
 .navigation__list_gamburger {
@@ -109,18 +113,12 @@
 }
 
 .navigation__item_gamburger:after {
-    // content: "";
-    // display: block;
-    // width: rem(6px);
-    // height: rem(6px);
-
     content: "";
     display: inline-block;
     width: rem(3px);
     height: rem(3px);
     border-radius: 50%;
     background-color: $white;
-
 }
 
 .navigation__link_gamburger {
