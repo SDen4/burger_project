@@ -13,8 +13,8 @@
 
     @include phone {
         display: block;
-        top: 4.5%;
-        left: 91%;
+        top: 3%;
+        left: 92%;
     }
 }
 
@@ -128,6 +128,16 @@
 
 .logo__pic_gamburger {
     position: absolute;
-    top: rem(12px);
-    left: rem(16px);
+    top: 12px;
+    left: 16px;
+
+    @include tablet {
+        top: 12px;
+        left: 12px;
+    }
+
+    @include phone {
+        top: 13px;
+        left: 17px;
+    }
 }
