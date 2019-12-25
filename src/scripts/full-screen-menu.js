@@ -1,7 +1,7 @@
 const open = document.querySelector(".gamburger-menu__link"),
 close = document.querySelector(".gamburger-menu__close"),
 content = document.querySelector(".gamburger-menu__content"),
-navLink = document.getElementsByClassName('navigation__link');
+navLinkG = document.getElementsByClassName('navigation__link_gamburger'); //navigation__link
 
 open.addEventListener('click', function () {
     flagScroll = true;
@@ -23,8 +23,8 @@ content.addEventListener('click', function(e) {
     };
 });
 
-for (let i = 0; i<navLink.length; i++) {
-    navLink[i].addEventListener('click', function() {
+for (let i = 0; i<navLinkG.length; i++) {
+    navLinkG[i].addEventListener('click', function() {
         close.click();
     });
 };
