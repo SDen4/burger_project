@@ -79,8 +79,7 @@ task('watch', () => {
 task(
     'default', series(
         'clean',
-        parallel('copy:html', 'styles', 'scripts'),
-        parallel('watch', 'server')
+        parallel('copy:html', 'styles', 'scripts'), 'watch', 'server'
     )
 );
 
