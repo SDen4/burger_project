@@ -4,7 +4,7 @@
     height: rem(25px);
     position: absolute;
     top: 3.5%;
-    left: 95%;
+    left: 92%;
 
     @include tablet {
         display: block;
@@ -13,22 +13,22 @@
 
     @include phone {
         display: block;
-        top: 3%;
+        top: 3.5%;
         left: 92%;
     }
 }
 
-.gamburger-menu__link_active {
-    display: block;
+// .gamburger-menu__link_active {
+//     display: block;
 
-    @include tablet {
-        display: none;
-    }
+//     @include tablet {
+//         display: none;
+//     }
 
-    @include phone {
-        display: none;
-    }
-}
+//     @include phone {
+//         display: none;
+//     }
+// }
 
 .gamburger-menu__section {
     display: block;
