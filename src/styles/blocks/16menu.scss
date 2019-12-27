@@ -36,6 +36,10 @@
     height: 100vh;
     width: 70%;
     margin-left: auto;
+
+    @include phone {
+        width: 90%;
+    }
 }
 
 .accordeon-vert {
@@ -44,6 +48,10 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    @include phone {
+        width: 90%;
+    }
 }
 
 .accordeon-vert__list {
@@ -64,7 +72,7 @@
     transition-duration: .3s;
 
     @include phone {
-        width: 5.7rem;
+        width: 4.7rem;
     };
 }
 
@@ -85,15 +93,22 @@
 
 .accordeon-vert__item_active {
     width: 50%;
-
     transition-property: width;
     transition-duration: .3s;
+
+    @include phone {
+        width: 65%;
+    }
 }
 
 .accordeon-vert__item_active .accordeon-vert__subtitle {
     width: 10%;
     max-width: rem(80px);
     color: $yellow;
+
+    @include phone {
+        line-height: 4.1rem;
+    }
 }
 
 .accordeon-vert__item_active .accordeon-vert__text {
@@ -101,15 +116,12 @@
     padding: 5%;
 }
 
-.accordeon-vert__subtitle {
-    background-color: rgba(0, 0, 0, .6);
-}
-
 .accordeon-vert__text {
     background-color: rgba(76, 78, 80, .9);
 }
 
 .accordeon-vert__subtitle {
+    background-color: rgba(0, 0, 0, .6);
     width: 100%;
     min-width: rem(80px);
     height: 100vh;
@@ -130,6 +142,8 @@
     @include phone {
         padding-top: 4.4rem;
         letter-spacing: 2.5px;
+        min-width: 4rem;
+        line-height: 4.4rem;
     };
 }
 

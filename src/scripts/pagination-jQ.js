@@ -23,6 +23,12 @@ const perform = sectionNum => {
     });
 
     setTimeout(() => {
+        // //!!!
+        // if(sectionNum == '1') {
+        //     console.log(sectionNum + typeof(sectionNum));
+        //     $('.pagination-link').eq(sectionNum).addClass('pagination__link_black'); 
+        // };
+
         flagScroll = false;
         $('.pagination__link').eq(sectionNum).addClass('pagination__link_active').siblings().removeClass('pagination__link_active');
 
