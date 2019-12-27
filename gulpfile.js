@@ -3,9 +3,9 @@ const rm = require('gulp-rm');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
-const sassGlob = require('gulp-sass-glob');
+//const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
-const gcmq = require('gulp-group-css-media-queries');
+//const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const {SRC_PATH, DIST_PATH} = require('./gulp.config');
@@ -44,20 +44,21 @@ task('server', () => {
     });
 });
 
+
 task('styles', () => {
         return src(styles)
+        .pipe(sass().on('error', sass.logError)) //компилятор sass
         .pipe(gulpif(env === "dev", sourcemaps.init()))
-        .pipe(concat('main.scss'))
-        .pipe(sassGlob())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulpif(env === "dev", 
-            autoprefixer({
+        //.pipe(sassGlob())
+        .pipe(concat('main.css'))
+        .pipe(gulpif(env === "dev",
+            autoprefixer({ // авто префиксы для браузеров
                 cascade: false
             })
         ))
-        .pipe(gulpif(env === "prod", gcmq()))
-        .pipe(gulpif(env === "prod", cleanCSS({})))
-        .pipe(gulpif(env === "dev", sourcemaps.write()))
+        //.pipe(gulpif(env === "prod", gcmq())) //группировка медиазапросов
+        .pipe(gulpif(env === "prod", cleanCSS({}))) //очистка css
+        .pipe(gulpif(env === "dev", sourcemaps.write())) // записать + сорс мап
         .pipe(dest(DIST_PATH));
     }
 );
