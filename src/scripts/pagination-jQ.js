@@ -91,5 +91,6 @@ if(isMobile) {
             const directionSwipe = direction === 'up' ? 'next' : 'prev';
             scrollToSection (directionSwipe);
         }
-    })
+    });
+    console.log('swipe!');
 };

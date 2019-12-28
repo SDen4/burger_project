@@ -27,7 +27,6 @@
                 };
 
                 modal.style.display = 'flex';
-                bodyFixed.classList.add('body__fixed');
             });
         };
     });
@@ -60,7 +59,6 @@
     closeModal.addEventListener('click', function(e) {
         e.preventDefault();
         modal.style.display = 'none';
-        bodyFixed.classList.remove('body__fixed');
     });
 
     modal.addEventListener('click', function(e) {
