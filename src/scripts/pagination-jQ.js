@@ -16,7 +16,6 @@ const perform = sectionNum => {
         console.error('Передано неверное значение в perform()');
     };
 
-
     sections.eq(sectionNum).addClass('section_active').siblings().removeClass('section_active');
 
     display.css({
@@ -24,15 +23,12 @@ const perform = sectionNum => {
     });
 
     setTimeout(() => {
-
         flagScroll = false;
         $('.pagination__link').eq(sectionNum).addClass('pagination__link_active ').siblings().removeClass('pagination__link_active');
-
     }, scrollDuration)
 
-    //color of dots
+    //black color of dots
     if(sectionNum == 1 || sectionNum == 6 || sectionNum == 8) {
-        console.log(sectionNum + typeof(sectionNum));
         $('.pagination__link').addClass('pagination__link_black');
     } else {
         $('.pagination__link').removeClass('pagination__link_black');

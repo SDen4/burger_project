@@ -13,16 +13,13 @@ const gulpif = require('gulp-if');
 
 const env = process.env.NODE_ENV;
 
-
 const reload = browserSync.reload;
 
 sass.compiler = require('node-sass');
 
-
 task('clean', () => {
     return src( `${DIST_PATH}/**/*`, {read: false}).pipe( rm() )
 });
-
 
 task('copy:html', () => {
         return src(`./${SRC_PATH}/*.html`)
@@ -43,7 +40,6 @@ task('server', () => {
         open: false
     });
 });
-
 
 task('styles', () => {
         return src(styles)
@@ -72,7 +68,7 @@ task('scripts', () => {
 });
 
 task('watch', () => {
-    watch(`${SRC_PATH}/styles/*.scss`, series('styles'));
+    watch(`${SRC_PATH}/styles/**/*.scss`, series('styles'));
     watch(`${SRC_PATH}/*.html`, series('copy:html'));
     watch(`${SRC_PATH}/scripts/*.js`, series('scripts'));
 });
