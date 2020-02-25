@@ -139,6 +139,10 @@
     @include phone {
         height: 7.8125rem;
     };
+
+    @include small {
+        height: 2.8125rem;
+    }
 }
 
 .form__payment, .form__callback {

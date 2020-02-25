@@ -15,7 +15,7 @@ open.addEventListener('click', function () {
 close.addEventListener('click', function () {
     flagScroll = false;
     content.classList.remove('gamburger-menu__content_active');
-    open.style.left = '92%';
+    open.style.left = '90%';
     //open.style.display = 'block';
     //open.classList.add('gamburger-menu__link_active');
 });

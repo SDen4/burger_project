@@ -39,4 +39,8 @@
         line-height: 4.1rem;
         padding-bottom: 6.5%;
     };
+
+    @include small {
+        padding-bottom: 0;
+    }
 }

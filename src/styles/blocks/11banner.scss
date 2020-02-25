@@ -34,6 +34,10 @@
         width: 75%;
         margin: -7% 0 8% 1%;
     };
+
+    @include small {
+        margin: -7% 0 0 1%;
+    }
 }
 
 .banner__descr {

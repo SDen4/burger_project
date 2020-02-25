@@ -77,6 +77,10 @@
         margin-bottom: 3%;
         margin-top: 24%;
     }
+
+    @include small {
+        margin-bottom: 0;
+    }
 }
 
 .slider__ingridients, .slider__ccal {
@@ -106,6 +110,10 @@
         top: unset;
         bottom: 95%;
         left: -3.5%;
+    }
+
+    @include small {
+        bottom: 82%;
     }
 }
 
@@ -191,6 +199,10 @@
         left: unset;
         right: -10%;
     }
+
+    @include small {
+        bottom: 90%;
+    }
 }
 
 .slider__ccal-svg {
@@ -241,6 +253,11 @@
     width: 105%;
 }
 
+.slider__image_big {
+    width: 82%;
+    margin-left: 9%;
+}
+
 .slider__info {
     width: 49%;
     display: flex;
@@ -279,6 +296,12 @@
         line-height: rem(59px);
         width: 100%;
         margin-bottom: -2%;
+    }        padding-bottom: 8%;
+
+    @include small {
+        font-size: rem(48px);
+        line-height: 36px;
+        padding-bottom: 2%;
     }
 }
 
@@ -307,6 +330,10 @@
     @include phone {
         margin-bottom: 2%;
     }
+
+    @include small {
+        margin-bottom: 0;
+    }
 }
 
 .slider__price {
@@ -327,6 +354,10 @@
     
     @include phone {
         font-size: rem(57px);
+    }
+
+    @include small {
+        line-height: 40px;
     }
 }
 
