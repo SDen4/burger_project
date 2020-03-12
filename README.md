@@ -7,3 +7,5 @@ $ cd burger_project
 $ npm i
 $ npm run gulp
 ```
+## Wath on github-pages:
+https://sden4.github.io/burger_project/dist/
