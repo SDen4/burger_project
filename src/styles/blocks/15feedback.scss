@@ -113,6 +113,9 @@
     transition: .3s;
     background-color: $black;
 
+    //Delete blue mark of tap in mobile version
+    -webkit-tap-highlight-color: transparent;
+
     @include phone {
         padding: .1875rem 1.15rem;
         letter-spacing: 0px;
