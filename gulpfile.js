@@ -72,7 +72,7 @@ task('styles', () => {
     //.pipe(gulpif(env === "prod", gcmq())) //группировка медиазапросов
     .pipe(gulpif(env === "prod", cleanCSS({}))) //очистка css
     .pipe(gulpif(env === "dev", sourcemaps.write())) // записать + сорс мап
-    .pipe(dest(DIST_PATH));
+    .pipe(dest(`${DIST_PATH}/css`));
 });
 
 task('scripts', () => {
@@ -80,7 +80,7 @@ task('scripts', () => {
     .pipe(sourcemaps.init())
     .pipe(concat('main.js', {newLine: ";"}))
     .pipe(sourcemaps.write())
-    .pipe(dest(DIST_PATH));
+    .pipe(dest(`${DIST_PATH}/js`));
 });
 
 task('watch', () => {
