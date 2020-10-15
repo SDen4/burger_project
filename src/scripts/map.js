@@ -9,8 +9,9 @@
         myMap.controls.remove('rulerControl');
         myMap.controls.remove('trafficControl');
         myMap.controls.remove('geolocationControl');
-        myMap.controls.remove('zoomControl');
+        // myMap.controls.remove('zoomControl');
         myMap.controls.remove('fullscreenControl');
+        myMap.behaviors.disable('scrollZoom');
 
         let coords = [
             [59.986320, 30.201875],
