@@ -89,7 +89,7 @@ if(isMobile) {
     $('body').swipe({
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
             const directionSwipe = direction === 'up' ? 'next' : 'prev';
-            scrollToSection (directionSwipe);
+            scrollToSection(directionSwipe);
         }
     });
 };

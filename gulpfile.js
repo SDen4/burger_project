@@ -76,7 +76,7 @@ task('styles', () => {
 });
 
 task('scripts', () => {
-    return src(['./node_modules/jquery/dist/jquery.js', `${SRC_PATH}/scripts/*.js`])
+    return src(['./node_modules/jquery/dist/jquery.js', './node_modules/jquery-touchswipe/jquery.touchSwipe.js', `${SRC_PATH}/scripts/*.js`])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js', {newLine: ";"}))
     .pipe(sourcemaps.write())
