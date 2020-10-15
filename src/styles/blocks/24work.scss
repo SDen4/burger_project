@@ -13,23 +13,27 @@
 
     @include tablet {
         width: 96%;
-    };
+    }
 }
 
 .work__title {
-    text-transform: uppercase;
-    font-size: rem(72px);
-    font-family: "Gagalin";
-    text-align: center;
+    font: {
+        size: rem(72px);
+        family: "Gagalin";
+    }
+    text: {
+        align: center;
+        transform: uppercase;
+    }
     padding-bottom: 5%;
 
     @include tablet {
         font-size: rem(76px);
-    };
+    }
 
     @include phone {
         font-size: rem(58px);
-    };
+    }
 }
 
 .work__content {
@@ -54,11 +58,9 @@
 .video__big-button {
     display: block;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0; bottom: 0; left: 0; right: 0;
     background: url('../img/svg/play-white-svg.svg') center center no-repeat;
+    cursor: pointer;
 }
 
 .player__window {
@@ -106,26 +108,24 @@
     left: 10px;
     cursor: pointer;
 
-    &:after {
+    &:after, &:before {
         content: "";
         display: block;
         height: 22px;
+        position: absolute;
+        top: 0px;
+    }
+
+    &:after {
         width: 4px;
         border-radius: 1px;
         background-color: $player-grey;
-        position: absolute;
-        top: 0px;
         left: 10px;
     }
 
     &:before {
-        content: "";
-        display: block;
         width: 22px;
-        height: 22px;
         background-color:transparent;
-        position: absolute;
-        top: 0px;
         left: -4px;
     }
 }

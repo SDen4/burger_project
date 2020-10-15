@@ -9,8 +9,7 @@
     width: 50%;
     height: 100vh;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0; right: 0;
     background-color: rgba(47, 48, 51, 0.93);
     display: flex;
     justify-content: center;
@@ -18,7 +17,7 @@
 
     @include tablet {
         width: 100%;
-    };
+    }
 }
 
 .team__content {
@@ -37,14 +36,14 @@
         text-align: center;
         letter-spacing: 3px;
         margin-bottom: 12%;
-    };
+    }
 
     @include phone {
         text-align: center;
         letter-spacing: 1px;
         margin-bottom: 8%;
         font-size: rem(56px);
-    };
+    }
 }
 
 .accordeon__list {
@@ -57,21 +56,21 @@
 
     @include tablet {
         margin-bottom: 7%;
-    };
+    }
 
     @include phone {
         margin-bottom: 10%;
-    };
+    }
 }
 
 .accordeon__item_active {
     @include tablet {
         margin-bottom: 5%;
-    };
+    }
 
     @include phone{
         margin-bottom: 9%;
-    };
+    }
 }
 
 .accordeon__item_active .accordeon__username {
@@ -80,11 +79,11 @@
 
     @include tablet {
         margin-bottom: 3%;
-    };
+    }
 
     @include phone {
         margin-bottom: 5%;
-    };
+    }
 }
 
 .accordeon__item_active .accordeon__username:before {
@@ -101,7 +100,7 @@
 
     @include tablet {
         margin-bottom: 1%;
-    };
+    }
 }
 
 @keyframes appear {
@@ -134,20 +133,20 @@
 
         @include phone {
             margin-right: 3%;
-        };
-    };
+        }
+    }
 
     @include tablet {
         font-size: rem(24px);
         letter-spacing: 1px;
         justify-content: center;
-    };
+    }
 
     @include phone {
         font-size: rem(28px);
         justify-content: center;
         letter-spacing: 0px;
-    };
+    }
 }
 
 .accordeon-hid {
@@ -166,7 +165,7 @@
         flex-direction: column;
         margin: 0;
         align-items: center;
-    };
+    }
 }
 
 .accordeon__photo {
@@ -181,12 +180,12 @@
     @include tablet {
         margin-right: 0;
         margin-bottom: 5.5%;
-    };
+    }
 
     @include phone {
         width: 7.25rem;
         height: 7.25rem;
-    };
+    }
 }
 
 .accordeon__avatar {
@@ -205,11 +204,11 @@
         align-items: center;
         text-align: center;
         width: 75%;
-    };
+    }
 
     @include phone {
         width: 100%;
-    };
+    }
 }
 
 .accordeon__skill, .accordeon__text {
@@ -233,5 +232,5 @@
 
     @include phone{
         letter-spacing: .3px;
-    };
+    }
 }

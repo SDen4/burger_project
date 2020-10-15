@@ -12,22 +12,18 @@
 
     @include tablet {
         padding: 1% 1% 1% 3%;
-    };
+    }
 
     @include phone {
         flex-direction: column;
         align-items: center;
-    };
+    }
 }
 
 .footer {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    background: url('../img/bg-delivery2.png') center center no-repeat, 
-    url('../img/bg-delivery.jpg') center center no-repeat;
+    bottom: 0; right: 0; left: 0;
+    background: url('../img/bg-delivery2.png') center center no-repeat, url('../img/bg-delivery.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -41,7 +37,7 @@
         width: 80%;
         align-items: center;
         margin-top: 3.1%;
-    };
+    }
 }
 
 .contacts__address {
@@ -54,7 +50,7 @@
         font-size: rem(16px);
         padding-bottom: 2%;
         text-align: center;
-    };
+    }
 }
 
 .contacts__phone {
@@ -103,15 +99,15 @@
 
     &:first-child {
         margin-left: 0;
-    };
+    }
 
     @include tablet {
         margin-left: 5%;
-    };
+    }
 
     @include phone {
         margin-left: 9%;
-    };
+    }
 }
 
 .social__list {
@@ -123,7 +119,7 @@
     @include phone {
         justify-content: center;
         margin: 7% 0;
-    };
+    }
 }
 
 .social__link {
@@ -138,7 +134,7 @@
 
     &:hover {
         fill: $white;
-    };
+    }
 }
 
 #map {

@@ -1,10 +1,7 @@
 .modal {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(47, 50, 52, .92);;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(47, 50, 52, .92);
     z-index: 10;
     display: none;
     justify-content: center;
@@ -26,8 +23,10 @@
 .modal__text {
     text-align: center;
     padding-bottom: 9%;
-    font-size: 14px;
     color: $black;
-    font-family: "Ubuntu";
-    font-weight: 300;
+    font: {
+        size: 14px;
+        family: "Ubuntu";
+        weight: 300;
+    }
 }

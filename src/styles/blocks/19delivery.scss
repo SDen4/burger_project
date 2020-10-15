@@ -14,11 +14,11 @@
 
     @include tablet {
         width: 95%;
-    };
+    }
 
     @include phone {
         width: 98%;
-    };
+    }
 }
 
 .delivery__title {
@@ -31,14 +31,14 @@
     @include tablet {
         letter-spacing: rem(2px);
         padding-bottom: 7.5%;
-    };
+    }
 
     @include phone {
         font-size: rem(56px);
         letter-spacing: rem(1px);
         line-height: 4.1rem;
         padding-bottom: 6.5%;
-    };
+    }
 
     @include small {
         padding-bottom: 0;

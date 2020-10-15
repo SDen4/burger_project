@@ -23,18 +23,17 @@
         letter-spacing: 3px;
         top: 7rem;
         left: 1.5rem;
-    };
+    }
 
     @include phone {
         font-size: rem(60px);
         letter-spacing: -1px;
         top: 3.5rem;
         left: 4.5rem;
-    };
+    }
 }
 
 .menu_hide{
-    //display: none;
     color: transparent;
 }
 
@@ -79,7 +78,7 @@
 
     @include phone {
         width: 4.7rem;
-    };
+    }
 }
 
 .accordeon-vert__item_meet {
@@ -143,14 +142,14 @@
 
     @include tablet {
         letter-spacing: 1px;
-    };
+    }
 
     @include phone {
         padding-top: 4.4rem;
         letter-spacing: 2.5px;
         min-width: 4rem;
         line-height: 4.4rem;
-    };
+    }
 }
 
 .accordeon-vert__text {

@@ -8,7 +8,7 @@
 
     @include phone {
         margin-bottom: 6%;
-    };
+    }
 }
 
 .scroll__link {
@@ -16,19 +16,19 @@
     width: rem(30px);
     height: rem(30px);
     
-    &::after {
+    &:after {
         content: "";
         display: block;
         width: rem(30px);
         height: rem(30px);
         position: absolute;
-    };
+    }
 
     &:hover .scroll__pic {
         top: rem(-5px);
         width: rem(29px) * 1.3;
         height: rem(14px) * 1.3;
-    };
+    }
 }
 
 .scroll__pic {

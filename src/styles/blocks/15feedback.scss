@@ -19,11 +19,11 @@
 
     &:nth-child(3n+2) .feedback__avatar {
         transform: scale(-1, 1);
-    };
+    }
 
     &:nth-child(2) .feedback__avatar {
         object-position: 10% 50%;
-    };
+    }
 
     @include tablet {
         width: 50%;
@@ -56,14 +56,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    };
+    }
 
     @include phone {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    };
+    }
 }
 
 .feedback__content:hover {
@@ -82,14 +82,14 @@
     @include tablet {
         padding-bottom: 2%;
         line-height: rem(28px);
-    };
+    }
 
     @include phone {
         font-size: rem(28px);
         line-height: rem(30px);
         letter-spacing: -1px;
         padding-bottom: 17%;
-    };
+    }
 }
 
 .feedback__text {
@@ -102,11 +102,11 @@
     @include tablet {
         line-height: rem(20px);
         margin-bottom: 1%;
-    };
+    }
 
     @include phone {
         display: none;
-    };
+    }
 }
 
 .feedback__button {

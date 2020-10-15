@@ -19,7 +19,7 @@
     align-items: center;
     flex: 1 1 auto;
     justify-content: space-around;
-    
+
     &:after {
         content: "";
         display: inline-block;
@@ -27,12 +27,12 @@
         height: rem(3px);
         border-radius: 50%;
         background-color: $white;
-    };
+    }
 
     &:last-child:after{
         content: "";
         display: none;
-    };
+    }
 }
 
 .navigation__link {
@@ -54,9 +54,9 @@
         background-color: $white;
         transition: .5s;
         position: inherit;
-    };
+    }
 
     &:hover:after {
         opacity: 1;
-    };
+    }
 }

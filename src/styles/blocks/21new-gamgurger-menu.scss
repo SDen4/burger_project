@@ -14,40 +14,22 @@
 
     @include phone {
         display: block;
-
         left: unset;
         right: 1.25rem;
         top: 2rem;
-
-        // top: 3.5%;
-        // left: 92%;
     }
 
     @include small {
         left: unset;
         right: 1.25rem;
         top: 2rem;
-        // left: 87%;
-        // top: 6%;
     }
 }
 
-// .gamburger-menu__link_active {
-//     display: block;
-
-//     @include tablet {
-//         display: none;
-//     }
-
-//     @include phone {
-//         display: none;
-//     }
-// }
-
 .gamburger-menu__section {
     display: block;
-    width: rem(24px);
-    height: rem(4px);
+    width: 24px;
+    height: 4px;
     border-radius: 2px;
     background-color: $white;
     position: relative;
@@ -55,11 +37,11 @@
     &:after,
     &:before {
         content: "";
-        width: rem(24px);
-        height: rem(4px);
-        border-radius: 2px;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
         position: absolute;
-        background-color: $white;
+        background-color: inherit;
     }
 
     &:after {
