@@ -15,6 +15,10 @@ const env = process.env.NODE_ENV;
 
 const reload = browserSync.reload;
 
+const styles = [
+    `${SRC_PATH}/main5.scss`
+];
+
 sass.compiler = require('node-sass');
 
 task('clean', () => {
@@ -22,15 +26,28 @@ task('clean', () => {
 });
 
 task('copy:html', () => {
-        return src(`./${SRC_PATH}/*.html`)
-            .pipe(dest(DIST_PATH))
-            .pipe(reload({stream: true}));
-    }
-);
+    return src(`./${SRC_PATH}/*.html`)
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({stream: true}));
+});
 
-const styles = [
-    `${SRC_PATH}/main5.scss`
-];
+task('images', () => {
+    return src(`${SRC_PATH}/img/**/*`)
+    .pipe(dest(`${DIST_PATH}/img`))
+    .pipe(reload({stream: true}))
+});
+
+task('copy:video', () => {
+    return src(`${SRC_PATH}/video/*`)
+    .pipe(dest(`${DIST_PATH}/video`))
+    .pipe(reload({stream: true}));
+});
+
+task('copy:fonts', () => {
+    return src(`${SRC_PATH}/fonts/*`)
+    .pipe(dest(`${DIST_PATH}/fonts`))
+    .pipe(reload({stream: true}));
+});
 
 task('server', () => {
     browserSync.init({
@@ -42,25 +59,24 @@ task('server', () => {
 });
 
 task('styles', () => {
-        return src(styles)
-        .pipe(sass().on('error', sass.logError)) //компилятор sass
-        .pipe(gulpif(env === "dev", sourcemaps.init()))
-        //.pipe(sassGlob())
-        .pipe(concat('main.css'))
-        .pipe(gulpif(env === "dev",
-            autoprefixer({ // авто префиксы для браузеров
-                cascade: false
-            })
-        ))
-        //.pipe(gulpif(env === "prod", gcmq())) //группировка медиазапросов
-        .pipe(gulpif(env === "prod", cleanCSS({}))) //очистка css
-        .pipe(gulpif(env === "dev", sourcemaps.write())) // записать + сорс мап
-        .pipe(dest(DIST_PATH));
-    }
-);
+    return src(styles)
+    .pipe(sass().on('error', sass.logError)) //компилятор sass
+    .pipe(gulpif(env === "dev", sourcemaps.init()))
+    //.pipe(sassGlob())
+    .pipe(concat('main.css'))
+    .pipe(gulpif(env === "dev",
+        autoprefixer({ // авто префиксы для браузеров
+            cascade: false
+        })
+    ))
+    //.pipe(gulpif(env === "prod", gcmq())) //группировка медиазапросов
+    .pipe(gulpif(env === "prod", cleanCSS({}))) //очистка css
+    .pipe(gulpif(env === "dev", sourcemaps.write())) // записать + сорс мап
+    .pipe(dest(DIST_PATH));
+});
 
 task('scripts', () => {
-    return src(`${SRC_PATH}/scripts/*.js`)
+    return src(['./node_modules/jquery/dist/jquery.js', `${SRC_PATH}/scripts/*.js`])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js', {newLine: ";"}))
     .pipe(sourcemaps.write())
@@ -76,14 +92,12 @@ task('watch', () => {
 task(
     'default', series(
         'clean',
-        parallel('copy:html', 'styles', 'scripts'),
+        parallel('copy:html', 'copy:fonts', 'copy:video', 'images', 'styles', 'scripts'),
         parallel('watch', 'server')
-    )
-);
+));
 
 task(
     'build', series(
         'clean',
-        parallel('copy:html', 'styles', 'scripts')
-    )
-);
+        parallel('copy:html', 'copy:fonts', 'copy:video', 'images', 'styles', 'scripts')
+));
