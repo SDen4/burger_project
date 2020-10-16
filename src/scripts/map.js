@@ -22,7 +22,7 @@
 
         for (let j = 0; j < coords.length; j++) {
             coordPoint = coords[j];
-            myMap.geoObjects.add(new ymaps.Placemark(coordPoint, {}, {iconLayout: 'default#image', iconImageHref: "../img/map-point.png", iconImageSize: [46, 57]}));
+            myMap.geoObjects.add(new ymaps.Placemark(coordPoint, {}, {iconLayout: 'default#image', iconImageHref: "./img/map-point.png", iconImageSize: [46, 57]}));
         };
     };
     ymaps.ready(init);
