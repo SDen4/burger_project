@@ -32,10 +32,26 @@
     font-family: "Gagalin";
     margin-bottom: 8%;
 
+    @include additional {
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+        }
+    }
+
     @include tablet {
         text-align: center;
         letter-spacing: 3px;
         margin-bottom: 12%;
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+            margin-bottom: 5%;
+        }
+        @include smallGRZ {
+            font-size: rem(40px);
+            line-height: rem(40px);
+        }
     }
 
     @include phone {
@@ -56,6 +72,9 @@
 
     @include tablet {
         margin-bottom: 7%;
+        @include phoneGRZ {
+            margin-bottom: 2%;
+        }
     }
 
     @include phone {
@@ -165,6 +184,9 @@
         flex-direction: column;
         margin: 0;
         align-items: center;
+        @include phoneGRZ {
+            flex-direction: row;
+        }
     }
 }
 
@@ -180,6 +202,12 @@
     @include tablet {
         margin-right: 0;
         margin-bottom: 5.5%;
+        @include phoneGRZ {
+            margin-right: 3.8%;
+        }
+        @include smallGRZ {
+            margin-bottom: 2%;
+        }
     }
 
     @include phone {
@@ -204,6 +232,9 @@
         align-items: center;
         text-align: center;
         width: 75%;
+        @include phoneGRZ {
+            align-items: flex-start;
+        }
     }
 
     @include phone {
@@ -229,6 +260,12 @@
 .accordeon__text {
     font-weight: 400;
     line-height: rem(24px);
+
+    @include tablet {
+        @include phoneGRZ {
+            text-align: left;
+        }
+    }
 
     @include phone{
         letter-spacing: .3px;

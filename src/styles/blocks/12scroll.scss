@@ -6,6 +6,12 @@
     position: relative;
     height: rem(14px);
 
+    @include additional {
+        @include phoneGRZ {
+            display: none;
+        }
+    }
+
     @include phone {
         margin-bottom: 6%;
     }

@@ -28,9 +28,23 @@
     padding-bottom: 4.5%;
     text-align: center;
 
+    @include additional {
+        @include phoneGRZ {
+            font-size: rem(52px);
+        }
+    }
+
     @include tablet {
         letter-spacing: rem(2px);
         padding-bottom: 7.5%;
+        @include phoneGRZ {
+            padding-bottom: 5.5%;
+        }
+        @include smallGRZ {
+            font-size: rem(40px);
+            line-height: rem(40px);
+            padding-bottom: 1%;
+        }
     }
 
     @include phone {

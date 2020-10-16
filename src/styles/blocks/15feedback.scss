@@ -28,6 +28,10 @@
     @include tablet {
         width: 50%;
         height: 25%;
+        @include phoneGRZ {
+            width: 25%;
+            height: 50%;
+        }
     }
 }
 
@@ -40,14 +44,20 @@
 
 .feedback__content {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     opacity: 0;
-    padding: 5% 5%;
+    padding: 5%;
     transition: .3s;
     background-color: rgba(0, 0, 0, .5);
+
+    @include additional {
+        @include phoneGRZ {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center
+        }
+    }
 
     @include tablet {
         text-align: center;
@@ -98,6 +108,12 @@
     font-family: "Ubuntu";
     font-weight: 300;
     margin-bottom: 6%;
+
+    @include additional {
+        @include phoneGRZ {
+            display: none;
+        }
+    }
 
     @include tablet {
         line-height: rem(20px);

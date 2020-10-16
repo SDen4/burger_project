@@ -102,6 +102,11 @@
     justify-content: center;
     min-height: 420px;
     width: fit-content;
+    @include tablet {
+        @include phoneGRZ {
+            min-height: 310px;
+        }
+    }
 }
 
 .navigation__item_gamburger {

@@ -35,9 +35,22 @@
     line-height: rem(64px);
     padding-bottom: 5%;
 
+    @include additional {
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+            padding-bottom: 1%;
+        }
+    }
+
     @include tablet {
         font-size: rem(76px);
         padding-bottom: 8%;
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+            padding-bottom: 1%;
+        }
     }
 
     @include phone {
@@ -89,6 +102,10 @@
 
     @include tablet {
         width: 45%;
+        @include smallGRZ {
+            margin-bottom: 2%;
+            height: 80px;
+        }
     }
 
     @include phone {
@@ -139,6 +156,12 @@
     letter-spacing: rem(-1px);
     padding-bottom: 20%;
 
+    @include additional {
+        @include phoneGRZ {
+            padding-bottom: 5%;
+        }
+    }
+
     @include phone {
         padding-bottom: 5%;
         font-size: rem(28px);
@@ -154,6 +177,12 @@
     }
     text-align: center;
     line-height: rem(24px);
+
+    @include tablet {
+        @include smallGRZ {
+            line-height: rem(18px);
+        }
+    }
 
     @include phone {
         text-align: start;

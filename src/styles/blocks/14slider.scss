@@ -5,6 +5,11 @@
 .container_slider {
     justify-content: space-between;
     align-items: center;
+    @include additional {
+        @include phoneGRZ {
+            width: 92%;
+        }
+    }
 }
 
 .slider__arrow {
@@ -59,12 +64,21 @@
 
     @include tablet {
         flex-direction: column;
+        @include phoneGRZ {
+            flex-direction: row;
+        }
     }
 }
 
 .slider__pic {
     width: 48%;
     position: relative;
+
+    @include additional {
+        @include phoneGRZ {
+            width: 35%;
+        }
+    }
     
     @include tablet {
         width: 75%;
@@ -101,6 +115,10 @@
         height: 6rem;
         bottom: 95%;
         left: 3%;
+        @include smallGRZ {
+            width: 5rem;
+            height: 5rem;
+        }
     }
 
     @include phone {
@@ -191,6 +209,13 @@
         top: unset;
         bottom: 95%;
         left: 83%;
+        @include phoneGRZ {
+            top: 85%;
+            left: 0;
+        }
+        @include smallGRZ {
+            top: 70%;
+        }
     }
 
     @include phone {
@@ -230,6 +255,12 @@
     top: rem(40px);
     left: rem(30px);
 
+    @include tablet {
+        @include smallGRZ {
+            left: 22px;
+        }
+    }
+
     @include phone {
         top: 2.857rem;
         left: 2.142rem;
@@ -242,6 +273,12 @@
     left: rem(32px);
     text-transform: uppercase;
 
+    @include tablet {
+        @include smallGRZ {
+            left: 24px;
+        }
+    }
+
     @include phone {
         top: rem(86px);
     }
@@ -251,6 +288,11 @@
     display: block;
     object-fit: cover;
     width: 105%;
+    @include tablet {
+        @include phoneGRZ {
+            width: 90%;
+        }
+    }
 }
 
 .slider__image_big {
@@ -282,6 +324,14 @@
     font-family: "Gagalin";
     padding-bottom: 10%;
 
+    @include additional {
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+            padding-bottom: 5%;
+        }
+    }
+
     @include tablet {
         font-size: rem(78px);
         line-height: rem(69px);
@@ -289,6 +339,16 @@
         text-align: center;
         padding-bottom: 8%;
         letter-spacing: -1px;
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+            padding-bottom: 5%;
+        }
+        @include smallGRZ {
+            font-size: rem(48px);
+            line-height: 36px;
+            padding-bottom: 2%;
+        }
     }
 
     @include phone {
@@ -296,7 +356,8 @@
         line-height: rem(59px);
         width: 100%;
         margin-bottom: -2%;
-    }        padding-bottom: 8%;
+        padding-bottom: 8%;
+    }
 
     @include small {
         font-size: rem(48px);
@@ -325,6 +386,9 @@
 
     @include tablet {
         margin-bottom: 4.5%;
+        @include smallGRZ {
+            line-height: 18px;
+        }
     }
 
     @include phone {
@@ -338,10 +402,10 @@
 
 .slider__price {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     flex-wrap: wrap;
 
-    @include tablet {
+    @include additional {
         justify-content: center;
     }
 }
@@ -351,9 +415,10 @@
     letter-spacing: -2px;
     color: $red_new;
     font-family: "Gagalin";
-    
+
     @include phone {
         font-size: rem(57px);
+        line-height: rem(57px);
     }
 
     @include small {
@@ -363,9 +428,22 @@
 
 .slider__rub-num {
     margin-right: 2%;
+    @include additional {
+        @include phoneGRZ {
+            font-size: rem(52px);
+            line-height: rem(52px);
+        }
+    }
+    @include tablet {
+        @include smallGRZ {
+            font-size: rem(40px);
+            line-height: 40px;
+        }
+    }
 }
 
 .slider__rub-let {
     font-size: rem(32px);
+    line-height: rem(32px);
     margin-right: 5%;
 }

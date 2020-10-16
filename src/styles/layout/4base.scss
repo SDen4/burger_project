@@ -80,6 +80,12 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include additional {
+        @include phoneGRZ {
+            min-height: unset;
+        }
+    }
 }
 
 .logo__pic {

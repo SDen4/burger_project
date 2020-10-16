@@ -27,8 +27,22 @@
     }
     padding-bottom: 5%;
 
+    @include additional {
+        @include phoneGRZ {
+            font-size: rem(52px);
+            padding-bottom: 1%;
+        }
+    }
+
     @include tablet {
         font-size: rem(76px);
+        @include phoneGRZ {
+            font-size: rem(52px);
+            padding-bottom: 1%;
+        }
+        @include smallGRZ {
+            font-size: rem(40px);
+        }
     }
 
     @include phone {
@@ -41,18 +55,38 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    @include additional {
+        @include phoneGRZ {
+            max-height: 300px;
+        }
+    }
+    @include tablet {
+        @include smallGRZ {
+            max-height: 270px;
+        }
+    }
 }
 
 .video__contant {
     position: relative;
     max-width: 100%;
+    @include additional {
+        @include phoneGRZ {
+            max-height: 260px;
+        }
+    }
+    @include tablet {
+        @include smallGRZ {
+            max-height: 230px;
+        }
+    }
 }
 
 .video {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; //???
+    object-fit: cover;
 }
 
 .video__big-button {
@@ -113,7 +147,7 @@
         display: block;
         height: 22px;
         position: absolute;
-        top: 0px;
+        top: 0;
     }
 
     &:after {

@@ -142,6 +142,9 @@
 
     @include tablet {
         letter-spacing: 1px;
+        @include smallGRZ {
+            font-size: rem(32px);
+        }
     }
 
     @include phone {

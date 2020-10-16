@@ -2,6 +2,12 @@
     flex: 2;
     margin-left: 6.1%;
 
+    @include additional {
+        @include phoneGRZ {
+            margin-left: 2%;
+        }
+    }
+
     @include tablet {
         display: none;
     }

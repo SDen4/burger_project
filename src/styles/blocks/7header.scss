@@ -15,6 +15,9 @@
 
     @include tablet {
         padding: .75rem 5.9rem 0 .5rem;
+        @include phoneGRZ {
+            align-items: flex-start;
+        }
     }
 
     @include phone {
