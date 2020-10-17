@@ -10,6 +10,9 @@
             width: 92%;
         }
     }
+    @include tablet {
+        min-height: 95%;
+    }
 }
 
 .slider__arrow {
@@ -35,12 +38,11 @@
 .slider__watch-zone {
     display: flex;
     width: 81vw;
-    height: 135%;
+    height: 100%;
     overflow: hidden;
     max-width: rem(980px);
 
     @include tablet {
-        height: 109%;
         align-items: center;
     }
 }
@@ -50,7 +52,15 @@
     position: relative;
 
     @include tablet {
+        height: 75%;
         align-items: center;
+    }
+
+    @include phone {
+        height: 100%;
+        @include additionalGRZ {
+            height: 85%;
+        }
     }
 }
 
@@ -61,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     @include tablet {
         flex-direction: column;
@@ -72,7 +83,9 @@
 
 .slider__pic {
     width: 48%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include additional {
         @include phoneGRZ {
@@ -88,6 +101,7 @@
 
     @include phone {
         width: 88%;
+        height: 48%;
         margin-bottom: 3%;
         margin-top: 24%;
     }
@@ -103,7 +117,7 @@
     border-radius: rem(5px);
     background-color: $orange;
     position: absolute;
-    bottom: 97%;
+    top:3%;
     left: 3%;
     display: flex;
     flex-direction: column;
@@ -113,8 +127,6 @@
     @include tablet {
         width: 6rem;
         height: 6rem;
-        bottom: 95%;
-        left: 3%;
         @include smallGRZ {
             width: 5rem;
             height: 5rem;
@@ -124,14 +136,6 @@
     @include phone {
         width: 6.428rem;
         height: 6.428rem;
-        bottom: unset;
-        top: unset;
-        bottom: 95%;
-        left: -3.5%;
-    }
-
-    @include small {
-        bottom: 82%;
     }
 }
 
@@ -139,6 +143,13 @@
     fill: $white;
     width: rem(46px);
     height: rem(44px);
+
+    @include tablet {
+        @include phoneGRZ {
+            width: rem(40px);
+            height: rem(40px);
+        }
+    }
 
     @include phone {
         width: rem(52px);
@@ -165,6 +176,7 @@
     top: 0;
     left: -9999px;
     transition: opacity .6s;
+    padding: 10% 0;
 }
 
 .slider__ingridients-row {
@@ -173,6 +185,11 @@
     align-items: center;
     justify-content: space-around;
     margin: 2% 0;
+    @include additional {
+        @include phoneGRZ {
+            margin: .5% 0;
+        }
+    }
 }
 
 .slider__ingridients-type, .slider__ingridients-weight {
@@ -202,31 +219,23 @@
 
 .slider__ccal {
     background-color: transparent;
-    top: 97%;
-    left: 0;
+    top: unset;
+    bottom: 3%;
 
     @include tablet {
-        top: unset;
-        bottom: 95%;
-        left: 83%;
+        bottom: unset;
+        left: unset;
+        top: 3%;
+        right: 3%;
         @include phoneGRZ {
-            top: 85%;
-            left: 0;
-        }
-        @include smallGRZ {
-            top: 70%;
+            top: unset;
+            bottom: 3%;
+            left: 3%;
         }
     }
 
     @include phone {
-        top: unset;
-        bottom: 95%;
-        left: unset;
-        right: -10%;
-    }
-
-    @include small {
-        bottom: 90%;
+        right: 0;
     }
 }
 
@@ -287,17 +296,13 @@
 .slider__image {
     display: block;
     object-fit: cover;
-    width: 105%;
+    width: 92%;
+
     @include tablet {
         @include phoneGRZ {
             width: 90%;
         }
     }
-}
-
-.slider__image_big {
-    width: 82%;
-    margin-left: 9%;
 }
 
 .slider__info {
@@ -412,6 +417,7 @@
 
 .slider__rub-num, .slider__rub-let {
     font-size: rem(72px);
+    line-height: rem(60px);
     letter-spacing: -2px;
     color: $red_new;
     font-family: "Gagalin";
@@ -422,7 +428,8 @@
     }
 
     @include small {
-        line-height: 40px;
+        font-size: rem(40px);
+        line-height: rem(30px);
     }
 }
 
@@ -437,7 +444,7 @@
     @include tablet {
         @include smallGRZ {
             font-size: rem(40px);
-            line-height: 40px;
+            line-height: rem(40px);
         }
     }
 }
@@ -446,4 +453,9 @@
     font-size: rem(32px);
     line-height: rem(32px);
     margin-right: 5%;
+
+    @include small {
+        font-size: rem(24px);
+        line-height: rem(24px);
+    }
 }

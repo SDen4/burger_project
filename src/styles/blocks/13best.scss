@@ -56,7 +56,11 @@
     @include phone {
         font-size: rem(58px);
         letter-spacing: -1px;
-        padding-bottom: 0;
+        padding-bottom: 15%;
+    }
+
+    @include small {
+        padding-bottom: 5%;
     }
 }
 
@@ -91,6 +95,14 @@
     @include phone {
         width: 100%;
         flex-direction: row;
+        margin-bottom: 5%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include small {
+        margin-bottom: 2%;
     }
 }
 

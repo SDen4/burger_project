@@ -26,6 +26,12 @@
     }
 }
 
+@mixin additionalGRZ {
+    @media screen and (min-height: 810px) {
+        @content;
+    }
+}
+
 @mixin phoneGRZ {
     @media screen and (max-height: 480px) {
         @content;
