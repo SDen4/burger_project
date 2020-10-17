@@ -140,6 +140,9 @@
     cursor: pointer;
     text-decoration: none;
 
+    //Delete blue mark of tap in mobile version
+    -webkit-tap-highlight-color: transparent;
+
     @include tablet {
         letter-spacing: 1px;
         @include smallGRZ {

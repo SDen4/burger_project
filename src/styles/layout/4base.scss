@@ -65,6 +65,11 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
+a {
+    //Delete blue mark of tap in mobile version
+    -webkit-tap-highlight-color: transparent;
+}
+
 .container {
     margin: 0 auto;
     max-width: rem(1100px);
@@ -89,6 +94,6 @@ input[type=number] {
 }
 
 .logo__pic {
-    width: rem(100px); /* 10% */
+    width: rem(100px);
     height: rem(75px);
 }

@@ -355,6 +355,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+a {
+  -webkit-tap-highlight-color: transparent; }
+
 .container {
   margin: 0 auto;
   max-width: 68.75rem;
@@ -376,7 +379,6 @@ input[type=number] {
 
 .logo__pic {
   width: 6.25rem;
-  /* 10% */
   height: 4.6875rem; }
 
 @font-face {
@@ -1528,7 +1530,8 @@ input[type=number] {
   line-height: 5rem;
   padding-top: 2.8125rem;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
   @media screen and (max-width: 768px) {
     .accordeon-vert__subtitle {
       letter-spacing: 1px; } }
@@ -1613,7 +1616,8 @@ input[type=number] {
   flex-flow: column wrap; }
 
 .accordeon__item {
-  margin-bottom: 4%; }
+  margin-bottom: 4%;
+  -webkit-tap-highlight-color: transparent; }
   @media screen and (max-width: 768px) {
     .accordeon__item {
       margin-bottom: 7%; } }

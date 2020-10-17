@@ -70,6 +70,9 @@
 .accordeon__item {
     margin-bottom: 4%;
 
+    //Delete blue mark of tap in mobile version
+    -webkit-tap-highlight-color: transparent;
+
     @include tablet {
         margin-bottom: 7%;
         @include phoneGRZ {
