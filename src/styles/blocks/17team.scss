@@ -1,5 +1,5 @@
 .team {
-    background: url('../img/bg-team.jpg') center center no-repeat;
+    background: $teamBG;
     align-items: center;
     background-size: cover;
     position: relative;
@@ -10,7 +10,7 @@
     height: 100vh;
     position: absolute;
     top: 0; right: 0;
-    background-color: rgba(47, 48, 51, 0.93);
+    background-color: $teamFrame;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@
 }
 
 .accordeon__item_active .accordeon__username:before {
-    background: url('../img/icons/team-up.png');
+    background: $teamUp;
 }
 
 .accordeon__item_active .accordeon__content {
@@ -148,7 +148,7 @@
     &:before {
         content: "";
         display: block;
-        background: url('../img/icons/team-down.png');
+        background: $teamDown;
         width: rem(12px);
         height: rem(9px);
         margin-right: 1%;

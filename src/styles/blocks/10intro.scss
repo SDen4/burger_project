@@ -1,11 +1,11 @@
 .intro {
-    background: url('../img/bg-intro.jpg') center center no-repeat;
+    background: $introBG;
     align-items: center;
     background-size: cover;
 }
 
 .intro__frame {
-    background: url('../img/texture.png');
+    background: $introFrameBG;
     background-size: cover;
     height: 100%;
     width: 100%;

@@ -23,7 +23,7 @@
 .footer {
     position: absolute;
     bottom: 0; right: 0; left: 0;
-    background: url('../img/bg-delivery2.png') center center no-repeat, url('../img/bg-delivery.jpg') center center no-repeat;
+    background: $deliveryBG;
     background-size: cover;
 }
 
@@ -130,7 +130,7 @@
     width: rem(23px);
     height: rem(23px);
     fill: $gray;
-    transition: .3s;
+    transition: $transitionDuration;
 
     &:hover {
         fill: $white;

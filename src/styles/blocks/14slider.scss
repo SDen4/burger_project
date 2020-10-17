@@ -1,5 +1,5 @@
 .slider {
-    background-image: linear-gradient(0deg, #f9b33b 0%, #ea8c38 48%, #f9b33b 74%);
+    background-image: $sliderGradient;
 }
 
 .container_slider {
@@ -175,7 +175,7 @@
     position: absolute;
     top: 0;
     left: -9999px;
-    transition: opacity .6s;
+    transition: opacity $transitionDuration;
     padding: 10% 0;
 }
 

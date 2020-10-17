@@ -47,7 +47,7 @@
     top: 0; left: 0; right: 0; bottom: 0;
     opacity: 0;
     padding: 5%;
-    transition: .3s;
+    transition: $transitionDuration;
     background-color: rgba(0, 0, 0, .5);
 
     @include additional {
@@ -126,7 +126,7 @@
 }
 
 .feedback__button {
-    transition: .3s;
+    transition: $transitionDuration;
     background-color: $black;
 
     //Delete blue mark of tap in mobile version

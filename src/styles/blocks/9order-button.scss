@@ -12,6 +12,11 @@
     outline: none;
     text-decoration: none;
     cursor: pointer;
+    transition: $transitionDuration;
+
+    &:hover {
+        background-color: $redHover;
+    }
 
     @include phone {
         padding: 0.1875rem 1rem;
@@ -22,7 +27,7 @@
 .button_clear {
     margin-left: 2%;
     background-color: transparent;
-    transition: .5s;
+    transition: $transitionDuration;
 
     &:hover {
         background-color: $red;

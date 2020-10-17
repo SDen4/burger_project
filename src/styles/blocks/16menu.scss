@@ -1,5 +1,5 @@
 .menu {
-    background: url('../img/bg-menu.jpg') center center no-repeat;
+    background: $menuBG;
     background-size: cover;
     color: $white;
     display: flex;
@@ -17,7 +17,7 @@
     top: rem(100px);
     left: rem(80px);
     z-index: 1;
-    transition: .6s;
+    transition: $transitionDuration;
 
     @include tablet {
         letter-spacing: 3px;
@@ -74,7 +74,7 @@
     justify-content: flex-end;
 
     transition-property: width;
-    transition-duration: .3s;
+    transition-duration: $transitionDuration;
 
     @include phone {
         width: 4.7rem;
@@ -82,24 +82,24 @@
 }
 
 .accordeon-vert__item_meet {
-    background: url('../img/accordeon-vert/for-meet-lovers.jpg') center center no-repeat;
+    background: $accVertMeet;
     background-size: cover;
 }
 
 .accordeon-vert__item_vegan {
-    background: url('../img/accordeon-vert/vegan.jpg') center center no-repeat;
+    background: $accVertVegan;
     background-size: cover;
 }
 
 .accordeon-vert__item_diet {
-    background: url('../img/accordeon-vert/diet.jpg') center center no-repeat;
+    background: $accVertDiet;
     background-size: cover;
 }
 
 .accordeon-vert__item_active {
     width: 50%;
     transition-property: width;
-    transition-duration: .3s;
+    transition-duration: $transitionDuration;
 
     @include phone {
         width: 65%;
@@ -167,5 +167,5 @@
     line-height: rem(24px);
 
     transition-property: width;
-    transition-duration: .3s;
+    transition-duration: $transitionDuration;
 }

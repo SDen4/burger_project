@@ -14,8 +14,9 @@ html {
     box-sizing: border-box;
 }
 
-body {
+body, p, ul {
     margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -28,10 +29,6 @@ h6 {
     font-weight: normal;
 }
 
-p {
-    margin: 0;
-}
-
 .wrapper {
     position: relative;
     width: 100%;
@@ -42,11 +39,6 @@ p {
 .main-content {
     height: 100%;
     transition: transform 1s;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }
 
 li {

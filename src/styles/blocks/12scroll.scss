@@ -44,5 +44,5 @@
     transform: translate(-50%, -50%);
     width: rem(29px);
     height: rem(14px);
-    transition: .3s;
+    transition: $transitionDuration;
 }

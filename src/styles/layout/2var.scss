@@ -1,11 +1,40 @@
-$yellow: #f9b43b;
-$white: #fff;
-$red: #e45028;
-$red_new: #e35028;
-$black: #2f3234;
-$green: #8bc03f;
-$gray: #6d6f71;
-$lite-gray: #d1cfcb;
-$orange: #f08c33;
-$player-grey: #626262;
-$player-grey-bkg: #3e3e3e;
+//colors
+    $yellow: #f9b43b;
+    $white: #fff;
+    $red: #e45028;
+    $redHover: #B22222;
+    $red_new: #e35028;
+    $black: #2f3234;
+    $green: #8bc03f;
+    $gray: #6d6f71;
+    $lite-gray: #d1cfcb;
+    $orange: #f08c33;
+    $player-grey: #626262;
+    $player-grey-bkg: #3e3e3e;
+    $sliderGradient: linear-gradient(0deg, #f9b33b 0%, #ea8c38 48%, #f9b33b 74%);
+    $teamFrame: rgba(47, 48, 51, 0.93);
+
+//bg
+    $introBG: url('../img/bg-intro.jpg') center center no-repeat;
+    $introFrameBG: url('../img/texture.png');
+    $bestMainBG: url('../img/bg-best.jpg') center center no-repeat;
+    $bestTabletBG: url('../img/bg-best-768px.jpg') center center no-repeat;
+    $bestPhoneBG: url('../img/bg-best-480px.jpg') center center no-repeat;
+    $menuBG: url('../img/bg-menu.jpg') center center no-repeat;
+    $accVertMeet: url('../img/accordeon-vert/for-meet-lovers.jpg') center center no-repeat;
+    $accVertVegan: url('../img/accordeon-vert/vegan.jpg') center center no-repeat;
+    $accVertDiet: url('../img/accordeon-vert/diet.jpg') center center no-repeat;
+    $teamBG: url('../img/bg-team.jpg') center center no-repeat;
+    $deliveryBG: url('../img/bg-delivery2.png') center center no-repeat, url('../img/bg-delivery.jpg') center center no-repeat;
+    $work: url('../img/bg-work1280.jpg') center center no-repeat;
+
+//icons&buttons
+    $teamUp: url('../img/icons/team-up.png');
+    $teamDown: url('../img/icons/team-down.png');
+    $formCheckbox: url("../img/icons/checkbox.png") center center no-repeat;
+    $gmbMenuClose: url('../img/icons/gamburger-menu-close.png') center center;
+    $feedbackClose: url('../img/icons/close_modal-feedback.png') center center;
+    $video: url('../img/svg/play-white-svg.svg') center center no-repeat;
+
+//animation
+    $transitionDuration: .5s;
