@@ -127,7 +127,7 @@
 
 .accordeon-vert__subtitle {
     background-color: rgba(0, 0, 0, .6);
-    width: 100%;
+    // width: 100%;
     min-width: rem(80px);
     height: 100vh;
     font-size: rem(40px);
@@ -153,13 +153,13 @@
     @include phone {
         padding-top: 4.4rem;
         letter-spacing: 2.5px;
-        min-width: 4rem;
+        min-width: 66px;
         line-height: 4.4rem;
     }
 }
 
 .accordeon-vert__text {
-    width: 0;
+    width: 0px;
     overflow: hidden;
     font-size: rem(14px);
     font-family: "Ubuntu";

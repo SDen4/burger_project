@@ -1512,7 +1512,6 @@ a {
 
 .accordeon-vert__subtitle {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
   min-width: 5rem;
   height: 100vh;
   font-size: 2.5rem;
@@ -1535,11 +1534,11 @@ a {
     .accordeon-vert__subtitle {
       padding-top: 4.4rem;
       letter-spacing: 2.5px;
-      min-width: 4rem;
+      min-width: 66px;
       line-height: 4.4rem; } }
 
 .accordeon-vert__text {
-  width: 0;
+  width: 0px;
   overflow: hidden;
   font-size: 0.875rem;
   font-family: "Ubuntu";
