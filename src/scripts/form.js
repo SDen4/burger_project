@@ -48,7 +48,7 @@
 
     function validateField(field) {
         if ( !field.checkValidity() ) {
-            field.nextElementSibling.textContent = field.validationMessage;
+            field.nextElementSibling.textContent = "Заполните поле";
             return false;
         } else {
             field.nextElementSibling.textContent = "";
