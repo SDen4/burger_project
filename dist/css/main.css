@@ -556,7 +556,8 @@ a {
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.5s; }
+  transition: 0.5s;
+  -webkit-tap-highlight-color: transparent; }
   .button:hover {
     background-color: #B22222; }
   @media screen and (max-width: 480px) {
