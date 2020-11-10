@@ -63,7 +63,7 @@
 
     @include phone {
         justify-content: center;
-        margin-top: 5%;
+        margin: 5% 0;
     }
 }
 
@@ -75,6 +75,7 @@
     }
 
     @include phone {
+        margin-bottom: 5%;
         justify-content: center;
     }
 }
