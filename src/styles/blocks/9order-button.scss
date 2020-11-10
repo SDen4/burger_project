@@ -19,6 +19,10 @@
 
     &:hover {
         background-color: $redHover;
+        @include tablet {
+            animation: $transitionDuration ease buttonHoverAnime;
+            background-color: $red;
+        }
     }
 
     @include phone {
@@ -35,14 +39,21 @@
     &:hover {
         background-color: $red;
         @include tablet {
-            animation: $transitionDuration ease hoverAnimation;
+            animation: $transitionDuration ease buttonClearHoverAnime;
             background-color: transparent;
         }
     }
 }
 
-//hover in mobiles
-@keyframes hoverAnimation {
+//button - hover in mobiles
+@keyframes buttonHoverAnime {
+    0%   { background-color: $red }
+    50%  { background-color: $redHover }
+    100% { background-color: $red }
+}
+
+//button clear - hover in mobiles
+@keyframes buttonClearHoverAnime {
     0%   { background-color: transparent }
     50%  { background-color: $red }
     100% { background-color: transparent }

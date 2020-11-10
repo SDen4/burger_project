@@ -560,6 +560,10 @@ a {
   -webkit-tap-highlight-color: transparent; }
   .button:hover {
     background-color: #B22222; }
+    @media screen and (max-width: 768px) {
+      .button:hover {
+        animation: 0.5s ease buttonHoverAnime;
+        background-color: #e45028; } }
   @media screen and (max-width: 480px) {
     .button {
       padding: 0.1875rem 1rem;
@@ -573,10 +577,18 @@ a {
     background-color: #e45028; }
     @media screen and (max-width: 768px) {
       .button_clear:hover {
-        animation: 0.5s ease hoverAnimation;
+        animation: 0.5s ease buttonClearHoverAnime;
         background-color: transparent; } }
 
-@keyframes hoverAnimation {
+@keyframes buttonHoverAnime {
+  0% {
+    background-color: #e45028; }
+  50% {
+    background-color: #B22222; }
+  100% {
+    background-color: #e45028; } }
+
+@keyframes buttonClearHoverAnime {
   0% {
     background-color: transparent; }
   50% {
@@ -2284,8 +2296,8 @@ a {
   align-items: center; }
 
 .modal__content {
-  width: 12.1875rem;
-  height: 6.5625rem;
+  width: 195px;
+  height: 105px;
   border-radius: 5px;
   background-color: #fff;
   opacity: 1;
