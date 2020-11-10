@@ -34,5 +34,16 @@
 
     &:hover {
         background-color: $red;
+        @include tablet {
+            animation: $transitionDuration ease hoverAnimation;
+            background-color: transparent;
+        }
     }
+}
+
+//hover in mobiles
+@keyframes hoverAnimation {
+    0%   { background-color: transparent }
+    50%  { background-color: $red }
+    100% { background-color: transparent }
 }

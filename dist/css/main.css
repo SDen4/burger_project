@@ -571,6 +571,18 @@ a {
   transition: 0.5s; }
   .button_clear:hover {
     background-color: #e45028; }
+    @media screen and (max-width: 768px) {
+      .button_clear:hover {
+        animation: 0.5s ease hoverAnimation;
+        background-color: transparent; } }
+
+@keyframes hoverAnimation {
+  0% {
+    background-color: transparent; }
+  50% {
+    background-color: #e45028; }
+  100% {
+    background-color: transparent; } }
 
 .intro {
   background: url("../img/bg-intro.jpg") center center no-repeat;
