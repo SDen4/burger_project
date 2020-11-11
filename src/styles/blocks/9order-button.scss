@@ -2,7 +2,6 @@
     border: 0;
     padding: 0.1875rem .9rem;
     border-radius: rem(5px);
-    background-color: $red;
     color: $white;
     font-size: rem(13px);
     line-height: rem(30px);
@@ -17,10 +16,11 @@
     //Delete blue mark of tap in mobile version
     -webkit-tap-highlight-color: transparent;
 
+    background-color: $red;
     &:hover {
         background-color: $redHover;
         @include tablet {
-            animation: $transitionDuration ease buttonHoverAnime;
+            animation: $transitionDuration ease 2 alternate buttonHoverAnime;
             background-color: $red;
         }
     }
@@ -34,12 +34,11 @@
 .button_clear {
     margin-left: 2%;
     background-color: transparent;
-    transition: $transitionDuration;
 
     &:hover {
         background-color: $red;
         @include tablet {
-            animation: $transitionDuration ease buttonClearHoverAnime;
+            animation: $transitionDuration ease 2 alternate buttonClearHoverAnime;
             background-color: transparent;
         }
     }
@@ -47,14 +46,12 @@
 
 //button - hover in mobiles
 @keyframes buttonHoverAnime {
-    0%   { background-color: $red }
-    50%  { background-color: $redHover }
-    100% { background-color: $red }
+    0%    { background-color: $red }
+    100%  { background-color: $redHover }
 }
 
 //button clear - hover in mobiles
 @keyframes buttonClearHoverAnime {
-    0%   { background-color: transparent }
-    50%  { background-color: $red }
-    100% { background-color: transparent }
+    0%    { background-color: transparent }
+    100%  { background-color: $red }
 }

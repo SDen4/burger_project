@@ -546,7 +546,6 @@ a {
   border: 0;
   padding: 0.1875rem .9rem;
   border-radius: 0.3125rem;
-  background-color: #e45028;
   color: #fff;
   font-size: 0.8125rem;
   line-height: 1.875rem;
@@ -557,12 +556,13 @@ a {
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  background-color: #e45028; }
   .button:hover {
     background-color: #B22222; }
     @media screen and (max-width: 768px) {
       .button:hover {
-        animation: 0.5s ease buttonHoverAnime;
+        animation: 0.5s ease 2 alternate buttonHoverAnime;
         background-color: #e45028; } }
   @media screen and (max-width: 480px) {
     .button {
@@ -571,30 +571,25 @@ a {
 
 .button_clear {
   margin-left: 2%;
-  background-color: transparent;
-  transition: 0.5s; }
+  background-color: transparent; }
   .button_clear:hover {
     background-color: #e45028; }
     @media screen and (max-width: 768px) {
       .button_clear:hover {
-        animation: 0.5s ease buttonClearHoverAnime;
+        animation: 0.5s ease 2 alternate buttonClearHoverAnime;
         background-color: transparent; } }
 
 @keyframes buttonHoverAnime {
   0% {
     background-color: #e45028; }
-  50% {
-    background-color: #B22222; }
   100% {
-    background-color: #e45028; } }
+    background-color: #B22222; } }
 
 @keyframes buttonClearHoverAnime {
   0% {
     background-color: transparent; }
-  50% {
-    background-color: #e45028; }
   100% {
-    background-color: transparent; } }
+    background-color: #e45028; } }
 
 .intro {
   background: url("../img/bg-intro.jpg") center center no-repeat;
